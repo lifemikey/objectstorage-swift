@@ -1,0 +1,52 @@
+{:navgroup: .navgroup}
+{:topicgroup: .topicgroup}
+
+{: .toc subcollection="Object Storage Swift" audience="services" href="/docs/infrastructure/objectstorage-swift/index.html"}
+IBM Bluemix Object Storage (Swift)
+
+    {: .navgroup id="learn"}
+    index.md
+    introduction-object-storage.md
+    object-storage-billing.md
+    pseudo-hierarchical-directories
+    {: .navgroup-end}
+    
+    {: .navgroup id="howto"}
+    access-object-storage-screen.md
+    access-and-exit-container.md
+    access-object-folder-or-container.md
+    add-and-edit-metadata-object.md
+    add-container-cluster
+    add-folder-container.md
+    archive-your-data-using-softlayer-object-storage-and-netapp-altavault.md
+    delete-object-cluster.md
+    delete-container.md
+    how-mount-object-storage
+    manage-object-storage-user.md
+    nas-backup-softlayer-object-storage-quantastor.md
+    search-within-cluster.md
+    view-and-edit-object-storage-file-details.md
+    view-object-details.md
+    
+    {: .topicgroup}
+    Accessing Object Storage
+        add-object-file.md
+        connect-object-storage-using-command-line.md
+        connect-object-storage-using-cyberduck.md
+        connect-object-storage-using-quantastor.md
+        connect-object-storage-using-s3ql.md
+        connect-object-storage-using-sftp.md
+        connect-object-storage-using-winscp.md
+        connect-object-storage-using-IBM-Bluemix-Apps.md
+
+    {: .topicgroup}
+    Virtual Hard Disks / ISO Images
+        vhd-uploader.md
+        vhd-content-checking-and-conversion.md
+        import-image.md
+        export-image.md
+    {: .navgroup-end}
+    
+    {: .navgroup id="help"}
+    FAQ.md
+    {: .navgroup-end}

@@ -1,0 +1,40 @@
+---
+
+copyright:
+  years: 2017
+lastupdated: "2017-07-05"
+
+---
+{:new_window: target="_blank"}
+{:shortdesc: .shortdesc}
+
+# Connect to Object Storage using the Command Line
+
+SoftLayer object storage provides a low cost storage solution that can be used for many applications. Unlike file and block storage, object storage manages data as objects, with each object including the data itself, some metadata, and a globally unique identifier. For more information about the right storage solution for your application, please read [Which storage solution is best for your project?](http://blog.softlayer.com/2014/which-storage-solution-best-your-project). The command line is a powerful and flexible method to access object storage. There are several tools that can be installed and used from a Linux terminal. A common package is [python-swiftclient](https://pypi.python.org/pypi/python-swiftclient) used with the latest version of Ubuntu (14.04) for this example. Steps may vary depending on your distribution.
+<table><tbody>
+<tr><td>Disadvantages:	</td><td>No advanced features (encryption, compression, etc.), No graphical interface</td></tr>
+<tr><td>Advantages:</td><td>Large files (> 5 GB) are supported, File segmentation is supported.</td></tr>
+<tr><td>Use Cases:	</td><td>Access when no graphical interface is available, uploading and downloading large files</td></tr>
+</tbody></table>
+
+## Access by Command Line (Linux)
+
+1. [Access the Object Storage Screen](access-object-storage-screen.html)
+2. Click the **View Credentials** link (record your credentials).
+3. Access the server's command line.
+4. Install the python swift client (this command is for Ubuntu, your distribution's commands may vary):<br/>
+   ``apt-get install python-swiftclient``
+5. Export the authentication credentials to simplify later steps:<br/>
+     ``export ST_AUTH=     (https://tor01.objectstorage.softlayer.net/auth/v1.0/ )`` <br/>
+     ``export ST_USER=     (IBMOS278685-10:######)``  <br/>
+     ``export ST_KEY=      (#############)``
+
+6. Upload any files or directories you wish to the container you created earlier:<br/>
+   ``swift upload ``<br/>
+   Example: ``swift upload StorageContainer testfile.txt``
+7. Swift object storage has a 5 GB single file upload limit. If you have files larger than this, you can upload them in segments with the following command: <br/>
+   ``swift upload -s `` <br/>
+  Example: `swift upload -s 1073741824 StorageContainer largefile` <br/>
+  **Note**: This command will break large files into 1 GB chunks.
+8. Downloading a file follows the same format swift download <br/>
+   Example: `swift download StorageContainer testfile.txt`
