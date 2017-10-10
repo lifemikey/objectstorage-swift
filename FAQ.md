@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-07-12"
+lastupdated: "2017-10-10"
 
 ---
 {:new_window: target="_blank"}
@@ -12,9 +12,9 @@ lastupdated: "2017-07-12"
 
 ## Can a Sub-User Access Object Storage?
 
-Any Customer Portal user with appropriate permissions may access and interact with Object Storage. If permissions have not been granted, the Object Storage menu option will not appear within the Customer Portal. To grant or remove permissions for Object Storage, refer to Manage an Object Storage User.
+Any [{{site.data.keyword.slportal}}](https://control.softlayer.com/){:new_window} user with appropriate permissions may access and interact with Object Storage. If permissions have not been granted, the Object Storage menu option will not appear within the {{site.data.keyword.slportal}}. To grant or remove permissions for Object Storage, refer to [Manage an Object Storage User](manage-object-storage-user.html).
 
-## Can a User Have CDN and StorageLayer Permissions Granted but be Prohibited from Accessing Object Storage?
+## Can a User Have Edgecast CDN and StorageLayer Permissions Granted but be Prohibited from Accessing Object Storage?
 
 If a user has the Manage CDN Account, Manage CDN File Transfers and Manage StorageLayer permissions granted, the user automatically has access to Object Storage, as well. At the current time, granting access to CDN and StorageLayer while prohibiting access to Object Storage, or vice versa, is not an option.
 
@@ -24,19 +24,19 @@ The upload limit is approximately 5GB for a single file. You will also have to t
 
 ## How Do I Interact with Object Storage?
 
-Users access Object Storage through the Customer Portal, IBM Bluemix Infrastructure’s API or a third party client. For best results, use the Object Storage through the API. Interacting with Object Storage through our API allows the most control over your files and greater flexibility when utilizing your Object Storage account.
+Users access Object Storage through the {{site.data.keyword.slportal}}, {{site.data.keyword.BluSoftlayer_full}}’s API or a third party client. For best results, use the Object Storage through the API. Interacting with Object Storage through our API allows the most control over your files and greater flexibility when utilizing your Object Storage account.
 
 ## What Are the Best Uses for Object Storage?
 
 The best uses are for long term static data that do not require frequent manipulation.  Examples include photographs, videos, backups, virtual machine images. Object Storage is not recommended for data sets that need to be manipulated often.
 
-## Which Devices Can Connect and Upload to an Object Storage Account via the Customer Portal?
+## Which Devices Can Connect and Upload to an Object Storage Account via the {{site.data.keyword.slportal}}?
 
-Any mobile device currently supported by IBM Bluemix Infrastructure has the ability to connect and upload items to the user’s Object Storage account via the Portal. IBM Bluemix Infrastructure currently supports iOS (iPhone, iPod Touch, iPad) Android and Windows Phone through our mobile apps designed with each device in mind. To download the IBM Bluemix Infrastructure Mobile app for your device, go to the Mobile Apps page on IBM Bluemix Infrastructure’s website.
+Any mobile device currently supported by {{site.data.keyword.BluSoftlayer_full}}  has the ability to connect and upload items to the user’s Object Storage account via the Portal. {{site.data.keyword.BluSoftlayer_full}} currently supports iOS (iPhone, iPod Touch, iPad) Android and Windows Phone through our mobile apps designed with each device in mind. To download the {{site.data.keyword.BluSoftlayer_full}} Mobile app for your device, go to the Mobile Apps page on {{site.data.keyword.BluSoftlayer_full}}’s website.
 
 ## What Type of Authentication Do I Need for Object Storage? 
 
-Each Object Storage account requires the API Key for the master user account. These are available under View Credentials upon accessing the Object Storage section your Portal.
+Each Object Storage account requires the API Key for the master user account. These are available under View Credentials upon accessing the Object Storage section your {{site.data.keyword.slportal}}.
 
 ## What Are the Object Storage Authentication Endpoints on the Public and Private Networks?
 
@@ -67,7 +67,7 @@ The authentication endpoints for Object Storage are cluster-specific. Use the pu
 
 ## How Do I Connect Object Storage to My Server for Backups?
 
-Although Object Storage is a solution for archiving, it isn't the ideal solution for targeting your active backups. IBM Bluemix recommends utilizing our EVault services to ensure the best results when backing up your server. To use Object Storage as a mount point for archiving data, connect the server to the desired storage container and set up your archive process.  For example, run a database dump and then schedule a job to move the file to the object storage mount point.
+Although Object Storage is a solution for archiving, it isn't the ideal solution for targeting your active backups. {{site.data.keyword.BluSoftlayer_full}} recommends utilizing our EVault services to ensure the best results when backing up your server. To use Object Storage as a mount point for archiving data, connect the server to the desired storage container and set up your archive process.  For example, run a database dump and then schedule a job to move the file to the object storage mount point.
 
 
 ## Do I Still Have to Adhere to the 5 GB per Object Limit When Using SFTP?
@@ -92,12 +92,12 @@ The use of SFTP clients is primarily based on the device's OS and user preferenc
 
 ## Which Third Party Software Can I Use with Object Storage? 
 
-There are currently two programs that IBM Bluemix recognizes as a third party solution for Object Storage: [Gladinet Cloud](http://www.gladinet.com/) and [Cyberduck](https://trac.cyberduck.io/wiki/help/en/howto/softlayer/).  Gladinet Cloud can be downloaded from the Gladinet website and setup instructions can be found on Gladinet’s [blog](http://gladinet.blogspot.com/2012/06/access-softlayer-object-storage-from.html).  Cyberduck is available on the Cyberduck website but must be configured to work properly with Object Storage.  Configuration instruction can be found on Cyberduck’s [wiki](http://trac.cyberduck.ch/wiki/help/en/howto/preferences#Hiddenconfigurationoptions) and in Bluemix Docs' [Connect to Object Storage with Cyberduck](connect-object-storage-using-cyberduck.html).   
+There are currently two programs that {{site.data.keyword.BluSoftlayer_full}}  recognizes as a third party solution for Object Storage: [Gladinet Cloud](http://www.gladinet.com/){:new_window} and [Cyberduck](https://trac.cyberduck.io/wiki/help/en/howto/softlayer/){:new_window}.  Gladinet Cloud can be downloaded from the Gladinet website and setup instructions can be found on Gladinet’s [blog](http://gladinet.blogspot.com/2012/06/access-softlayer-object-storage-from.html){:new_window}.  Cyberduck is available on the Cyberduck website but must be configured to work properly with Object Storage.  Configuration instruction can be found on Cyberduck’s [wiki](http://trac.cyberduck.ch/wiki/help/en/howto/preferences#Hiddenconfigurationoptions) and in Bluemix Docs' [Connect to Object Storage with Cyberduck](connect-object-storage-using-cyberduck.html).   
 
 ## Will I Be Able to Expand Archives without Downloading Them within Object Storage? 
 
-No. This feature is not supported by OpenStack’s Swift, the platform on which Object Storage is built. Currently, IBM Bluemix has no plans to implement this feature. 
+No. This feature is not supported by OpenStack’s Swift, the platform on which Object Storage is built. Currently, {{site.data.keyword.BluSoftlayer_full}}  has no plans to implement this feature. 
 
 ## Is CDN integration Available on my Object Storage Account?
 
-Yes, CDN integration is a standard feature on all Object Storage accounts.  All interactions with the CDN portion of your account must be managed through SoftLayer’s API and CDN integration must be activated on your account prior to its use.  For more information on interactions with the CDN portion of your Object Storage account, refer to the [Object Storage CDN](http://sldn.softlayer.com/reference/Object-Storage-CDN) reference page of the SLDN.
+Yes, Edgecast CDN integration is a standard feature on all Swift Object Storage accounts.  All interactions with the CDN portion of your account must be managed through SoftLayer’s API and CDN integration must be activated on your account prior to its use.  For more information on interactions with the Edgecast CDN portion of your Object Storage account, refer to the article [Attaching EdgeCast CDN account to SL Object Storage](/docs/infrastructure/content-deliver-network/attach-edgecast-cdn-account-sl-object-storage.html) or the [Object Storage CDN](http://sldn.softlayer.com/reference/Object-Storage-CDN){new_window} reference page of the SLDN.
