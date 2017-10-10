@@ -1,36 +1,37 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="Object Storage Swift" audience="services" href="/docs/infrastructure/objectstorage-swift/index.html"}
-IBM Bluemix Object Storage (Swift)
+{: .toc subcollection="objectstorage-swift" audience="services" href="/docs/infrastructure/objectstorage-swift/index.html"}
+IBM Cloud Storage - Object Storage (Swift)
 
     {: .navgroup id="learn"}
-    index.md
     introduction-object-storage.md
+    index.md
     object-storage-billing.md
     pseudo-hierarchical-directories
     {: .navgroup-end}
     
     {: .navgroup id="howto"}
-    access-object-storage-screen.md
-    access-and-exit-container.md
-    access-object-folder-or-container.md
-    add-and-edit-metadata-object.md
-    add-container-cluster
-    add-folder-container.md
-    archive-your-data-using-softlayer-object-storage-and-netapp-altavault.md
-    delete-object-cluster.md
-    delete-container.md
-    how-mount-object-storage
-    manage-object-storage-user.md
-    nas-backup-softlayer-object-storage-quantastor.md
-    search-within-cluster.md
-    view-and-edit-object-storage-file-details.md
-    view-object-details.md
+    {: .topicgroup}
+    Interacting with Object Storage Swift through the Customer Portal
+        access-object-storage-screen.md
+        access-and-exit-container.md
+        access-object-folder-or-container.md
+        add-container-cluster.md
+        add-folder-container.md
+        add-object-file.md
+        add-and-edit-metadata-object.md
+        delete-object-cluster.md
+        delete-container.md
+        manage-object-storage-user.md
+        search-within-cluster.md
+        view-and-edit-object-storage-file-details.md
+        view-object-details.md
     
     {: .topicgroup}
-    Accessing Object Storage
+    Various Ways of Accessing Object Storage
         add-object-file.md
+        how-mount-object-storage.md
         connect-object-storage-using-command-line.md
         connect-object-storage-using-cyberduck.md
         connect-object-storage-using-quantastor.md
@@ -45,6 +46,11 @@ IBM Bluemix Object Storage (Swift)
         vhd-content-checking-and-conversion.md
         import-image.md
         export-image.md
+        
+    {: .topicgroup}
+    Using Object Storage as Archive/Backup
+        nas-backup-softlayer-object-storage-quantastor.md
+        archive-your-data-using-softlayer-object-storage-and-netapp-altavault.md
     {: .navgroup-end}
     
     {: .navgroup id="help"}
