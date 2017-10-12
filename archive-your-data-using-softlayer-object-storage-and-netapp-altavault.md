@@ -85,7 +85,7 @@ After the AltaVault VM has been configured with the appropriate hardware, you ca
 2. After logging into the appliance, the console displays a question whether you want to use the wizard for initial configuration. Enter **y**.
 3. Use the information in Table 1 once you have entered the wizard.
    <table><tbody>
-     <tr><td>Question</td><td>Answer</td></tr>
+     <tr><th>Question</th><th>Answer</th></tr>
      <tr><td>Step 1: Admin password?</td><td>Enter a new admin password</td></tr>
      <tr><td>Step 2: Hostname?</td><td>Enter the hostname you wish to use</td></tr>
      <tr><td>Step 3: Use DHCP on primary interface?</td><td>Enter n</td></tr>
@@ -219,7 +219,7 @@ After the AltaVault VM has been configured with the appropriate virtualized hard
 2.  After logging into the appliance, the console displays a question whether you want to use the wizard for initial configuration. Enter y.
 3. Use the information in Table 2once you have entered the wizard. 
    <table><tbody>
-     <tr><td>Question</td><td>Answer</td></tr>
+     <tr><th>Question</th><th>Answer</th></tr>
      <tr><td>Step 1: Admin password?</td><td>Enter a new admin password</td></tr>
      <tr><td>Step 2: Hostname?</td><td>Enter the hostname you wish to use</td></tr>
      <tr><td>Step 3: Use DHCP on primary interface?</td><td>Enter n</td></tr>
