@@ -2,15 +2,15 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-07-05"
+lastupdated: "2017-10-11"
 
 ---
 {:new_window: target="_blank"}
 {:shortdesc: .shortdesc}
 
-# Add a Folder to a Container
+# Adding a Folder to a Container
 
-Adding a folder in the [Customer Portal](https://control.softlayer.com/) allows for organization of files that would ordinarily be placed directly in the container. Folders may be added to the container itself or to another folder to provide additional options for organization. The process for adding a folder directly to a container or adding a folder to another folder (nesting folders) is the same. Follow the steps below to add a folder.
+Adding a folder in the [{{site.data.keyword.slportal}}](https://control.softlayer.com/){:new_window} allows for organization of files that would ordinarily be placed directly in the container. Folders may be added to the container itself or to another folder to provide additional options for organization. The process for adding a folder directly to a container or adding a folder to another folder (nesting folders) is the same. Follow the steps below to add a folder.
 
 ## Add a Folder
 

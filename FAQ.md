@@ -2,45 +2,45 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-10-10"
+lastupdated: "2017-10-11"
 
 ---
 {:new_window: target="_blank"}
 {:shortdesc: .shortdesc}
 
-# IBM Cloud Object Storage (Swift) FAQ
+# {{site.data.keyword.cloud_notm}} {{site.data.keyword.objectstorageshort}} OpenStack Swift - Frequently Asked Questions
 
-## Can a Sub-User Access Object Storage?
+## Can a Sub-User Access {{site.data.keyword.objectstorageshort}}?
 
-Any [{{site.data.keyword.slportal}}](https://control.softlayer.com/){:new_window} user with appropriate permissions may access and interact with Object Storage. If permissions have not been granted, the Object Storage menu option will not appear within the {{site.data.keyword.slportal}}. To grant or remove permissions for Object Storage, refer to [Manage an Object Storage User](manage-object-storage-user.html).
+Any [{{site.data.keyword.slportal}}](https://control.softlayer.com/){:new_window} user with appropriate permissions may access and interact with {{site.data.keyword.objectstorageshort}}. If permissions have not been granted, the {{site.data.keyword.objectstorageshort}} menu option will not appear within the {{site.data.keyword.slportal}}. To grant or remove permissions for {{site.data.keyword.objectstorageshort}}, refer to [Manage an {{site.data.keyword.objectstorageshort}} User](manage-object-storage-user.html).
 
-## Can a User Have Edgecast CDN and StorageLayer Permissions Granted but be Prohibited from Accessing Object Storage?
+## Can a User Have Edgecast CDN and StorageLayer Permissions Granted but be Prohibited from Accessing {{site.data.keyword.objectstorageshort}}?
 
-If a user has the Manage CDN Account, Manage CDN File Transfers and Manage StorageLayer permissions granted, the user automatically has access to Object Storage, as well. At the current time, granting access to CDN and StorageLayer while prohibiting access to Object Storage, or vice versa, is not an option.
+If a user has the Manage CDN Account, Manage CDN File Transfers and Manage StorageLayer permissions granted, the user automatically has access to {{site.data.keyword.objectstorageshort}}, as well. At the current time, granting access to CDN and StorageLayer while prohibiting access to {{site.data.keyword.objectstorageshort}}, or vice versa, is not an option.
 
-## What Is the File Upload Limit for Object Storage?
+## What Is the File Upload Limit for {{site.data.keyword.objectstorageshort}}?
 
-The upload limit is approximately 5GB for a single file. You will also have to take in consideration any device limitation - iOS (iPhone, iPod Touch, iPad) Android and Windows Phone are currently supported. If you require a file size larger than 5GB, utilize segmentation. For more information regarding segmentation, review OpenStack’s [segmentation overview](http://docs.openstack.org/developer/swift/overview_large_objects.html) for swift.
+The upload limit is approximately 5 GB for a single file. You will also have to take in consideration any device limitation - iOS (iPhone, iPod Touch, iPad) Android and Windows Phone are currently supported. If you require a file size larger than 5 GB, utilize segmentation. For more information regarding segmentation, review OpenStack’s [segmentation overview](http://docs.openstack.org/developer/swift/overview_large_objects.html) for swift.
 
-## How Do I Interact with Object Storage?
+## How Do I Interact with {{site.data.keyword.objectstorageshort}}?
 
-Users access Object Storage through the {{site.data.keyword.slportal}}, {{site.data.keyword.BluSoftlayer_full}}’s API or a third party client. For best results, use the Object Storage through the API. Interacting with Object Storage through our API allows the most control over your files and greater flexibility when utilizing your Object Storage account.
+Users access {{site.data.keyword.objectstorageshort}} through the {{site.data.keyword.slportal}}, {{site.data.keyword.BluSoftlayer_full}}’s API or a third party client. For best results, use the {{site.data.keyword.objectstorageshort}} through the API. Interacting with {{site.data.keyword.objectstorageshort}} through our API allows the most control over your files and greater flexibility when utilizing your {{site.data.keyword.objectstorageshort}} account.
 
-## What Are the Best Uses for Object Storage?
+## What Are the Best Uses for {{site.data.keyword.objectstorageshort}}?
 
-The best uses are for long term static data that do not require frequent manipulation.  Examples include photographs, videos, backups, virtual machine images. Object Storage is not recommended for data sets that need to be manipulated often.
+The best uses are for long term static data that do not require frequent manipulation.  Examples include photographs, videos, backups, virtual machine images. {{site.data.keyword.objectstorageshort}} is not recommended for data sets that need to be manipulated often.
 
-## Which Devices Can Connect and Upload to an Object Storage Account via the {{site.data.keyword.slportal}}?
+## Which Devices Can Connect and Upload to an {{site.data.keyword.objectstorageshort}} Account via the {{site.data.keyword.slportal}}?
 
-Any mobile device currently supported by {{site.data.keyword.BluSoftlayer_full}}  has the ability to connect and upload items to the user’s Object Storage account via the Portal. {{site.data.keyword.BluSoftlayer_full}} currently supports iOS (iPhone, iPod Touch, iPad) Android and Windows Phone through our mobile apps designed with each device in mind. To download the {{site.data.keyword.BluSoftlayer_full}} Mobile app for your device, go to the Mobile Apps page on {{site.data.keyword.BluSoftlayer_full}}’s website.
+Any mobile device currently supported by {{site.data.keyword.BluSoftlayer}} has the ability to connect and upload items to the user’s {{site.data.keyword.objectstorageshort}} account via the {{site.data.keyword.slportal}}. {{site.data.keyword.BluSoftlayer}} currently supports iOS (iPhone, iPod Touch, iPad) Android and Windows Phone through our mobile apps designed with each device in mind. To download the {{site.data.keyword.BluSoftlayer}} Mobile app for your device, go to the Mobile Apps page on {{site.data.keyword.BluSoftlayer}}’s website.
 
-## What Type of Authentication Do I Need for Object Storage? 
+## What Type of Authentication Do I Need for {{site.data.keyword.objectstorageshort}}? 
 
-Each Object Storage account requires the API Key for the master user account. These are available under View Credentials upon accessing the Object Storage section your {{site.data.keyword.slportal}}.
+Each {{site.data.keyword.objectstorageshort}} account requires the API Key for the master user account. These are available under View Credentials upon accessing the {{site.data.keyword.objectstorageshort}} section your {{site.data.keyword.slportal}}.
 
-## What Are the Object Storage Authentication Endpoints on the Public and Private Networks?
+## What Are the {{site.data.keyword.objectstorageshort}} Authentication Endpoints on the Public and Private Networks?
 
-The authentication endpoints for Object Storage are cluster-specific. Use the public or private network endpoint that corresponds to the desired cluster. Endpoints are as follows:
+The authentication endpoints for {{site.data.keyword.objectstorageshort}} are cluster-specific. Use the public or private network endpoint that corresponds to the desired cluster. Endpoints are as follows:
 
 <table><tbody><tr><th>Data Center</th><th>Network Endpoints</th></tr>
 <tr><td>Amsterdam, Netherlands</td><td><li>Public Network: https://ams01.objectstorage.softlayer.net/auth/v1.0 </li><li>Private Network: https://ams01.objectstorage.service.networklayer.com/auth/v1.0</li></td></tr>
@@ -65,14 +65,14 @@ The authentication endpoints for Object Storage are cluster-specific. Use the pu
 </tbody></table>
 
 
-## How Do I Connect Object Storage to My Server for Backups?
+## How Do I Connect {{site.data.keyword.objectstorageshort}} to My Server for Backups?
 
-Although Object Storage is a solution for archiving, it isn't the ideal solution for targeting your active backups. {{site.data.keyword.BluSoftlayer_full}} recommends utilizing our EVault services to ensure the best results when backing up your server. To use Object Storage as a mount point for archiving data, connect the server to the desired storage container and set up your archive process.  For example, run a database dump and then schedule a job to move the file to the object storage mount point.
+Although {{site.data.keyword.objectstorageshort}} is a solution for archiving, it isn't the ideal solution for targeting your active backups. {{site.data.keyword.BluSoftlayer}} recommends utilizing [our EVault services](/docs/infrastructure/Backup/index.html#evault-backup) to ensure the best results when backing up your server. To use {{site.data.keyword.objectstorageshort}} as a mount point for archiving data, connect the server to the desired storage container and set up your archive process.  For example, run a database dump and then schedule a job to move the file to the object storage mount point.
 
 
 ## Do I Still Have to Adhere to the 5 GB per Object Limit When Using SFTP?
 
-The 5 GB limitation for objects uploaded to Object Storage is still in place using SFTP. If an object greater than 5 GB should be uploaded, we recommend referring to the following articles provided by OpenStack to ensure the object is uploaded successfully and efficiently:
+The 5 GB limitation for objects uploaded to {{site.data.keyword.objectstorageshort}} is still in place using SFTP. If an object greater than 5 GB should be uploaded, we recommend referring to the following articles provided by OpenStack to ensure the object is uploaded successfully and efficiently:
 
 - [Create Large Objects](http://docs.openstack.org/user-guide/cli_swift_large_object_creation.html)
 - [Chunked Transfer Encoding](http://docs.openstack.org/developer/python-swiftclient/swiftclient.html)
@@ -90,14 +90,14 @@ The use of SFTP clients is primarily based on the device's OS and user preferenc
  - [Cyberduck](http://cyberduck.io/) for Mac and Windows
  - [FileZilla](https://filezilla-project.org/) for all platforms
 
-## Which Third Party Software Can I Use with Object Storage? 
+## Which Third Party Software Can I Use with {{site.data.keyword.objectstorageshort}}? 
 
-There are currently two programs that {{site.data.keyword.BluSoftlayer_full}}  recognizes as a third party solution for Object Storage: [Gladinet Cloud](http://www.gladinet.com/){:new_window} and [Cyberduck](https://trac.cyberduck.io/wiki/help/en/howto/softlayer/){:new_window}.  Gladinet Cloud can be downloaded from the Gladinet website and setup instructions can be found on Gladinet’s [blog](http://gladinet.blogspot.com/2012/06/access-softlayer-object-storage-from.html){:new_window}.  Cyberduck is available on the Cyberduck website but must be configured to work properly with Object Storage.  Configuration instruction can be found on Cyberduck’s [wiki](http://trac.cyberduck.ch/wiki/help/en/howto/preferences#Hiddenconfigurationoptions) and in Bluemix Docs' [Connect to Object Storage with Cyberduck](connect-object-storage-using-cyberduck.html).   
+There are currently two programs that {{site.data.keyword.BluSoftlayer}}  recognizes as a third party solution for {{site.data.keyword.objectstorageshort}}: [Gladinet Cloud](http://www.gladinet.com/){:new_window} and [Cyberduck](https://trac.cyberduck.io/wiki/help/en/howto/softlayer/){:new_window}.  Gladinet Cloud can be downloaded from the Gladinet website and setup instructions can be found on Gladinet’s [blog](http://gladinet.blogspot.com/2012/06/access-softlayer-object-storage-from.html){:new_window}.  Cyberduck is available on the Cyberduck website but must be configured to work properly with {{site.data.keyword.objectstorageshort}}.  Configuration instruction can be found on Cyberduck’s [wiki](http://trac.cyberduck.ch/wiki/help/en/howto/preferences#Hiddenconfigurationoptions) and in our [Connect to {{site.data.keyword.objectstorageshort}} with Cyberduck](connect-object-storage-using-cyberduck.html) article.   
 
-## Will I Be Able to Expand Archives without Downloading Them within Object Storage? 
+## Will I Be Able to Expand Archives without Downloading Them within {{site.data.keyword.objectstorageshort}}? 
 
-No. This feature is not supported by OpenStack’s Swift, the platform on which Object Storage is built. Currently, {{site.data.keyword.BluSoftlayer_full}}  has no plans to implement this feature. 
+No. This feature is not supported by OpenStack’s Swift, the platform on which {{site.data.keyword.objectstorageshort}} is built. Currently, {{site.data.keyword.BluSoftlayer}} has no plans to implement this feature. 
 
-## Is CDN integration Available on my Object Storage Account?
+## Is CDN integration Available on my {{site.data.keyword.objectstorageshort}} Account?
 
-Yes, Edgecast CDN integration is a standard feature on all Swift Object Storage accounts.  All interactions with the CDN portion of your account must be managed through SoftLayer’s API and CDN integration must be activated on your account prior to its use.  For more information on interactions with the Edgecast CDN portion of your Object Storage account, refer to the article: [Attaching EdgeCast CDN account to SL Object Storage](/docs/infrastructure/content-deliver-network/attach-edgecast-cdn-account-sl-object-storage.html).
+Yes, Edgecast CDN integration is a standard feature on all {{site.data.keyword.objectstorageshort}} OpenStack Swift accounts.  All interactions with the Storage CDN portion of your account must be managed through {{site.data.keyword.BluSoftlayer}}’s API and CDN integration must be activated on your account prior to its use.  For more information on interactions with the Edgecast CDN portion of your {{site.data.keyword.objectstorageshort}} account, refer to the article: [Attaching EdgeCast CDN account to {{site.data.keyword.objectstorageshort}} OpenStack Swift](/docs/infrastructure/content-deliver-network/attach-edgecast-cdn-account-sl-object-storage.html).

@@ -2,19 +2,19 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-07-05"
+lastupdated: "2017-10-11"
 
 ---
 {:new_window: target="_blank"}
 {:shortdesc: .shortdesc}
 
-# Delete an Object in a Cluster
+# Deleting an Object in a Cluster
 
 Similar to containers, users may also delete an object at any time. Like containers, folders must be completely empty prior to deletion. No restrictions are set for files. Follow the steps below to delete an object.
 
 ## Delete an Object
 
-1. Access the **Object Storage** screen. Refer to [Access the Object Storage Screen]().
+1. Access the **{{site.data.keyword.objectstorageshort}}** screen in the [{{site.data.keyword.slportal}}](https://control.softlayer.com/){:new_window}. Refer to [Access the {{site.data.keyword.objectstorageshort}} Screen]().
 2. Scroll over the **Container Name** that will be deleted.
 3. Click the **Delete** icon. A Delete Object confirmation box will appear.<br/>
 ![Delete Object](/images/Delete_Object.png)

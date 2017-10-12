@@ -2,13 +2,13 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-07-06"
+lastupdated: "2017-10-11"
 
 ---
 {:new_window: target="_blank"}
 {:shortdesc: .shortdesc}
 
-# Connect to Object Storage using S3QL
+# Connecting to {{site.data.keyword.objectstorageshort}} OpenStack Swift using S3QL
 
 S3QL is the Python utility that QuantaStor uses to mount its cloud containers. If you don't have a QuantaStor appliance or wish to manage your endpoints manually, then you can install and use the S3QL utility. S3QL supports a wide range of features including: data-deduplication, compression, encryption, and caching. The following example uses Ubuntu 14.04. Your instructions may vary depending on your distribution.
 <table><tbody>
@@ -41,7 +41,7 @@ S3QL is the Python utility that QuantaStor uses to mount its cloud containers. I
     	backend-password: #########################
     	storage-url: swift://
      
-4. Create a new Object Storage container for your S3QL file system.
+4. Create a new {{site.data.keyword.objectstorageshort}} container for your S3QL file system.
 5. Make your new S3QL file system: <br/>
     ``mkfs.s3ql swift://:443/``<br/>
     Example: ``mkfs.s3ql swift://tor01.objectstorage.softlayer.net:443/s3qltest``

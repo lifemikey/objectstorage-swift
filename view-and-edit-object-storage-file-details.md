@@ -2,15 +2,15 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-07-05"
+lastupdated: "2017-10-11"
 
 ---
 {:new_window: target="_blank"}
 {:shortdesc: .shortdesc}
 
-# View and Edit Object Storage File Details
+# Viewing and Editing {{site.data.keyword.objectstorageshort}} OpenStack Swift File Details
 
-After a file has been added, details regarding the file may be viewed and edited at any time. Follow the steps below to view and edit file details for a single file.View and Edit File Details
+After a file has been added, details regarding the file may be viewed and edited at any time. Follow the steps below to view and edit file details for a single file.
 
 1. Access the **Container** containing the file requiring edit. Refer to [Access and Exit a Container](access-and-exit-container.html). <br/>
    **Note**: If the file for edit is located within a folder, click the **Folder Name** to access the folder's contents and locate the file.

@@ -2,18 +2,26 @@
 {:topicgroup: .topicgroup}
 
 {: .toc subcollection="objectstorage-swift" audience="services" href="/docs/infrastructure/objectstorage-swift/index.html"}
-IBM Cloud Storage - Object Storage (Swift)
+IBM Cloud Storage - Object Storage OpenStack Swift
 
     {: .navgroup id="learn"}
-    introduction-object-storage.md
     index.md
     object-storage-billing.md
-    pseudo-hierarchical-directories
+    pseudo-hierarchical-directories.md
     {: .navgroup-end}
-    
+
     {: .navgroup id="howto"}
+    connect-object-storage-using-cloudfuse.md
+    connect-object-storage-using-command-line.md
+    connect-object-storage-using-cyberduck.md
+    connect-object-storage-using-IBM-Bluemix-Apps.md
+    connect-object-storage-using-quantastor.md
+    connect-object-storage-using-s3ql.md
+    connect-object-storage-using-sftp.md
+    connect-object-storage-using-winscp.md
+   
     {: .topicgroup}
-    Interacting with Object Storage Swift through the Customer Portal
+    Interacting with Object Storage through the Customer Portal
         access-object-storage-screen.md
         access-and-exit-container.md
         access-object-folder-or-container.md
@@ -27,28 +35,16 @@ IBM Cloud Storage - Object Storage (Swift)
         search-within-cluster.md
         view-and-edit-object-storage-file-details.md
         view-object-details.md
-    
-    {: .topicgroup}
-    Various Ways of Accessing Object Storage
-        add-object-file.md
-        how-mount-object-storage.md
-        connect-object-storage-using-command-line.md
-        connect-object-storage-using-cyberduck.md
-        connect-object-storage-using-quantastor.md
-        connect-object-storage-using-s3ql.md
-        connect-object-storage-using-sftp.md
-        connect-object-storage-using-winscp.md
-        connect-object-storage-using-IBM-Bluemix-Apps.md
 
     {: .topicgroup}
-    Virtual Hard Disks / ISO Images
+    Handling Virtual Hard Disks and ISO Images
         vhd-uploader.md
         vhd-content-checking-and-conversion.md
         import-image.md
         export-image.md
         
     {: .topicgroup}
-    Using Object Storage as Archive/Backup
+    Using Object Storage as Archive or Backup
         nas-backup-softlayer-object-storage-quantastor.md
         archive-your-data-using-softlayer-object-storage-and-netapp-altavault.md
     {: .navgroup-end}

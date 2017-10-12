@@ -2,15 +2,15 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-07-07"
+lastupdated: "2017-10-11"
 
 ---
 {:new_window: target="_blank"}
 {:shortdesc: .shortdesc}
 
-# How to Mount Object Storage
+# Connecting to {{site.data.keyword.objectstorageshort}} OpenStack Swift using Cloudfuse
 
-IBM Bluemix's Object Storage product can be mounted in Linux or Windows and navigated as a native directory.  While you will be able to interact with your object storage containers similar to a native file/folder structure; it is not recommended to run programs from this mount point.
+{{site.data.keyword.BluSoftlayer}}'s {{site.data.keyword.objectstorageshort}} product can be mounted in Linux or Windows and navigated as a native directory.  While you will be able to interact with your object storage containers similar to a native file/folder structure; it is not recommended to run programs from this mount point.
 
 ## To mount an object storage account:
 
@@ -45,5 +45,4 @@ There are additional options that you can set for the object storage mount.  The
     cache_timeout= This option sets the duration of directory caching, the default is 600 seconds.
 
  
-You can read more about object storage at our blog:
-http://blog.softlayer.com/2012/softlayer-openstack-swift-softlayer-object-storage/
+You can read more about object storage at our blog: [SoftLayer + OpenStack Swift = SoftLayer Object Storage](http://blog.softlayer.com/2012/softlayer-openstack-swift-softlayer-object-storage/){:new_window}

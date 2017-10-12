@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-07-11"
+lastupdated: "2017-10-11"
 
 ---
 {:new_window: target="_blank"}
@@ -10,30 +10,21 @@ lastupdated: "2017-07-11"
 
 # Pseudo Hierarchical Directories
 
-After creating a directory with the Object Storage browser interface and then using the API directly or using one of
-the various clients or libraries, you may have noticed that a stub directory object was created. This is done to enable
-users to create empty directories that stick around past one user's session without having to add
-objects underneath that directory. 
+After creating a directory with the {{site.data.keyword.objectstorageshort}} browser interface and then using the API directly or using one of the various clients or libraries, you may have noticed that a stub directory object was created. This is done to enable users to create empty directories that stick around past one user's session without having to add objects underneath that directory. 
 
-The entire directory structure can be built without these directory objects so
-cleaning up those objects is safe. To further explain, this article runs through an example of building a directory
-listing from an Object Storage API perspective.
+The entire directory structure can be built without these directory objects so cleaning up those objects is safe. To further explain, this article runs through an example of building a directory listing from an {{site.data.keyword.objectstorageshort}} API perspective.
 
-## Strategy to Building a Directory-Based Interface with Object Storage
+## Strategy to Building a Directory-Based Interface with {{site.data.keyword.objectstorageshort}}
 
-- Provide a way to create directory objects: zero-byte objects with a content type of 'application/directory'. This
-is to allow users to drill down to a directory in order to upload objects at a specific path and also have
-directories without objects in them.
-- If a zero-byte object with the content-type of application/directory exists as well as a fake directory then only
-show the object (and cause it to act like a directory)
-- If a non-zero-byte object or an object with a content-type other than 'application/directory' exists as well as a
-fake directory then show both. Treat the fake directory as the directory and the real object as a normal object.
+- Provide a way to create directory objects: zero-byte objects with a content type of 'application/directory'. This is to allow users to drill down to a directory in order to upload objects at a specific path and also have directories without objects in them.
+- If a zero-byte object with the content-type of application/directory exists as well as a fake directory then only show the object (and cause it to act like a directory)
+- If a non-zero-byte object or an object with a content-type other than 'application/directory' exists as well as a fake directory then show both. Treat the fake directory as the directory and the real object as a normal object.
 
 ## Pseudo-Hierarchical Directories
 
 Example: <br/>
 Instead of CURL, we are using a HTTPie as the command line tool to make HTTP requests. Before we do anything on
-Object Storage, we need to authenticate, so let's get our auth token.
+{{site.data.keyword.objectstorageshort}}, we need to authenticate, so let's get our auth token.
 
 ```
 $ http -v https://dal05.objectstorage.softlayer.net/auth/v1.0
@@ -90,7 +81,8 @@ Content-Length:0 Content-Type:application/directory
 
 Now, let's look at the normal listing.
 
-```http -v GET
+```
+http -v GET
 https://dal05.objectstorage.softlayer.net/v1/AUTH_de5f21ef-09ff-4b1a-aaa...
 93/fake_directories?format=json X-Auth-Token:AUTH_tk8a47cc0e4b3d48599aa499ffce1cf50a
 GET /v1/AUTH_de5f21ef-09ff-4b1a-aaa3-f9ea5ef10393/fake_directories?format=json
@@ -133,8 +125,7 @@ X-Trans-Id: tx1670a8c4fa614878a831147d3300f99c
 ]
 ```
 
-As you can see, we get a JSON document that is a list with three hashes – each one is an object in the container.
-It's easier to see the structure if we don't include format=json in the parameters:
+As you can see, we get a JSON document that is a list with three hashes – each one is an object in the container. It's easier to see the structure if we don't include format=json in the parameters:
 
 ```
 1/2
@@ -142,7 +133,7 @@ It's easier to see the structure if we don't include format=json in the paramete
 1/actual_object.txt
 ```
 
-If Object Storage was an actual directory structure, a recursive list of all the files/directories would look like this:
+If {{site.data.keyword.objectstorageshort}} was an actual directory structure, a recursive list of all the files/directories would look like this:
 
 ```
 1
@@ -155,11 +146,10 @@ If Object Storage was an actual directory structure, a recursive list of all the
 1/2/3/4/5/6/actual_object.txt
 ```
 
-Now let's add some more parameters to the end of that URL so we only see one level of that directory structure.
-Object Storage gives us the following to work with:
+Now let's add some more parameters to the end of that URL so we only see one level of that directory structure. {{site.data.keyword.objectstorageshort}} gives us the following to work with:
 
 - **Prefix** - This causes the call to return a list of objects that are prefixed with this value. If the prefix is 1/2/3/4/ it will return objects that start with 1/2/3/4/. Pretty simple.
-- **Delimiter** - What to use to split a directory path. Without this it has no idea if you're using slashes to denote a  directory or pictures of ducks. Defining this means you want Object Storage to treat your call like you want only the current directory (which you can define via prefix). Using the example setup that we've built, this is what to expect out of making a GET request to /fake_directories with a prefix of '1/' and a delimiter of '/':
+- **Delimiter** - What to use to split a directory path. Without this it has no idea if you're using slashes to denote a  directory or pictures of ducks. Defining this means you want {{site.data.keyword.objectstorageshort}} to treat your call like you want only the current directory (which you can define via prefix). Using the example setup that we've built, this is what to expect out of making a GET request to /fake_directories with a prefix of '1/' and a delimiter of '/':
 
 ```
 1/2
@@ -167,10 +157,7 @@ Object Storage gives us the following to work with:
 1/actual_object.txt
 ```
 
-The actual_object.txt that is nested deeper doesn't show at all. Instead it's just '1/2/'. One of the problems is that 1/2
-(the object) can clash with 1/2/ (the directory). You can delete 1/2 but you can't delete 1/2/. You can set metadata on
-1/2 but you can't on 1/2/. You can set content on 1/2 but you can't on 1/2/. That was the plain text output. Let's look
-at the JSON.
+The actual_object.txt that is nested deeper doesn't show at all. Instead it's just '1/2/'. One of the problems is that 1/2 (the object) can clash with 1/2/ (the directory). You can delete 1/2 but you can't delete 1/2/. You can set metadata on 1/2 but you can't on 1/2/. You can set content on 1/2 but you can't on 1/2/. That was the plain text output. Let's look at the JSON.
 
 ```
 $ http -v GET
@@ -214,6 +201,4 @@ X-Trans-Id: txb3f50709a63145de9274e8d419f9fb22
 ]
 ```
 
-As you can see, real objects have a distinctly different look than the fake directories through the API. The SoftLayer
-Object Storage browsing interface uses both real and fake directories to provide an experience similar to browsing a
-file-based directory structure that might be much more familiar.
+As you can see, real objects have a distinctly different look than the fake directories through the API. The {{site.data.keyword.BluSoftlayer}} {{site.data.keyword.objectstorageshort}} browsing interface uses both real and fake directories to provide an experience similar to browsing a file-based directory structure that might be much more familiar.

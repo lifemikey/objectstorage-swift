@@ -2,21 +2,21 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-06-29"
+lastupdated: "2017-10-11"
 
 ---
 {:new_window: target="_blank"}
 {:shortdesc: .shortdesc}
 
-# Access the Object Storage Screen
+# Accessing the {{site.data.keyword.objectstorageshort}} Screen
 
-The Object Storage screen in the [Customer Portal](https://control.softlayer.com/) may be accessed through the user navigation after login. Follow the steps below to access the Object Storage screen.
+The {{site.data.keyword.objectstorageshort}} screen in the [{{site.data.keyword.slportal}}](https://control.softlayer.com/){:new_window} may be accessed through the user navigation after login. Follow the steps below to access the {{site.data.keyword.objectstorageshort}} screen.
 
-## Access the Object Storage Screen
+## Access the {{site.data.keyword.objectstorageshort}} Screen
 
-1. Access the Customer Portal using your unique credentials.
-2. Select **Storage** > **Object Storage** from the navigation bar. <br/> ![Object Storage menu option](/images/ObjectStorageMenu.png)
-3. Click the **Object Storage** link from the list of storage nodes located at the top of the page to access the Object Storage page. If there are multiple users on an account, select the user whose Object Storage account you wish to access.
+1. Access the {{site.data.keyword.slportal}} using your unique credentials.
+2. Select **Storage** > **{{site.data.keyword.objectstorageshort}}** from the navigation bar. <br/> ![{{site.data.keyword.objectstorageshort}} menu option](/images/ObjectStorageMenu.png)
+3. Click the **{{site.data.keyword.objectstorageshort}}** link from the list of storage nodes located at the top of the page to access the {{site.data.keyword.objectstorageshort}} page. If there are multiple users on an account, select the user whose {{site.data.keyword.objectstorageshort}} account you wish to access.
 4. Select one of the following **Clusters** based on the city that is of nearest proximity to your users:
    - Amsterdam 1 (AMS01)
    - Dallas 5 (DAL05)
