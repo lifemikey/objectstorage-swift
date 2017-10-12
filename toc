@@ -45,8 +45,8 @@ IBM Cloud Storage - Object Storage OpenStack Swift
         
     {: .topicgroup}
     Using Object Storage as Archive or Backup
-        nas-backup-softlayer-object-storage-quantastor.md
         archive-your-data-using-softlayer-object-storage-and-netapp-altavault.md
+        nas-backup-softlayer-object-storage-quantastor.md
     {: .navgroup-end}
     
     {: .navgroup id="help"}
