@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-10-11"
+lastupdated: "2017-10-25"
 
 ---
 {:new_window: target="_blank"}
@@ -10,7 +10,7 @@ lastupdated: "2017-10-11"
 
 # Importing an Image from an {{site.data.keyword.objectstorageshort}} OpenStack Swift Account
 
-The Image Templates screen in the [{{site.data.keyword.slportal}}](https://control.softlayer.com/){:new_window} allows users to upload an existing image from a Swift based {{site.data.keyword.objectstorageshort}} account.  After being imported as an Image Template, images may be used to provision or boot an existing virtual server. Images imported from an {{site.data.keyword.objectstorageshort}} account may be either VHDs or custom ISOs. VHD imports are restricted to the following 64-bit operating systems:
+The [Image Templates](/../docs/infrastructure/image-templates/image_index.html){:new_window} screen in the [{{site.data.keyword.slportal}}](https://control.softlayer.com/){:new_window} allows users to upload an existing image from a Swift based {{site.data.keyword.objectstorageshort}} account.  After being imported as an [Image Template](/../docs/infrastructure/image-templates/image_about.html){:new_window}, images may be used to provision or boot an existing virtual server. Images imported from an {{site.data.keyword.objectstorageshort}} account may be either VHDs or custom ISOs. VHD imports are restricted to the following 64-bit operating systems:
  - CentOS 6 and 7
  - RedHat Enterprise Linux 6 and 7
  - Ubuntu 14.04, and 16.04
@@ -55,7 +55,7 @@ Please follow the steps below to import an image in the [{{site.data.keyword.slp
    - Cluster
    - Container
    - Image Filename
-2. Access the **Image Templates** screen in the Customer Portal via **Devices** > **Manage** > **Images**.
+2. Access the **Image Templates** screen in the {{site.data.keyword.slportal}} via **Devices** > **Manage** > **Images**.
 3. Click the **Import Image** tab to open the Import tool.
 4. Select the **{{site.data.keyword.objectstorageshort}} Account** for the desired image from the **Account** drop down list.
 5. Select the **{{site.data.keyword.objectstorageshort}} Cluster** for the desired image from the **Cluster** drop down list.
@@ -69,6 +69,6 @@ Please follow the steps below to import an image in the [{{site.data.keyword.slp
 
 ## What Happens Next
 
-After the import has begun, the system will located the image file in the {{site.data.keyword.objectstorageshort}} account using the specified path (**Account > Cluster > Container > Image File**) and will import the image file as an image template, which will be stored on the Image Templates screen. After the import has completed, the image may be used to order a new device or to boot an existing device. Additionally, the image may be deleted at any time. Image import times vary based on file size, but generally take several minutes.
+After the import has begun, the system will located the image file in the {{site.data.keyword.objectstorageshort}} account using the specified path (**Account > Cluster > Container > Image File**) and will import the image file as an image template, which will be stored on the [Image Templates](/../docs/infrastructure/image-templates/image_about.html){:new_window} screen. After the import has completed, the image may be used to order a new device or to boot an existing device. Additionally, the image may be deleted at any time. Image import times vary based on file size, but generally take several minutes.
 
 Please read [VHD Content Checking and Conversion](vhd-content-checking-and-conversion.html) for more information regarding image handling.

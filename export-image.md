@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-10-11"
+lastupdated: "2017-10-25"
 
 ---
 {:new_window: target="_blank"}
@@ -10,7 +10,7 @@ lastupdated: "2017-10-11"
 
 # Exporting an Image to an {{site.data.keyword.objectstorageshort}} Account
 
-The Image Templates screen in the [{{site.data.keyword.slportal}}](https://control.softlayer.com/){:new_window} allows users to export an Image Template to an {{site.data.keyword.objectstorageshort}} account. The image export process takes a preexisting, private Standard Image Template and coverts the image into an Image File that is stored in a specified location on an {{site.data.keyword.objectstorageshort}} account. The export process is currently not available on Flex Images. Follow the steps below to export an Image Template.
+The [Image Templates](/../docs/infrastructure/image-templates/image_index.html){:new_window} screen in the [{{site.data.keyword.slportal}}](https://control.softlayer.com/){:new_window} allows users to export an [Image Template](/../docs/infrastructure/image-templates/image_about.html){:new_window} to an {{site.data.keyword.objectstorageshort}} account. The image export process takes a preexisting, private Standard [Image Template](/../docs/infrastructure/image-templates/image_about.html){:new_window} and coverts the image into an Image File that is stored in a specified location on an {{site.data.keyword.objectstorageshort}} account. The export process is currently not available on Flex Images. Follow the steps below to export an Image Template.
 
 ## Export an Image
 
@@ -25,4 +25,4 @@ The Image Templates screen in the [{{site.data.keyword.slportal}}](https://contr
 
 ## What Happens Next
 
-After exporting an image, the image will remain in the list of Image Templates, but will also be available as a file in the {{site.data.keyword.objectstorageshort}} location specified during the export process. Refer to [View and Edit {{site.data.keyword.objectstorageshort}} File Details](view-and-edit-object-storage-file-details.html) for more information on viewing a file exported to an {{site.data.keyword.objectstorageshort}} Account. Because each image is a different size and has different characteristics, the export process may take several minutes before it is complete. Our average export speed is 2 GB/minute. If several minutes lapse and the image is still not available on the {{site.data.keyword.objectstorageshort}} Account, please contact Support.
+After exporting an image, the image will remain in the list of [Image Templates](/../docs/infrastructure/image-templates/image_about.html){:new_window}, but will also be available as a file in the {{site.data.keyword.objectstorageshort}} location specified during the export process. Refer to [View and Edit {{site.data.keyword.objectstorageshort}} File Details](view-and-edit-object-storage-file-details.html) for more information on viewing a file exported to an {{site.data.keyword.objectstorageshort}} Account. Because each image is a different size and has different characteristics, the export process may take several minutes before it is complete. Our average export speed is 2 GB/minute. If several minutes lapse and the image is still not available on the {{site.data.keyword.objectstorageshort}} Account, please contact Support.
