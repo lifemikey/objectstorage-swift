@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-10-11"
+lastupdated: "2017-12-15"
 
 ---
 {:new_window: target="_blank"}
@@ -36,7 +36,7 @@ Another example is your workload is split across two or more data centers – 5,
 
 ## Public Inbound Bandwidth
 
-There is no additional charge for public inbound bandwidth. We also don’t charge for bandwidth on the private network nor between SoftLayer data centers. If you were to back up your data to another data center, you’d only pay for the storage at your backup site; not for the data transfer between the two data centers.
+There is no additional charge for public inbound bandwidth. We also don’t charge for bandwidth on the private network nor between {{site.data.keyword.BluSoftlayer}} data centers. If you were to back up your data to another data center, you’d only pay for the storage at your backup site; not for the data transfer between the two data centers.
 
 ## Public Outbound Bandwidth
 
