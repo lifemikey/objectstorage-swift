@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-10-11"
+lastupdated: "2017-12-15"
 
 ---
 {:new_window: target="_blank"}
@@ -34,4 +34,4 @@ After granting or removing permissions for {{site.data.keyword.objectstorageshor
   - Manage Storage CDN File Transfer
   - Manage StorageLayer
 
-If granting a user access for {{site.data.keyword.objectstorageshort}}, the user will have the ability to view and interact with the {{site.data.keyword.objectstorageshort}} cluster. If removing user access for  through this tool, all storage and Storage CDN access will be removed. If the user should have access to either of these features, edit the user's permissions to manually grant the necessary permissions.
+If granting a user access for {{site.data.keyword.objectstorageshort}}, the user will have the ability to view and interact with the {{site.data.keyword.objectstorageshort}} cluster. If removing user access for  through this tool, all storage and Storage CDN access will be removed. If the user should have access to either of these features, edit the user's permissions to manually grant the necessary permissions. See also [Can a User Have CDN and StorageLayer Permissions Granted but be Prohibited from Accessing Object Storage?](https://console.bluemix.net/docs/infrastructure/content-deliver-network/FAQ.html#can-a-user-have-cdn-and-storagelayer-permissions-granted-but-be-prohibited-from-accessing-object-storage-){:new_window}.
