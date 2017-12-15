@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-10-11"
+lastupdated: "2017-12-15"
 
 ---
 {:new_window: target="_blank"}
@@ -37,7 +37,7 @@ Quickly access information through user-defined metadata key-value pairs, file n
 
 ### Wordwide Storage Fabric
 
-Storage clusters located in North America, Europe and Asia. With all clusters connected via SoftLayer’s private network, you are guaranteed secure data replication and transfer.
+Storage clusters located in North America, Europe and Asia. With all clusters connected via {{site.data.keyword.BluSoftlayer}}’s private network, you are guaranteed secure data replication and transfer.
 
 ### Redundant Architecture
 
@@ -45,7 +45,7 @@ Data is written multiple times per cluster with self-healing capabilities to imm
 
 ### Flexible Data Distribution
 
-Highly scalable read/write access gives users the ability to serve content directly from the storage system or via SoftLayer’s Content Delivery Network (CDN).
+Highly scalable read/write access gives users the ability to serve content directly from the storage system or via {{site.data.keyword.cdn_full}}.
 
 ### Powerful Management Toolkit
 
