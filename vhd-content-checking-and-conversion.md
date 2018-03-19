@@ -10,7 +10,7 @@ lastupdated: "2017-10-11"
 
 # VHD Content Checking and Conversion 
 
-Being able to import and deploy your own instance using a custom VHD or ISO is one of the many benefits of the {{site.data.keyword.BluSoftlayer_full}}. In this guide we will show you how to verify that your VHD/ISO is the proper content type, show how to convert it if the content type is incorrect, and even manually import an image if needed. If you are unfamiliar with the Image import option please see the following [article](import-image.html).
+Being able to import and deploy your own instance using a custom VHD or ISO is one of the many benefits of the {{site.data.keyword.BluSoftlayer_full}}. In this guide we will show you how to verify that your VHD/ISO is the proper content type, show how to convert it if the content type is incorrect, and even manually import an image if needed. If you are unfamiliar with the Image import option please see the following [article](../../image-templates/import-image.html){:new_window} .
 
 ## Prerequisites
 
