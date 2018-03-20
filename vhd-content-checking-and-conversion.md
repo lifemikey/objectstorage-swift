@@ -6,6 +6,7 @@ lastupdated: "2018-03-19"
 
 ---
 {:new_window: target="_blank"}
+{:note: .deprecated}
 {:shortdesc: .shortdesc}
 
 # VHD Content Checking and Conversion 
