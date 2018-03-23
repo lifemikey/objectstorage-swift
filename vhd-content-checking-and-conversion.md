@@ -110,18 +110,19 @@ curl -i -H "X-Auth-Token: AUTH_tkcxxxxxxxxxxxxxxxxxxxxxxxx1d2a2a2" -H "Content-T
 In very rare circumstances an ISO with the correct Content-Type will not show up for import under **Devices** > **Manage** > **Images** > **Import Image**. When this happens you can manually import the ISO using the following curl command. 
 
 ```
-curl -sk "https://<APIUSER>:<APIKEY>@api.softlayer.com/rest/v3/SoftLayer_Virtual_Guest_Block_Device_Template_Group/createFromExternalSource.json" -X POST -d '{"parameters": [{"name": "<CentOS>", "note": "operatingSystemReferenceCode": "<CENTOS_6_64>" "Testing manual import of ISO", "uri": "<CONTAINER AND IMAGE NAME>"}]}'
+curl -sk "https://<SWIFT_USER>:<APIKEY>@api.softlayer.com/rest/v3/SoftLayer_Virtual_Guest_Block_Device_Template_Group/createFromExternalSource.json" -X POST -d '{"parameters": [{"name": "<CentOS>", "note": "Testing manual import of image", "operatingSystemReferenceCode": "<CENTOS_6_64>", "uri": "swift://<SWIFT_ACCOUNT>@<DC>/<CONTAINER_NAME>/<OBJECT_NAME_OF_IMAGE>"}]}'
 ```
 {: pre}
 
-1. Replace **<APIUSER>** and **<APIKEY>** with your {{site.data.keyword.BluSoftlayer}} account username and API key.
-  
-   **Note**: Only use the first part of your {{site.data.keyword.objectstorageshort}} username in the command. For example, if your full {{site.data.keyword.objectstorageshort}} name is SLOSXXXXX-35:johndoe then only SLOSXXXXX-35 in the import command and leave the second part (johndoe) out.
-   
-2. Fill in the parameteres with the appropriate name and OS reference code, plus the appropriate container name, and image name in the uri section. Here is what the full command would look like if I wanted to import a CentOS ISO in to the customer portal:
+- Replace `<SWIFT_USER>` and `<APIKEY>` with your {{site.data.keyword.BluSoftlayer}} account username and API key.
 
-   ```
-   curl -sk "https://SLXXXXXXX:a5a9139ccb319795362785af5da02d244e76076d142f15b9d7bb95671b83XXXX@api.softlayer.com/rest/v3/SoftLayer_Virtual_Guest_Block_Device_Template_Group/createFromExternalSource.json" -X POST -d '{"parameters": [{"name": "Softnas 3.6,", "note": "Softnas 3.6", "operatingSystemReferenceCode": "CENTOS_6_64", "uri": "swift://SLOSXXXXX-35@dal05/db2test/centos_production_iso_image.iso"}]}'
+  **Note**:  The command requires both parts of the Username. For example, in case of **SLOSXXXXX-35:johndoe** the `<SWIFT_USER>` entry is **johndoe** and the `<SWIFT_ACCOUNT>` entry is **SLOSXXXXX-35**.
+- Fill in the parameteres with the appropriate name and OS reference code, plus the appropriate container name, and image name in the uri section.
+
+Here is what the full command would look like if johndoe wanted to import a CentOS ISO in to the customer portal:
+
+   ``` 
+   curl -sk "https://johndoe:a5a9139ccb319795362785af5da02d244e76076d142f15b9d7bb95671b83XXXX@api.softlayer.com/rest/v3/SoftLayer_Virtual_Guest_Block_Device_Template_Group/createFromExternalSource.json" -X POST -d '{"parameters": [{"name": "CentOS", "note": "CentOS production image", "operatingSystemReferenceCode": "CENTOS_6_64", "uri": "swift://SLOSXXXXX-35@dal05/isos/centos_production_iso_image.iso"}]}'
    ```
    {: codeblock}
 
