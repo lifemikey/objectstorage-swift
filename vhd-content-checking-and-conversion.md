@@ -117,7 +117,7 @@ curl -sk "https://<SWIFT_USER>:<APIKEY>@api.softlayer.com/rest/v3/SoftLayer_Virt
 - Replace `<SWIFT_USER>` and `<APIKEY>` with your {{site.data.keyword.BluSoftlayer}} account username and API key.
 
   **Note**:  The command requires both parts of the Username. For example, in case of **SLOSXXXXX-35:johndoe** the `<SWIFT_USER>` entry is **johndoe** and the `<SWIFT_ACCOUNT>` entry is **SLOSXXXXX-35**.
-- Fill in the parameteres with the appropriate name and OS reference code, plus the appropriate container name, and image name in the uri section.
+- Fill in the parameters with the appropriate name and OS reference code, plus the appropriate container name, and image name in the uri section.
 
 Here is what the full command would look like if johndoe wanted to import a CentOS ISO in to the customer portal:
 
