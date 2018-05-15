@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2017-10-11"
+  years: 2017, 2018
+lastupdated: "2018-05-15"
 
 ---
 {:new_window: target="_blank"}
@@ -14,7 +14,7 @@ Similar to containers, users may also delete an object at any time. Like contain
 
 ## Delete an Object
 
-1. Access the **{{site.data.keyword.objectstorageshort}}** screen in the [{{site.data.keyword.slportal}}](https://control.softlayer.com/){:new_window}. Refer to [Access the {{site.data.keyword.objectstorageshort}} Screen]().
+1. Access the **{{site.data.keyword.objectstorageshort}}** screen in the [{{site.data.keyword.slportal}}](https://control.softlayer.com/){:new_window}. Refer to [Access the {{site.data.keyword.objectstorageshort}} Screen](access-object-storage-screen.html).
 2. Scroll over the **Container Name** that will be deleted.
 3. Click the **Delete** icon. A Delete Object confirmation box will appear.<br/>
 ![Delete Object](/images/Delete_Object.png)
