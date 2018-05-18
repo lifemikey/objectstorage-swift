@@ -1,12 +1,14 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2017-10-11"
+  years: 2017, 2018
+lastupdated: "2018-05-18"
 
 ---
 {:new_window: target="_blank"}
+{:note: .deprecated}
 {:shortdesc: .shortdesc}
+
 
 # {{site.data.keyword.cloud_notm}} {{site.data.keyword.objectstorageshort}} OpenStack Swift - Frequently Asked Questions
 
@@ -14,26 +16,29 @@ lastupdated: "2017-10-11"
 
 The authentication endpoints for {{site.data.keyword.objectstorageshort}} are cluster-specific. Use the public or private network endpoint that corresponds to the desired cluster. Endpoints are as follows:
 
-<table><tbody><tr><th>Data Center</th><th>Network Endpoints</th></tr>
-<tr><td>Amsterdam, Netherlands</td><td><li>Public Network: https://ams01.objectstorage.softlayer.net/auth/v1.0 </li><li>Private Network: https://ams01.objectstorage.service.networklayer.com/auth/v1.0</li></td></tr>
-<tr><td>Frankfurt, Germany</td><td><li>Public Network: https://fra02.objectstorage.softlayer.net/auth/v1.0</li><li>Private Network: https://fra02.objectstorage.service.networklayer.com/auth/v1.0</li></td></tr>
-<tr><td>London, United Kingdom</td><td><li>Public Network: https://lon02.objectstorage.softlayer.net/auth/v1.0</li><li>Private Network: https://lon02.objectstorage.service.networklayer.com/auth/v1.0</li></td></tr>
-<tr><td>Milan, Italy</td><td><li>Public Network: https://mil01.objectstorage.softlayer.net/auth/v1.0</li><li>Private Network: https://mil01.objectstorage.service.networklayer.com/auth/v1.0</li></td></tr>
-<tr><td>Paris, France</td><td><li>Public Network: https://par01.objectstorage.softlayer.net/auth/v1.0</li><li>Private Network: https://par01.objectstorage.service.networklayer.com/auth/v1.0</li></td></tr>
-<tr><td>Montreal, Canada</td><td><li>Public Network: https://mon01.objectstorage.softlayer.net/auth/v1.0</li><li>Private Network: https://mon01.objectstorage.service.networklayer.com/auth/v1.0</li></td></tr>
-<tr><td>Toronto, Canada</td><td><li>Public Network: https://tor01.objectstorage.softlayer.net/auth/v1.0</li><li>Private Network: https://tor01.objectstorage.service.networklayer.com/auth/v1.0</li></td></tr>
-<tr><td>Dallas, TX, United States</td><td><li>Public Network: https://dal05.objectstorage.softlayer.net/auth/v1.0</li><li>Private Network: https://dal05.objectstorage.service.networklayer.com/auth/v1.0</li></td></tr>
-<tr><td>San Jose, CA, United States</td><td><li>Public Network: https://sjc01.objectstorage.softlayer.net/auth/v1.0</li><li>Private Network: https://sjc01.objectstorage.service.networklayer.com/auth/v1.0</li></td></tr>
-<tr><td>Washington DC, United States</td><td><li>Public Network: https://wdc.objectstorage.softlayer.net/auth/v1.0</li><li>Private Network: https://wdc.objectstorage.service.networklayer.com/auth/v1.0</li></td></tr>
-<tr><td>Mexico City, Mexico</td><td><li>Public Network: https://mex01.objectstorage.softlayer.net/auth/v1.0</li><li>Private Network: https://mex01.objectstorage.service.networklayer.com/auth/v1.0</li></td></tr>
-<tr><td>Sao Paolo, Brazil</td><td><li>Public Network: https://sao01.objectstorage.softlayer.net/auth/v1.0</li><li>Private Network: https://sao01.objectstorage.service.networklayer.com/auth/v1.0</li></td></tr>
-<tr><td>Chennai, India</td><td><li>Public Network: https://che01.objectstorage.softlayer.net/auth/v1.0</li><li>Private Network: https://che01.objectstorage.service.networklayer.com/auth/v1.0</li></td></tr>
-<tr><td>Hong Kong, China</td><td><li>Public Network: https://hkg02.objectstorage.softlayer.net/auth/v1.0</li><li>Private Network: https://hkg02.objectstorage.service.networklayer.com/auth/v1.0 </li></td></tr>
-<tr><td>Melbourne, Australia</td><td><li>Public Network: https://mel01.objectstorage.softlayer.net/auth/v1.0</li><li>Private Network: https://mel01.objectstorage.service.networklayer.com/auth/v1.0</li></td></tr>
-<tr><td>Sydney, Australia</td><td><li>Public Network: https://syd01.objectstorage.softlayer.net/auth/v1.0</li><li>Private Network: https://syd01.objectstorage.service.networklayer.com/auth/v1.0  </li></td></tr>
-<tr><td>Seoul, S. Korea</td><td><li>Public Network: https://seo01.objectstorage.softlayer.net/auth/v1.0</li><li>Private Network: https://seo01.objectstorage.service.networklayer.com/auth/v1.0</li></td></tr>
-<tr><td>Singapore</td><td><li>Public Network: https://sng01.objectstorage.softlayer.net/auth/v1.0</li><li>Private Network: https://sng01.objectstorage.service.networklayer.com/auth/v1.0</li></td></tr>
-<tr><td>Tokyo, Japan</td><td><li>Public Network: https://tok02.objectstorage.softlayer.net/auth/v1.0</li><li>Private Network: https://tok02.objectstorage.service.networklayer.com/auth/v1.0</li></td></tr>
+<table>
+<caption style="caption-side:bottom;">Table 1. Shows the available endpoints for the {{site.data.keyword.objectstorageshort}} Swift API</caption>
+<thead><tr><th>Data Center</th><th>Network Endpoints</th></tr></thead>
+<tbody>
+<tr><td>Amsterdam, Netherlands</td><td><li>Public Network: <code>https://ams01.objectstorage.softlayer.net/auth/v1.0</code></li><li>Private Network: <code>https://ams01.objectstorage.service.networklayer.com/auth/v1.0</code></li></td></tr>
+<tr><td>Frankfurt, Germany</td><td><li>Public Network: <code>https://fra02.objectstorage.softlayer.net/auth/v1.0</code></li><li>Private Network: <code>https://fra02.objectstorage.service.networklayer.com/auth/v1.0</code></li></td></tr>
+<tr><td>London, United Kingdom</td><td><li>Public Network: <code>https://lon02.objectstorage.softlayer.net/auth/v1.0</code></li><li>Private Network: <code>https://lon02.objectstorage.service.networklayer.com/auth/v1.0</code></li></td></tr>
+<tr><td>Milan, Italy</td><td><li>Public Network: <code>https://mil01.objectstorage.softlayer.net/auth/v1.0</code></li><li>Private Network: <code>https://mil01.objectstorage.service.networklayer.com/auth/v1.0</code></li></td></tr>
+<tr><td>Paris, France</td><td><li>Public Network: <code>https://par01.objectstorage.softlayer.net/auth/v1.0</code></li><li>Private Network: <code>https://par01.objectstorage.service.networklayer.com/auth/v1.0</code></li></td></tr>
+<tr><td>Montreal, Canada</td><td><li>Public Network: <code>https://mon01.objectstorage.softlayer.net/auth/v1.0</code></li><li>Private Network: <code>https://mon01.objectstorage.service.networklayer.com/auth/v1.0</code></li></td></tr>
+<tr><td>Toronto, Canada</td><td><li>Public Network: <code>https://tor01.objectstorage.softlayer.net/auth/v1.0</code></li><li>Private Network: <code>https://tor01.objectstorage.service.networklayer.com/auth/v1.0</code></li></td></tr>
+<tr><td>Dallas, TX, United States</td><td><li>Public Network: <code>https://dal05.objectstorage.softlayer.net/auth/v1.0</code></li><li>Private Network: <code>https://dal05.objectstorage.service.networklayer.com/auth/v1.0</code></li></td></tr>
+<tr><td>San Jose, CA, United States</td><td><li>Public Network: <code>https://sjc01.objectstorage.softlayer.net/auth/v1.0</code></li><li>Private Network: <code>https://sjc01.objectstorage.service.networklayer.com/auth/v1.0</code></li></td></tr>
+<tr><td>Washington DC, United States</td><td><li>Public Network: <code>https://wdc.objectstorage.softlayer.net/auth/v1.0</code></li><li>Private Network: <code>https://wdc.objectstorage.service.networklayer.com/auth/v1.0</code></li></td></tr>
+<tr><td>Mexico City, Mexico</td><td><li>Public Network: <code>https://mex01.objectstorage.softlayer.net/auth/v1.0</code></li><li>Private Network: <code>https://mex01.objectstorage.service.networklayer.com/auth/v1.0</code></li></td></tr>
+<tr><td>Sao Paolo, Brazil</td><td><li>Public Network: <code>https://sao01.objectstorage.softlayer.net/auth/v1.0</code></li><li>Private Network: <code>https://sao01.objectstorage.service.networklayer.com/auth/v1.0</code></li></td></tr>
+<tr><td>Chennai, India</td><td><li>Public Network: <code>https://che01.objectstorage.softlayer.net/auth/v1.0</code></li><li>Private Network: <code>https://che01.objectstorage.service.networklayer.com/auth/v1.0</code></li></td></tr>
+<tr><td>Hong Kong, China</td><td><li>Public Network: <code>https://hkg02.objectstorage.softlayer.net/auth/v1.0</code></li><li>Private Network: <code>https://hkg02.objectstorage.service.networklayer.com/auth/v1.0</code></li></td></tr>
+<tr><td>Melbourne, Australia</td><td><li>Public Network: <code>https://mel01.objectstorage.softlayer.net/auth/v1.0</li><li>Private Network: <code>https://mel01.objectstorage.service.networklayer.com/auth/v1.0</code></li></td></tr>
+<tr><td>Sydney, Australia</td><td><li>Public Network: <code>https://syd01.objectstorage.softlayer.net/auth/v1.0</code></li><li>Private Network: <code>https://syd01.objectstorage.service.networklayer.com/auth/v1.0</code></li></td></tr>
+<tr><td>Seoul, S. Korea</td><td><li>Public Network: <code>https://seo01.objectstorage.softlayer.net/auth/v1.0</code></li><li>Private Network: <code>https://seo01.objectstorage.service.networklayer.com/auth/v1.0</code></li></td></tr>
+<tr><td>Singapore, Singapore</td><td><li>Public Network: <code>https://sng01.objectstorage.softlayer.net/auth/v1.0</code></li><li>Private Network: <code>https://sng01.objectstorage.service.networklayer.com/auth/v1.0</code></li></td></tr>
+<tr><td>Tokyo, Japan</td><td><li>Public Network: <code>https://tok02.objectstorage.softlayer.net/auth/v1.0</code></li><li>Private Network: <code>https://tok02.objectstorage.service.networklayer.com/auth/v1.0</code></li></td></tr>
 </tbody></table>
 
 
