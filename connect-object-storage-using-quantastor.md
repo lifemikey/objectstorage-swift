@@ -13,6 +13,7 @@ lastupdated: "2018-05-21"
 The QuantaStor appliance available from {{site.data.keyword.BluSoftlayer_full}} offers a more permanent solution for accessing your {{site.data.keyword.objectstorageshort}} account. The QuantaStor appliance acts as a storage gateway and allows you to create nfs/cifs endpoints from your {{site.data.keyword.objectstorageshort}} clusters. The endpoints can then be mounted and accessed like any other nfs/cifs share. The QuantaStor appliance uses the S3QL Python library to access your {{site.data.keyword.objectstorageshort}} account and shares many of the same features, namely: data-deduplication, encryption, and compression. The QuantaStor appliance also provides the ability to schedule backups and push them to your {{site.data.keyword.objectstorageshort}} account.
 
 <table>
+<caption>Table 1. shows the advantages and disadvantages of using QuantaStor</caption>
 <tr><td>Advantages:	</td><td>GUI, advanced features (encryption, compression, dedup, local caching), scheduled backup of volumes to {{site.data.keyword.objectstorageshort}}</td></tr>
 <tr><td>Disadvantages:</td><td>{{site.data.keyword.objectstorageshort}} containers cannot be shared by multiple hosts, configuration options are lacking (defaults assumed by QuantaStor)
 </td></tr>
