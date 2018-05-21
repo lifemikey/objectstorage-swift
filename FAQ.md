@@ -17,7 +17,7 @@ lastupdated: "2018-05-18"
 The authentication endpoints for {{site.data.keyword.objectstorageshort}} are cluster-specific. Use the public or private network endpoint that corresponds to the desired cluster. Endpoints are as follows:
 
 <table>
-<caption style="caption-side:bottom;">Table 1. Shows the available endpoints for the {{site.data.keyword.objectstorageshort}} Swift API</caption>
+<caption style="caption-side:bottom;">Table 1. shows the available endpoints for the {{site.data.keyword.objectstorageshort}} Swift API</caption>
 <thead><tr><th>Data Center</th><th>Network Endpoints</th></tr></thead>
 <tbody>
 <tr><td>Amsterdam, Netherlands</td><td><li>Public Network: <code>https://ams01.objectstorage.softlayer.net/auth/v1.0</code></li><li>Private Network: <code>https://ams01.objectstorage.service.networklayer.com/auth/v1.0</code></li></td></tr>
