@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2017-12-15"
+  years: 2017, 2018
+lastupdated: "2018-05-18"
 
 ---
 {:new_window: target="_blank"}
@@ -26,11 +26,11 @@ For Capacity Usage per billing cycle, we get the usage every hour. In an example
 
 Another example is your workload is split across two or more data centers – 5,000 GB is based in Dallas and 1,000 GB is in Sao Paolo. Your monthly cost is determined through location-based pricing 
 
-<table><tbody>
+<table><caption>Table 1. shows an example of how the cost is calculated when data is split between different locations</caption>
 <tr><td>Monthly cost for Dallas-based {{site.data.keyword.objectstorageshort}}:</td><td>$0.04 per GB x 5,000 GB 	= 	$200.00</td></tr>
 <tr><td>Montly cost for Sao Paolo-based {{site.data.keyword.objectstorageshort}}:</td><td>$0.06 per GB x 1,000 GB 	= 	$60.00</td></tr>
 <tr><td>Total {{site.data.keyword.objectstorageshort}} cost for the month:</td><td>  	= 	$260.00</td></tr>
-</tbody></table>
+</table>
 
 *Not official pricing and prices subject to change
 
@@ -49,11 +49,11 @@ This charge applies whenever data is read from any of your object containers ove
 
 Another example is you have data in the Dallas and Sao Paolo data centers and 10,000 GB and 7,500 GB respectively is downloaded monthly over the public network. Your billing cycle cost is determined through location-based pricing:
 
-<table><tbody>
+<table><caption>Table 2. shows an example of how the cost is calculated when data is split between different locations</caption>
 <tr><td>Monthly cost for Dallas-based bandwith:</td><td>$0.09 per GB x 10,000 GB 	= 	$900.00</td></tr>
 <tr><td>Montly cost for Sao Paolo-based bandwith:</td><td>$0.25 per GB x 7,500 GB 	= 	$1,875.00</td></tr>
 <tr><td>Total {{site.data.keyword.objectstorageshort}} cost for the month:</td><td>  	= 	$2,775.00</td></tr>
-</tbody></table>
+</table>
 
 *Not official pricing and prices subject to change
 
