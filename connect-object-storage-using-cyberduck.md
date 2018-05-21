@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2017-10-11"
+  years: 2017, 2018
+lastupdated: "2018-05-21"
 
 ---
 {:new_window: target="_blank"}
@@ -22,10 +22,11 @@ Essentially, the file size doesn't matter when it comes to using Cyberduck. Uplo
 
 Cyberduck is compatible with Mac OS X and Windows, but there are a couple differences.
 
-<table><tbody>
+<table>
+  <caption>Table 1. shows the advantages and disadvantages of using Cyberduck</caption>
 <tr><td>Advantages:	</td><td><li>Cyberduck supports SLO (Static Large Objects).</li><li>Cyberduck will automatically split files over 5 GB to create them as SLO's (Static Large Objects have each segment defined in a JSON array stored as the content of the manifest file).</li><li>You can simply drag and drop your files rather than type out complex cURL commands.</li><li>You have a GUI to work with.</li></td></tr>
 <tr><td>Disadvantages:</td><td>There's no {{site.data.keyword.BluSoftlayer}} API functionality for this.</td></tr>
-</tbody></table>
+</table>
 
 
 ## Getting Started
