@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2017-10-11"
+  years: 2017, 2018
+lastupdated: "2018-05-21"
 
 ---
 {:new_window: target="_blank"}
@@ -20,7 +20,7 @@ The entire directory structure can be built without these directory objects so c
 - If a zero-byte object with the content-type of application/directory exists as well as a fake directory then only show the object (and cause it to act like a directory)
 - If a non-zero-byte object or an object with a content-type other than 'application/directory' exists as well as a fake directory then show both. Treat the fake directory as the directory and the real object as a normal object.
 
-## Pseudo-Hierarchical Directories
+## Building a directory structure
 
 Example: <br/>
 Instead of CURL, we are using a HTTPie as the command line tool to make HTTP requests. Before we do anything on
