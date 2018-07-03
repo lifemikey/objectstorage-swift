@@ -2,19 +2,18 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-05-18"
+lastupdated: "2018-07-03"
 
 ---
 {:new_window: target="_blank"}
 {:note: .deprecated}
-{:shortdesc: .shortdesc}
 
 
 # {{site.data.keyword.cloud_notm}} {{site.data.keyword.objectstorageshort}} OpenStack Swift - Frequently Asked Questions
 
 ## What Are the {{site.data.keyword.objectstorageshort}} Authentication Endpoints on the Public and Private Networks?
 
-The authentication endpoints for {{site.data.keyword.objectstorageshort}} are cluster-specific. Use the public or private network endpoint that corresponds to the desired cluster. Endpoints are as follows:
+The authentication endpoints for {{site.data.keyword.objectstorageshort}} are cluster-specific. Use the public or private network endpoint that corresponds to the desired cluster. Endpoints are as follows.
 
 <table>
 <caption style="caption-side:bottom;">Table 1. shows the available endpoints for the {{site.data.keyword.objectstorageshort}} Swift API</caption>
@@ -47,15 +46,15 @@ Any [{{site.data.keyword.slportal}}](https://control.softlayer.com/){:new_window
 
 ## Can a User Have Edgecast CDN and StorageLayer Permissions Granted but be Prohibited from Accessing {{site.data.keyword.objectstorageshort}}?
 
-If a user has the Manage CDN Account, Manage CDN File Transfers and Manage StorageLayer permissions granted, the user automatically has access to {{site.data.keyword.objectstorageshort}}, as well. At the current time, granting access to CDN and StorageLayer while prohibiting access to {{site.data.keyword.objectstorageshort}}, or vice versa, is not an option.
+If a user has the Manage CDN Account, Manage CDN File Transfers and Manage StorageLayer permissions, the user automatically has access to {{site.data.keyword.objectstorageshort}}, as well. At the current time, you can't grant access to CDN and StorageLayer while prohibiting access to {{site.data.keyword.objectstorageshort}}, or vice versa.
 
 ## What Is the File Upload Limit for {{site.data.keyword.objectstorageshort}}?
 
-The upload limit is approximately 5 GB for a single file. You will also have to take in consideration any device limitation - iOS (iPhone, iPod Touch, iPad) Android and Windows Phone are currently supported. If you require a file size larger than 5 GB, utilize segmentation. For more information regarding segmentation, review OpenStack’s [segmentation overview](http://docs.openstack.org/developer/swift/overview_large_objects.html) for swift.
+The upload limit is approximately 5 GB for a single file. You have to consider any device limitation - iOS (iPhone, iPod Touch, iPad) Android and Windows Phone are currently supported. If you require a file size larger than 5 GB, use segmentation. For more information regarding segmentation, see OpenStack’s [segmentation overview](http://docs.openstack.org/developer/swift/overview_large_objects.html) for swift.
 
 ## How Do I Interact with {{site.data.keyword.objectstorageshort}}?
 
-Users access {{site.data.keyword.objectstorageshort}} through the {{site.data.keyword.slportal}}, {{site.data.keyword.BluSoftlayer_full}}’s API or a third party client. For best results, use the {{site.data.keyword.objectstorageshort}} through the API. Interacting with {{site.data.keyword.objectstorageshort}} through our API allows the most control over your files and greater flexibility when utilizing your {{site.data.keyword.objectstorageshort}} account.
+Users access {{site.data.keyword.objectstorageshort}} through the {{site.data.keyword.slportal}}, {{site.data.keyword.BluSoftlayer_full}}’s API or a third party client. For best results, use the {{site.data.keyword.objectstorageshort}} through the API. Interacting with {{site.data.keyword.objectstorageshort}} through the API provides the most control over your files and greater flexibility when you use your {{site.data.keyword.objectstorageshort}} account.
 
 ## What Are the Best Uses for {{site.data.keyword.objectstorageshort}}?
 
