@@ -76,7 +76,7 @@ Cyberduck is compatible with Mac OS X and Windows, but there are a couple differ
         - Change the `<key>SLOSXXXXXX:username</key>` to your {{site.data.keyword.objectstorageshort}} user name. 
         - Change the `<key>API Key goes here</key>` to your full API key.
 
-5. Save your file by clicking **File** > **Save As..**, and change the **Save As Type** to **All Files**. Then, save your file with the name of the cluster, and add `.cyberduckprofile` to the end. <br/> ![Cyberduck Profile](/images/cyberduck_fig1.png)
+5. Click **File** > **Save As..**, and change the **Save As Type** to **All Files**. Then, save your file with the name of the cluster, and add `.cyberduckprofile` to the end. <br/> ![Cyberduck Profile](/images/cyberduck_fig1.png)
 
 6. Go to the profile file you created, and double-click it. When the application launches, two screens come up. Close the one on top. You can now see the main screen of the program. 
 
