@@ -9,7 +9,7 @@ lastupdated: "2018-07-03"
 {:note: .deprecated}
 
 
-# Connecting to {{site.data.keyword.objectstorageshort}} OpenStack Swift using QuantaStor 
+# Connecting to {{site.data.keyword.objectstorageshort}} OpenStack Swift with QuantaStor 
 
 The QuantaStor appliance available from {{site.data.keyword.BluSoftlayer_full}} offers a more permanent solution for accessing your {{site.data.keyword.objectstorageshort}} account. The QuantaStor appliance acts as a storage gateway and allows you to create nfs/cifs endpoints from your {{site.data.keyword.objectstorageshort}} clusters. The endpoints can then be mounted and accessed like any other nfs/cifs share. The QuantaStor appliance uses the S3QL Python library to access your {{site.data.keyword.objectstorageshort}} account and shares many of the same features, namely: data-deduplication, encryption, and compression. The QuantaStor appliance also provides the ability to schedule backups and push them to your {{site.data.keyword.objectstorageshort}} account.
 
