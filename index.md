@@ -1,86 +1,84 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2017-12-15"
+  years: 2017, 2018
+lastupdated: "2018-07-06"
 
 ---
 {:new_window: target="_blank"}
-{:shortdesc: .shortdesc}
+
 
 # Getting Started with {{site.data.keyword.objectstorageshort}} OpenStack Swift
 
-## Overview
+{{site.data.keyword.objectstorageshort}} OpenStack Swift is a redundant and scalable cloud storage service. With {{site.data.keyword.objectstorageshort}} users can easily store, search, and retrieve data across the internet, with optional CDN connectivity, or across {{site.data.keyword.BluSoftlayer}}’s global private network. This offering was formerly known as SoftLayer {{site.data.keyword.objectstorageshort}}.
 
-{{site.data.keyword.objectstorageshort}} OpenStack Swift is a redundant and scalable cloud storage service that allows users to easily store, search, and retrieve data across the Internet, with optional CDN connectivity, or across {{site.data.keyword.BluSoftlayer}}’s global private network. This is the original {{site.data.keyword.objectstorageshort}} that runs on Openstack swift. Formerly known as SoftLayer {{site.data.keyword.objectstorageshort}}.
+{{site.data.keyword.objectstorageshort}} can be accessed through a RESTful API and through [{{site.data.keyword.slportal}}](https://control.softlayer.com/){:new_window}. By using the {{site.data.keyword.slportal}} you can complete easy, point-and-click interactions with your account without making direct calls to the API.
 
-{{site.data.keyword.objectstorageshort}} may be accessed through a RESTful API and through [{{site.data.keyword.slportal}}](https://control.softlayer.com/){:new_window}. Using the {{site.data.keyword.slportal}} allows for easy, point-and-click interactions with your account without making direct calls to the API.
+**How {{site.data.keyword.objectstorageshort}} works**
 
-## How {{site.data.keyword.objectstorageshort}} Works
-
-{{site.data.keyword.objectstorageshort}} uses multiple servers and multiple drives, meaning it replicates the data you provide to the cluster across multiple physical servers. Replication ensures that your data will be available exactly when you need it. To provide additional reliability, all update requests are handled through proxy servers, which abstract the actual data storage to provide the highest levels of fault tolerance. {{site.data.keyword.objectstorageshort}} is run on a RESTful interface.
+{{site.data.keyword.objectstorageshort}} uses multiple servers and multiple drives. It replicates the data that you provide to the cluster across multiple physical servers. Replication ensures that your data is available exactly when you need it. To provide additional reliability, all update requests are handled through proxy servers, which abstract the actual data storage to provide the highest levels of fault tolerance. {{site.data.keyword.objectstorageshort}} is run on a RESTful interface.
 
 The primary use of {{site.data.keyword.objectstorageshort}} is the long-term storage of static data. {{site.data.keyword.BluSoftlayer}} customers use {{site.data.keyword.objectstorageshort}} in a variety of ways, but use the system most commonly for:
 
-- Archiving documents and email
-- Archiving system backups
-- Storing photos and videos
-- Storing virtual machine images
+- Archiving documents and email,
+- Archiving system backups,
+- Storing photos and videos,
+- Storing virtual machine images.
     
-## Key Features
+## Introducing Key Features
 
 Although {{site.data.keyword.objectstorageshort}} is based on OpenStack’s Swift, we offer many value-added features that are unique to {{site.data.keyword.objectstorageshort}}. Among them are:
 
-### Integrated Indexing and Search Functionality
+**Integrated Indexing and Search functions**
 
-Quickly access information through user-defined metadata key-value pairs, file names or unique identifiers.
+Quickly access information through user-defined metadata key-value pairs, file names, or unique identifiers.
 
-### Wordwide Storage Fabric
+**Worldwide Storage Fabric**
 
-Storage clusters located in North America, Europe and Asia. With all clusters connected via {{site.data.keyword.BluSoftlayer}}’s private network, you are guaranteed secure data replication and transfer.
+Storage clusters that are located in North America, Europe, and Asia. With all clusters connected through {{site.data.keyword.BluSoftlayer}}’s private network, you are guaranteed secure data replication and transfer.
 
-### Redundant Architecture
+**Redundant Architecture**
 
-Data is written multiple times per cluster with self-healing capabilities to immediately restore data in the event of drive failure.
+Data is written multiple times per cluster with self-healing capabilities to immediately restore data if a drive fails.
 
-### Flexible Data Distribution
+**Flexible Data Distribution**
 
-Highly scalable read/write access gives users the ability to serve content directly from the storage system or via {{site.data.keyword.cdn_full}}.
+Highly scalable read/write access gives users the ability to serve content directly from the storage system or through {{site.data.keyword.cdn_full}}.
 
-### Powerful Management Toolkit
+**Powerful Management Toolkit**
 
 Full integration into the [{{site.data.keyword.slportal}}](https://control.softlayer.com/){:new_window}, mobile applications (iPhone, iPad, Android and Windows) and a RESTful API provides a full range of human or machine access.
 
-## Primary {{site.data.keyword.objectstorageshort}} Concepts
+## Explaining Primary {{site.data.keyword.objectstorageshort}} Concepts
 
-If you're new to {{site.data.keyword.BluSoftlayer_full}}'s {{site.data.keyword.objectstorageshort}}, here are a few things that will better acquaint you with how this product functions and what you can expect when you use it.
+If you're new to {{site.data.keyword.BluSoftlayer_full}}'s {{site.data.keyword.objectstorageshort}}, here are a few things that can better acquaint you with how this product functions and what you can expect when you use it.
 
-### Cluster Replication
+**Cluster Replication**
 
-{{site.data.keyword.BluSoftlayer}} {{site.data.keyword.objectstorageshort}} is possible through the functionality of cluster replication. On each client's account, a cluster, or set of servers, exists. When using {{site.data.keyword.objectstorageshort}}, your data will be replicated across the cluster, ensuring that in the instance that a single server fails, your data will still be retrievable. Clusters are located in datacenters in Amsterdam, Dallas and Singapore.
+{{site.data.keyword.BluSoftlayer}} {{site.data.keyword.objectstorageshort}} is possible through the functionality of cluster replication. On each client's account, a cluster, or set of servers, exists. When using {{site.data.keyword.objectstorageshort}}, your data is replicated across the cluster, ensuring that if a single server fails, your data is still retrievable. Clusters are located in datacenters in Amsterdam, Dallas and Singapore.
 
-### Eventual Consistency
+**Eventual Consistency**
 
-{{site.data.keyword.BluSoftlayer}} {{site.data.keyword.objectstorageshort}} functions on the principle of eventual consistency. Because your data is replicated to your cluster, it exists on multiple servers. When the time comes for each server to be updated, those updates generally occur independently of another but will eventually hit all servers to allow them to mirror each other once again. In practice, this means that although the upload operation may appear to have completed to your client, the data you upload may not become immediately available for retrieval.
+{{site.data.keyword.BluSoftlayer}} {{site.data.keyword.objectstorageshort}} functions on the principle of eventual consistency. Because your data is replicated to your cluster, it exists on multiple servers. When the time comes for each server to be updated, those updates generally occur independently of one another but they eventually hit all servers so they mirror each other once again. In practice, the upload operation might appear to have completed to your client, but the data that you upload might not become immediately available for retrieval.
 
-The principle of Eventual Consistency helps {{site.data.keyword.objectstorageshort}} work reliably in a distributed and scalable fashion. For example, if a storage node goes down during an update to a file, once the hardware comes back online, the system checks for consistency. If the node is found to be inconsistent with its partners, the system writes the latest copy of the file onto the hardware from the copy that was written to one of the online nodes.
+The principle of Eventual Consistency helps {{site.data.keyword.objectstorageshort}} work reliably in a distributed and scalable fashion. For example, if a storage node goes down during an update to a file, when the hardware comes back online, the system checks for consistency. If the node is found to be inconsistent with its partners, the system writes the latest copy of the file onto the hardware from the copy that was written to one of the online nodes.
 Containers, Folders and Objects
 
 Stored within each cluster are containers, folders and objects (files), which are vital to the functionality of {{site.data.keyword.objectstorageshort}}. Containers store your data, files assist in organizing data located within the container and an object represents the data stored. Let's review each of these a little further.
 
-### Container
+**Container**
 
 As said before, a container is the basic storage unit for all the data within {{site.data.keyword.objectstorageshort}}. Containers work similar to a folder or directory within many operating systems, however, are unable to be nested. One container must be associated with each {{site.data.keyword.objectstorageshort}} account; however, the amount of containers which a user may create is unlimited. Aside from nesting, containers may be organized by each user to meet individual business needs.
 
 Container names cannot contain a forward slash (/) and must be less than 256 bytes in length.
 
-#### Folder
+- **Folder**
+  Folders are an optional addition to {{site.data.keyword.objectstorageshort}} that allows the user to better organize their metadata.
+  After creating a container, both folders and files may be added. Files provide an additional layer to {{site.data.keyword.objectstorageshort}}, allowing the user to organize specific objects in specific folders, at the user’s discretion.
+  Although folders are available for use with your container, the use of folders is not required. After creating a folder, it is important to note that files are not required to be organized within it. That being said, a user can view a container’s contents and see both folders and files at the same level.
 
-Folders are an optional addition to {{site.data.keyword.objectstorageshort}} that allows the user to better organize their metadata. After creating a container, both folders and files may be added. Files provide an additional layer to {{site.data.keyword.objectstorageshort}}, allowing the user to organize specific objects in specific folders, at the user’s discretion. Although folders are available for use with your container, the use of folders is not required. After creating a folder, it is important to note that files are not required to be organized within it. That being said, a user can view a container’s contents and see both folders and files at the same level. This concept will be discussed further below.
-
-#### Object (File)
-
-Any data or metadata for the files stored in the system is considered an object, or file. Files stored on the system cannot exceed 5GB; files larger than 5GB must be segmented prior to storage, but may be concatenated together so that the eventual download may be viewed as a single file.
+- **Object (File)**
+  Any data or metadata for the files stored in the system is considered an object, or file. Files stored on the system can't exceed 5 GB; files larger than 5 GB must be segmented prior to storage, but can be concatenated together so that the eventual download can be viewed as a single file.
 
 File names must be less than 1024 bytes in length after URL encoding. 
 
@@ -110,11 +108,11 @@ The {{site.data.keyword.objectstorageshort}} screen can be accessed through Navi
 
 ## {{site.data.keyword.objectstorageshort}} Client Overview
 
-Upon clicking {{site.data.keyword.objectstorageshort}} in the menu, you will be routed directly to the {{site.data.keyword.objectstorageshort}} landing page. From ordering additional {{site.data.keyword.objectstorageshort}} on your user account to adding and deleting metadata, all [{{site.data.keyword.slportal}}](https://control.softlayer.com/){:new_window} interactions with your {{site.data.keyword.objectstorageshort}} account begin from this screen. The information displayed on the landing page is specific to the selected account and is dependent upon how containers, files and metadata are organized on the cluster. Your {{site.data.keyword.objectstorageshort}} account interactions begin on the **Account** Tab.
+Upon clicking {{site.data.keyword.objectstorageshort}} in the menu, you are routed directly to the {{site.data.keyword.objectstorageshort}} landing page. From ordering additional {{site.data.keyword.objectstorageshort}} on your user account to adding and deleting metadata, all [{{site.data.keyword.slportal}}](https://control.softlayer.com/){:new_window} interactions with your {{site.data.keyword.objectstorageshort}} account begin from this screen. The information displayed on the landing page is specific to the selected account and is dependent upon how containers, files and metadata are organized on the cluster. Your {{site.data.keyword.objectstorageshort}} account interactions begin on the **Account** Tab.
 
 ### Account Tab
 
-The **Account** Tab contains a variety of information regarding your account, including account and network usage and is the access point to all information stored on your cluster. After an {{site.data.keyword.objectstorageshort}} account has been created and is in use, the Account Tab will appear similar to the image below.
+The **Account** Tab contains a variety of information regarding your account, including account and network usage and is the access point to all information stored on your cluster. After an {{site.data.keyword.objectstorageshort}} account has been created and is in use, the Account Tab appears similar to the following image.
 
 ![Figure 3: Account Overview](/images/objectstorage3.png)
  
