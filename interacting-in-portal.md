@@ -11,9 +11,9 @@ lastupdated: "2018-07-09"
 
 ## Accessing the {{site.data.keyword.objectstorageshort}} Screen
 
-The {{site.data.keyword.objectstorageshort}} screen in the [{{site.data.keyword.slportal}}](https://control.softlayer.com/){:new_window} may be accessed from the top menu after login. 
+The {{site.data.keyword.objectstorageshort}} screen in the [{{site.data.keyword.slportal}}](https://control.softlayer.com/){:new_window} may be accessed from the main menu after login. 
 
-1. Access the {{site.data.keyword.slportal}} using your unique credentials.
+1. Access the {{site.data.keyword.slportal}} by using your unique credentials.
 2. Select **Storage** > **{{site.data.keyword.objectstorageshort}}** from the navigation bar. <br/> 
    ![{{site.data.keyword.objectstorageshort}} menu option](/images/ObjectStorageMenu.png)
 3. Click the **{{site.data.keyword.objectstorageshort}}** link from the list of storage nodes to access the {{site.data.keyword.objectstorageshort}} page. If there are multiple users on an account, select the user whose {{site.data.keyword.objectstorageshort}} account you want to access.
@@ -36,38 +36,36 @@ The {{site.data.keyword.objectstorageshort}} screen in the [{{site.data.keyword.
    
 ## Managing {{site.data.keyword.objectstorageshort}} OpenStack Swift User Permissions
 
-User permissions for {{site.data.keyword.objectstorageshort}} accounts require that several individual permissions be granted. In order to alleviate the need to grant a variety of permissions, the Manage Users feature for {{site.data.keyword.objectstorageshort}} allows the account administrator to manage users' {{site.data.keyword.objectstorageshort}} permissions by clicking a single check box. Additionally, multiple users can be managed at one time on the same screen.  It is important to note the following when updating an {{site.data.keyword.objectstorageshort}} user's permissions:
+User permissions for {{site.data.keyword.objectstorageshort}} accounts require that several individual permissions be granted. In order to alleviate the need to grant a variety of permissions, by using the Manage Users feature for {{site.data.keyword.objectstorageshort}} the account administrator can manage users' {{site.data.keyword.objectstorageshort}} permissions by clicking a single check box. Additionally, multiple users can be managed at one time on the same screen.  It is important to note the following information.
 
   - Access to each {{site.data.keyword.objectstorageshort}} Account and Cluster are impacted.  If access is removed, the user loses access to all Accounts and Clusters for {{site.data.keyword.objectstorageshort}}.
-  - {{site.data.keyword.objectstorageshort}} permissions are derived from a combination of permissions from Storage CDN and StorageLayer.  Granting access to {{site.data.keyword.objectstorageshort}} means giving users permissions from those sets.  Removing permissions for {{site.data.keyword.objectstorageshort}} results in the removal of permissions for Storage CDN and StorageLayer.
+  - {{site.data.keyword.objectstorageshort}} permissions are derived from a combination of permissions from Storage CDN and StorageLayer. Granting access to {{site.data.keyword.objectstorageshort}} means giving users permissions from those sets. Removing permissions for {{site.data.keyword.objectstorageshort}} results in the removal of permissions for Storage CDN and StorageLayer. For more information, see [Can a User Have CDN and StorageLayer Permissions Granted but be Prohibited from Accessing Object Storage?](https://console.bluemix.net/docs/infrastructure/content-deliver-network/FAQ.html#can-a-user-have-cdn-and-storagelayer-permissions-granted-but-be-prohibited-from-accessing-object-storage-){:new_window}.
 
 
 ### Managing an {{site.data.keyword.objectstorageshort}} User
 
-1. Access the {{site.data.keyword.objectstorageshort}} screen on the  [{{site.data.keyword.slportal}}](https://control.softlayer.com/){:new_window}. Refer to [Access the {{site.data.keyword.objectstorageshort}} Screen](access-object-storage-screen.html).
-2. Click the **Manage Users** option in the Account tab.
-3. Locate the desired user by scrolling through the list or typing the user's name in the Filter field.
+1. Access the {{site.data.keyword.objectstorageshort}} screen on the  [{{site.data.keyword.slportal}}](https://control.softlayer.com/){:new_window}.
+2. On the Account tab, click the **Manage Users**.
+3. Locate the user by scrolling through the list or typing the user's name in the Filter field.
 4. Select the **Grant Access** check box to grant the user permission to view and manage the {{site.data.keyword.objectstorageshort}} account. Deselect the **Grant Access** check box to remove the user's permission set.
-5. Repeat the previous two steps until all desired permissions have been updated.
+5. Repeat the previous two steps until all permissions are updated.
 6. Click **Save** to save the changes. Click **Cancel** to cancel the action.
 
-After granting or removing permissions for {{site.data.keyword.objectstorageshort}}, the changes will be reflected in the following permissions for each user that was changed:
+After granting or removing permissions for {{site.data.keyword.objectstorageshort}}, the changes are reflected in the following permissions for each user that were changed:
 
   - Manage Storage CDN
   - Manage Storage CDN File Transfer
   - Manage StorageLayer
 
-If granting a user access for {{site.data.keyword.objectstorageshort}}, the user will have the ability to view and interact with the {{site.data.keyword.objectstorageshort}} cluster. If removing user access for  through this tool, all storage and Storage CDN access will be removed. If the user should have access to either of these features, edit the user's permissions to manually grant the necessary permissions. See also [Can a User Have CDN and StorageLayer Permissions Granted but be Prohibited from Accessing Object Storage?](https://console.bluemix.net/docs/infrastructure/content-deliver-network/FAQ.html#can-a-user-have-cdn-and-storagelayer-permissions-granted-but-be-prohibited-from-accessing-object-storage-){:new_window}.  
-
 
 ## Adding a Container to a Cluster
 
-A container houses data that is associated with an {{site.data.keyword.objectstorageshort}} account and is associated with an {{site.data.keyword.objectstorageshort}} cluster. At least one container must exist per account; however, multiple containers may be made and maintained according to the user's needs. Follow the steps below to add a container to a cluster.
+A container houses data that is associated with an {{site.data.keyword.objectstorageshort}} account and is associated with an {{site.data.keyword.objectstorageshort}} cluster. At least one container must exist per account. However, multiple containers can be made and maintained according to the user's needs.
 
-1. Access the **{{site.data.keyword.objectstorageshort}}** screen in the [{{site.data.keyword.slportal}}](https://control.softlayer.com/){:new_window}. Refer to [Access the {{site.data.keyword.objectstorageshort}} screen](access-object-storage-screen.html).
-2. Click the **Add Container** link. A field will appear prompting the entry of the new container name.
-3. Enter the name of the container in the **Container Name** field. Container names must be 256 characters or less after URL encoding and cannot contain a forward slash (/).
-2. Click the **OK** button to create your container. Your new container will appear as the first container within the cluster.
+1. Access the **{{site.data.keyword.objectstorageshort}}** screen in the [{{site.data.keyword.slportal}}](https://control.softlayer.com/){:new_window}. 
+2. Click **Add Container**.
+3. Enter the name of the container in the **Container Name** field. Container names must be 256 characters or less after URL encoding and cannot contain a forward slash (`/`).
+2. Click **OK** to create your container. Your new container appear as the first container within the cluster.
 
 
 ## Accessing and Exiting a Container
