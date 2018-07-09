@@ -2,11 +2,10 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-10-11"
+lastupdated: "2018-07-09"
 
 ---
-{:new_window: target="_blank"}
-{:shortdesc: .shortdesc}
+{:new_window: target="_blank"}}
 
 
 # Viewing an Object in {{site.data.keyword.objectstorageshort}} OpenStack Swift
