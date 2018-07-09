@@ -9,22 +9,14 @@ lastupdated: "2018-07-09"
 
 # Interacting with {{site.data.keyword.objectstorageshort}} through the {{site.data.keyword.slportal}}
 
-   
-        
-        
-        delete-object-cluster.md
-        delete-container.md
-        manage-object-storage-user.md
-        search-within-cluster.md
-
-
 ## Accessing the {{site.data.keyword.objectstorageshort}} Screen
 
-The {{site.data.keyword.objectstorageshort}} screen in the [{{site.data.keyword.slportal}}](https://control.softlayer.com/){:new_window} may be accessed through the user navigation after login. Follow the steps below to access the {{site.data.keyword.objectstorageshort}} screen.
+The {{site.data.keyword.objectstorageshort}} screen in the [{{site.data.keyword.slportal}}](https://control.softlayer.com/){:new_window} may be accessed from the top menu after login. 
 
 1. Access the {{site.data.keyword.slportal}} using your unique credentials.
-2. Select **Storage** > **{{site.data.keyword.objectstorageshort}}** from the navigation bar. <br/> ![{{site.data.keyword.objectstorageshort}} menu option](/images/ObjectStorageMenu.png)
-3. Click the **{{site.data.keyword.objectstorageshort}}** link from the list of storage nodes located at the top of the page to access the {{site.data.keyword.objectstorageshort}} page. If there are multiple users on an account, select the user whose {{site.data.keyword.objectstorageshort}} account you wish to access.
+2. Select **Storage** > **{{site.data.keyword.objectstorageshort}}** from the navigation bar. <br/> 
+   ![{{site.data.keyword.objectstorageshort}} menu option](/images/ObjectStorageMenu.png)
+3. Click the **{{site.data.keyword.objectstorageshort}}** link from the list of storage nodes to access the {{site.data.keyword.objectstorageshort}} page. If there are multiple users on an account, select the user whose {{site.data.keyword.objectstorageshort}} account you want to access.
 4. Select one of the following **Clusters** based on the city that is of nearest proximity to your users:
    - Amsterdam 1 (AMS01)
    - Dallas 5 (DAL05)
@@ -40,6 +32,33 @@ The {{site.data.keyword.objectstorageshort}} screen in the [{{site.data.keyword.
    - Sydney 1 (SYD01)
    - Toronto 1 (TOR01)
    - Tokyo 2 (TOK02)
+   
+   
+## Managing {{site.data.keyword.objectstorageshort}} OpenStack Swift User Permissions
+
+User permissions for {{site.data.keyword.objectstorageshort}} accounts require that several individual permissions be granted. In order to alleviate the need to grant a variety of permissions, the Manage Users feature for {{site.data.keyword.objectstorageshort}} allows the account administrator to manage users' {{site.data.keyword.objectstorageshort}} permissions by clicking a single check box. Additionally, multiple users can be managed at one time on the same screen.  It is important to note the following when updating an {{site.data.keyword.objectstorageshort}} user's permissions:
+
+  - Access to each {{site.data.keyword.objectstorageshort}} Account and Cluster are impacted.  If access is removed, the user loses access to all Accounts and Clusters for {{site.data.keyword.objectstorageshort}}.
+  - {{site.data.keyword.objectstorageshort}} permissions are derived from a combination of permissions from Storage CDN and StorageLayer.  Granting access to {{site.data.keyword.objectstorageshort}} means giving users permissions from those sets.  Removing permissions for {{site.data.keyword.objectstorageshort}} results in the removal of permissions for Storage CDN and StorageLayer.
+
+
+### Managing an {{site.data.keyword.objectstorageshort}} User
+
+1. Access the {{site.data.keyword.objectstorageshort}} screen on the  [{{site.data.keyword.slportal}}](https://control.softlayer.com/){:new_window}. Refer to [Access the {{site.data.keyword.objectstorageshort}} Screen](access-object-storage-screen.html).
+2. Click the **Manage Users** option in the Account tab.
+3. Locate the desired user by scrolling through the list or typing the user's name in the Filter field.
+4. Select the **Grant Access** check box to grant the user permission to view and manage the {{site.data.keyword.objectstorageshort}} account. Deselect the **Grant Access** check box to remove the user's permission set.
+5. Repeat the previous two steps until all desired permissions have been updated.
+6. Click **Save** to save the changes. Click **Cancel** to cancel the action.
+
+After granting or removing permissions for {{site.data.keyword.objectstorageshort}}, the changes will be reflected in the following permissions for each user that was changed:
+
+  - Manage Storage CDN
+  - Manage Storage CDN File Transfer
+  - Manage StorageLayer
+
+If granting a user access for {{site.data.keyword.objectstorageshort}}, the user will have the ability to view and interact with the {{site.data.keyword.objectstorageshort}} cluster. If removing user access for  through this tool, all storage and Storage CDN access will be removed. If the user should have access to either of these features, edit the user's permissions to manually grant the necessary permissions. See also [Can a User Have CDN and StorageLayer Permissions Granted but be Prohibited from Accessing Object Storage?](https://console.bluemix.net/docs/infrastructure/content-deliver-network/FAQ.html#can-a-user-have-cdn-and-storagelayer-permissions-granted-but-be-prohibited-from-accessing-object-storage-){:new_window}.  
+
 
 ## Adding a Container to a Cluster
 
@@ -128,4 +147,29 @@ In addition to cluster, container and object interactions, a search may be acros
    **Note**: The Search field for {{site.data.keyword.objectstorageshort}} will be located on the middle of the screen, to the right of your current location within the cluster hierarchy.
 3. Click the Search button.
 
-The system will return all containers and objects that match the search criteria where files and containers are normally viewed. 
+The system will return all containers and objects that match the search criteria where files and containers are normally viewed.
+
+## Deleting an Object in a Cluster
+
+Similar to containers, users may also delete an object at any time. Like containers, folders must be completely empty prior to deletion. No restrictions are set for files.
+
+1. Access the **{{site.data.keyword.objectstorageshort}}** screen in the [{{site.data.keyword.slportal}}](https://control.softlayer.com/){:new_window}.
+2. Scroll over the **Container Name**.
+3. Click **Delete**. A Delete Object confirmation box appears.<br/>
+   ![Delete Object](/images/Delete_Object.png)
+4. Click **Yes** to delete the object. Click **No** to cancel the request.
+
+
+After deleting an object, it cannot be retrieved. Objects may be deleted when they are no longer needed; however, all objects must be removed from a container prior to [deleting the container](delete-container.html).
+
+# Deleting a Container
+
+At any point in time, a container may be deleted from the cluster, so long as the container holds no data (files or folders). Prior to deleted the container, all files and folders must also be [deleted](delete-object-cluster.html) or, if they are still needed, may be [copied, moved or downloaded](view-and-edit-object-storage-file-details.html) to another location.
+
+1. Access the {{site.data.keyword.objectstorageshort}} screen on the [{{site.data.keyword.slportal}}](https://control.softlayer.com/){:new_window}. Refer to [Access the {{site.data.keyword.objectstorageshort}} Screen](access-object-storage-screen.html).
+2. Click **Delete** . A **Delete Container** confirmation box appears.
+3. Click **Yes** button to delete the container. Click **No** to cancel the request.
+
+After a container has been deleted, it cannot be retrieved. It must be re-added and all files or folders that were within the container must also be added back to the cluster.
+
+
