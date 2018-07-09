@@ -1,23 +1,23 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2017-12-15
+  years: 2017, 2018
+lastupdated: "2018-07-09"
 
 ---
 {:new_window: target="_blank"}
-{:shortdesc: .shortdesc}
+
 
 # Connecting to {{site.data.keyword.objectstorageshort}} OpenStack Swift using {{site.data.keyword.Bluemix_notm}} Apps
 
-## Apps
+**Apps**
 
 Limited storage size is an issue for all workloads. {{site.data.keyword.BluSoftlayer}} furnishes its customers cloud storage as {{site.data.keyword.objectstorageshort}}, which helps solve the problem for keeping static content in unlimited capacity. IBM provides {{site.data.keyword.Bluemix}}, a Platform as a Service (Paas) that offers a cost-effective cloud platform for developers to programmatically implement owned services. In this article we provide you with straightforward steps to leverage {{site.data.keyword.objectstorageshort}} ({{site.data.keyword.BluSoftlayer}}) through Node.JS ({{site.data.keyword.Bluemix_short}}), assuming you have an active {{site.data.keyword.BluSoftlayer}} account and existing {{site.data.keyword.objectstorageshort}} deployed.
 
 You will create a new {{site.data.keyword.Bluemix_short}} application, make some edits to connect existing {{site.data.keyword.objectstorageshort}}, and deploy the application in the cloud. Click [here](http://blog.softlayer.com/2015/softlayer-bluemix-and-openstack-powerful-combination) for more information on {{site.data.keyword.BluSoftlayer}}.
 
 
-## Register for an {{site.data.keyword.appid_long_notm}} and sign in to {{site.data.keyword.Bluemix_notm}}
+## Registering for an {{site.data.keyword.appid_long_notm}} and sign in to {{site.data.keyword.Bluemix_notm}}
 
 1.    Open a browser window and enter https://console.ng.bluemix.net/ to register for an {{site.data.keyword.appid_long}} and sign in to {{site.data.keyword.Bluemix_short}}.
 
@@ -26,7 +26,7 @@ You will create a new {{site.data.keyword.Bluemix_short}} application, make some
 If you do not have an ID, fill out the required fields on the Sign up for {{site.data.keyword.Bluemix_short}} screen and click the **Create Account** button.
 
 
-## Get started with Node.JS
+## Getting started with Node.JS
 
  1.    Log in to bluemix.net with your {{site.data.keyword.appid_long_notm}}; you should be at the {{site.data.keyword.Bluemix_short}}
  Dashboard.
@@ -99,7 +99,7 @@ If you do not have an ID, fill out the required fields on the Sign up for {{site
  
  15. Minimize the {{site.data.keyword.jazzhub_short}} window.
 
-## Create {{site.data.keyword.objectstorageshort}} container on {{site.data.keyword.BluSoftlayer_notm}}
+## Creating {{site.data.keyword.objectstorageshort}} container on {{site.data.keyword.BluSoftlayer_notm}}
 
  1.    Open a browser window, enter https://control.softlayer.com, and log in.
 
