@@ -2,29 +2,25 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-03-22"
+lastupdated: "2018-07-09"
 
 ---
 {:note: .deprecated}
 {:codeblock: .codeblock}
 {:pre: .pre}
-{:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # VHD Content Checking and Conversion 
 
 Being able to import and deploy your own instance using a custom VHD or ISO is one of the many benefits of the {{site.data.keyword.BluSoftlayer_full}}. In this guide we will show you how to verify that your VHD/ISO is the proper content type, show how to convert it if the content type is incorrect, and even manually import an image if needed. If you are unfamiliar with the Image import option please see the following [article](https://console.bluemix.net/docs/infrastructure/image-templates/import-image.html){:new_window}.
 
-## Prerequisites
 
-1.  [Access the {{site.data.keyword.objectstorageshort}} Screen](access-object-storage-screen.html)
+1.  [Access the {{site.data.keyword.objectstorageshort}} Screen](interacting-in-portal.html)
 2.  Click the **View Credentials** link (record your credentials).
-
-## Basic Operations
 
 The first step to interacting with {{site.data.keyword.objectstorageshort}} from the command line is to authenticate against the specific ObjectStorage cluster you will be interacting with. For our examples we use the Dallas 05 cluster.
 
-### Authentication
+### Authenticating
 
 Run the following command to authenticate against the Dallas {{site.data.keyword.objectstorageshort}} Cluster, substituting your own {{site.data.keyword.objectstorageshort}} credentials.
 
@@ -48,7 +44,7 @@ Date: Fri, 20 Nov 2015 15:06:55 GMT
 ```
 {: codeblock}
 
-### List Containers
+### Listing Containers
 
 Using the **X-Auth-Token** and **X-Storage-Url** from our Authentication step we can now list the containers in our Cluster:
 
@@ -105,7 +101,7 @@ curl -i -H "X-Auth-Token: AUTH_tkcxxxxxxxxxxxxxxxxxxxxxxxx1d2a2a2" -H "Content-T
 ```
 {: pre}
 
-### Manual import
+### Importing Data Manually
 
 In very rare circumstances an ISO with the correct Content-Type will not show up for import under **Devices** > **Manage** > **Images** > **Import Image**. When this happens you can manually import the ISO using the following curl command. 
 
