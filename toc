@@ -11,6 +11,7 @@ IBM Cloud Storage - Object Storage OpenStack Swift
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
+    interacting-in-portal.md
     connect-object-storage-using-cloudfuse.md
     connect-object-storage-using-command-line.md
     connect-object-storage-using-cyberduck.md
@@ -19,22 +20,6 @@ IBM Cloud Storage - Object Storage OpenStack Swift
     connect-object-storage-using-s3ql.md
     connect-object-storage-using-sftp.md
     connect-object-storage-using-winscp.md
-   
-    {: .topicgroup}
-    Interacting with Object Storage through the Customer Portal
-        access-object-storage-screen.md
-        access-and-exit-container.md
-        access-object-folder-or-container.md
-        add-container-cluster.md
-        add-folder-container.md
-        add-object-file.md
-        add-and-edit-metadata-object.md
-        delete-object-cluster.md
-        delete-container.md
-        manage-object-storage-user.md
-        search-within-cluster.md
-        view-and-edit-object-storage-file-details.md
-        view-object-details.md
 
     {: .topicgroup}
     Handling Virtual Hard Disks and ISO Images
