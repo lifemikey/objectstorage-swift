@@ -1,12 +1,11 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2017-10-11"
+  years: 2017, 2018
+lastupdated: "2018-07-09"
 
 ---
 {:new_window: target="_blank"}
-{:shortdesc: .shortdesc}
 
 # Adding a Container to a Cluster
 
