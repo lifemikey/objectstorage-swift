@@ -14,7 +14,7 @@ lastupdated: "2018-07-09"
 The {{site.data.keyword.objectstorageshort}} screen in the [{{site.data.keyword.slportal}}](https://control.softlayer.com/){:new_window} can be accessed from the main menu after login. 
 
 1. Access the {{site.data.keyword.slportal}} by using your unique credentials.
-2. Select **Storage** > **{{site.data.keyword.objectstorageshort}}** from the navigation bar. <br/> 
+2. Select **Storage** > **{{site.data.keyword.objectstorageshort}}** from the navigation bar.<br/> 
    ![{{site.data.keyword.objectstorageshort}} menu option](/images/ObjectStorageMenu.png)
 3. Click the **{{site.data.keyword.objectstorageshort}}** link from the list of storage nodes to access the {{site.data.keyword.objectstorageshort}} page. If the account has multiple users, select the user whose {{site.data.keyword.objectstorageshort}} account you want to access.
 4. Select one of the following **Clusters** based on the city that is of nearest proximity to your users.
@@ -104,14 +104,14 @@ Due to the {{site.data.keyword.slportal}} upload's size limit of 20 MB, you migh
 
 ## Accessing an Object in a Folder or Container
 
-After adding an object, it can be accessed at any time from your {{site.data.keyword.objectstorageshort}} account. To access an object, simply click the file or folder name. Files might be downloaded according to browser settings, while folders are opened to show an extra level of objects.
+After an object is added, it can be accessed at any time from your {{site.data.keyword.objectstorageshort}} account. To access an object, simply click the file or folder name. Files might be downloaded according to browser settings, while folders are opened to show an extra level of objects.
 
 
 ## Viewing and Editing File Details
 
 After a file was added, details regarding the file can be viewed and edited at any time. 
 
-1. Access the **Container** containing the file requiring edit. <br/>
+1. Access the **Container** that contains the file you want to edit. <br/>
    **Note**: If the file for edit is located within a folder, click the **Folder Name** to access the folder's contents and locate the file.
 2. Click the check box next to the file you want to view. The file details appear in the window to the right of the Object List. 
 3. Click **Actions**.
@@ -120,13 +120,13 @@ After a file was added, details regarding the file can be viewed and edited at a
   <caption><Table 1 shows the Actions on the left and the steps that you need to take for each action on the right.>
 <tr><th>Action</th><th>Steps to Complete</th></tr>
 <tr><td>Copy</td><td><li>Select <strong>Copy</strong> from the <strong>Actions</strong> list.</li><li>Select a location to copy the file from the <strong>Browse Locations</strong> window.</li><li>Click <strong>Copy</strong> to copy the file. Click <strong>Cancel</strong> to cancel the action.</li></td></tr>
-<tr><td>Move</td><td><li>Select <strong>Move</strong> from the <strong>Actions</strong> list.</li><li>Select the location to move the file from the <strong>Browse Locations</strong> pop up box.</li><li>Click <strong>Move</strong> to move the file to its new location. Click <strong>Cancel</strong> to cancel the action.</li></td></tr>
+<tr><td>Move</td><td><li>Select <strong>Move</strong> from the <strong>Actions</strong> list.</li><li>Select the location to move the file from the <strong>Browse Locations</strong> window.</li><li>Click <strong>Move</strong> to move the file to its new location. Click <strong>Cancel</strong> to cancel the action.</li></td></tr>
 <tr><td>Download</td><td><li>Select <strong>Download</strong> from the <strong>Actions</strong> list. The file is downloaded to your system in accordance with your browser's settings.</li></td></tr>
 <tr><td>Rename</td><td><li>Select <strong>Rename</strong> from the <strong>Actions</strong> list.</li><li>Enter the new name for the file in the <strong>Rename</strong> text box.</li><li>Click <strong>OK</strong> to rename the file. Click <strong>Cancel</strong> to cancel the action.</li></td></tr>
 <tr><td>Delete</td><td><li>Select <strong>Delete</strong> from the <strong>Actions<strong> list.</li><li>Click </strong>Yes<strong> to delete the file. Click <strong>No</strong> to cancel the transaction.</li></td></tr>
 </table>
 
-The next actions are dependent upon the selections that were made. Generally, the selections dictate the actions that are taken by the system on the file, however, when you delete a file, it cannot be retrieved. If a file was downloaded, it generally is available within a location in your browser. More actions can be taken on the same file consecutively, as long as the file was not deleted.
+The next actions are dependent upon the selections that were made. Generally, the selections dictate the actions that are taken by the system on the file, however, when you delete a file, it can't be retrieved. If a file was downloaded, it generally is available within a location in your browser. More actions can be taken on the same file consecutively, unless the file was not deleted.
 
 ## Adding and Editing Metadata for an Object
 
@@ -138,12 +138,12 @@ After an object is uploaded to the container, metadata can be associated with th
 4. Enter the metadata value in the second text box. The metadata value corresponds with the key entered.
 5. Click **Update** to add the metadata. Click **Cancel** to cancel the action.
 
-After you added metadata to a file, files can be located more easily, and metadata values can also be searched when trying to locate a file by using {{site.data.keyword.objectstorageshort}} search functionality. More than one set of metadata can be added. Repeat these steps to add more metadata to the same file.
+After you added metadata to a file, files can be located more easily, and metadata values can also be searched when you're trying to locate a file by using {{site.data.keyword.objectstorageshort}} search function. More than one set of metadata can be added. Repeat these steps to add more metadata to the same file.
 
 
 ## Searching within a Cluster
 
-In addition to cluster, container, and object interactions, a search can be across the entire cluster, regardless of what level of data is being viewed.
+In addition to cluster, container, and object interactions, you can search across the entire cluster, regardless of what level of data is being viewed.
 
 1. Access the {{site.data.keyword.objectstorageshort}} screen in the [{{site.data.keyword.slportal}}](https://control.softlayer.com/){:new_window}.
 2. Enter the search term or terms in the Search field. <br/>
@@ -154,7 +154,7 @@ The system returns all containers and objects that match the search criteria whe
 
 ## Deleting an Object in a Cluster
 
-Similar to containers, users can also delete an object at any time. Like containers, folders must be completely empty before the deletion. No restrictions are set for files.
+Similar to containers, users can also delete an object at any time. Like containers, folders must be empty before the deletion. No restrictions are set for files.
 
 1. Access the **{{site.data.keyword.objectstorageshort}}** screen in the [{{site.data.keyword.slportal}}](https://control.softlayer.com/){:new_window}.
 2. Scroll over the **Container Name**.
@@ -162,15 +162,15 @@ Similar to containers, users can also delete an object at any time. Like contain
    ![Delete Object](/images/Delete_Object.png)
 4. Click **Yes** to delete the object. Click **No** to cancel the request.
 
-Objects can be deleted when they are no longer needed. After deleting an object, it can't be retrieved.
+Objects can be deleted when they are no longer needed. After an object is deleted, it can't be retrieved.
 
 
 # Deleting a Container
 
-At any point in time, a container can be deleted from the cluster, so long as the container holds no data (files or folders). Before you can delete the container, all files and folders must also be deleted or, if they are still needed, can be copied, moved or downloaded to another location.
+At any point in time, a container can be deleted from the cluster, while the container holds no data (files or folders). Before you can delete the container, all files and folders must be deleted or, if they are still needed, they can be copied, moved, or downloaded to another location.
 
 1. Access the {{site.data.keyword.objectstorageshort}} screen on the [{{site.data.keyword.slportal}}](https://control.softlayer.com/){:new_window}.
 2. Click **Delete**. A **Delete Container** confirmation box appears.
 3. Click **Yes** to delete the container. Click **No** to cancel the request.
 
-After a container was deleted, it can't be retrieved. It must be re-added and all files or folders that were within the container must also be added back to the cluster.
+After a container was deleted, it can't be retrieved. It must be readded and all files or folders that were within the container must also be added back to the cluster.
