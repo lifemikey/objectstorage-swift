@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-07-03"
+lastupdated: "2018-07-09"
 
 ---
 {:new_window: target="_blank"}
@@ -25,7 +25,7 @@ QuantaStor works great for integrated solutions, automated backups to the cloud,
 1. Access your QuantaStor console.
 2. Click **Cloud Containers**.
 3. Click **Add Credentials**.
-4. Select **SoftLayer Object Storage** as your cloud provider, and [enter your {{site.data.keyword.objectstorageshort}} credentials](access-object-storage-screen.html) and click **OK**.
+4. Select **SoftLayer Object Storage** as your cloud provider, and [enter your {{site.data.keyword.objectstorageshort}} credentials](interacting-in-portal.html) and click **OK**.
        ![Add Cloud Provider Credentials](/images/AddCloudProviderCredentials.png)
 5. Click **Create** in the **Cloud Container** section.
 6. Complete the form with the required information, and click **OK**.
