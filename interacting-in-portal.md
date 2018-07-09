@@ -39,7 +39,7 @@ The {{site.data.keyword.objectstorageshort}} screen in the [{{site.data.keyword.
 User permissions for {{site.data.keyword.objectstorageshort}} accounts require that several individual permissions be granted. By using the Manage Users feature for {{site.data.keyword.objectstorageshort}}, the account administrator can manage users' {{site.data.keyword.objectstorageshort}} permissions by clicking a single check box. Additionally, multiple users can be managed at one time on the same screen. It's important to note the following information.
 
   - Access to each {{site.data.keyword.objectstorageshort}} Account and Cluster are impacted. If access is removed, the user loses access to all Accounts and Clusters for {{site.data.keyword.objectstorageshort}}.
-  - {{site.data.keyword.objectstorageshort}} permissions are derived from a combination of permissions from Storage CDN and StorageLayer. Granting access to {{site.data.keyword.objectstorageshort}} means giving users permissions from those sets. Removing permissions for {{site.data.keyword.objectstorageshort}} results in the removal of permissions for Storage CDN and StorageLayer. For more information, see [Can a User Have CDN and StorageLayer Permissions Granted but be Prohibited from Accessing Object Storage?](https://console.bluemix.net/docs/infrastructure/content-deliver-network/FAQ.html#can-a-user-have-cdn-and-storagelayer-permissions-granted-but-be-prohibited-from-accessing-object-storage-){:new_window}.
+  - {{site.data.keyword.objectstorageshort}} permissions are derived from a combination of permissions from Storage CDN and StorageLayer. Granting access to {{site.data.keyword.objectstorageshort}} means giving users permissions from those sets. Removing permissions for {{site.data.keyword.objectstorageshort}} results in the removal of permissions for Storage CDN and StorageLayer. For more information, see the [FAQ](https://console.bluemix.net/docs/infrastructure/content-deliver-network/FAQ.html#can-a-user-have-cdn-and-storagelayer-permissions-granted-but-be-prohibited-from-accessing-object-storage-){:new_window}.
 
 
 ### Managing an {{site.data.keyword.objectstorageshort}} User
@@ -89,7 +89,7 @@ Adding a folder in the [{{site.data.keyword.slportal}}](https://control.softlaye
 
 ## Adding an Object (File) through the {{site.data.keyword.slportal}}
 
-Adding an object (file) in the {{site.data.keyword.slportal}} allows the user to upload files into the selected container that is associated with an {{site.data.keyword.objectstorageshort}} account. An unlimited number of files can be uploaded, but each file can't exceed 20 MB in size. 
+Adding an object (file) in the {{site.data.keyword.slportal}} allows the user to upload files into the selected container that is associated with an {{site.data.keyword.objectstorageshort}} account. An unlimited number of files can be uploaded, but each file can't exceed 20 MB. 
 
 1. Access the {{site.data.keyword.objectstorageshort}} screen in the [{{site.data.keyword.slportal}}](https://control.softlayer.com/){:new_window}.
 2. Click **Add File**.
@@ -97,12 +97,14 @@ Adding an object (file) in the {{site.data.keyword.slportal}} allows the user to
 4. Locate the file for upload and select the file.
 5. Click **Add** to upload the selected file. Click **Cancel** to cancel the upload.
 
-Due to the {{site.data.keyword.slportal}} upload's size limit of 20 MB, you might consider using other means to upload larger files. See instructions for [Connecting to {{site.data.keyword.objectstorageshort}} OpenStack Swift using the Command Line](connect-object-storage-using-command-line.html), [Connecting to {{site.data.keyword.objectstorageshort}} OpenStack Swift using Cyberduck](connect-object-storage-using-cyberduck.html), or [Connecting to {{site.data.keyword.objectstorageshort}} OpenStack Swift using WinSCP](connect-object-storage-using-winscp.html) for more information.
-
+Due to the {{site.data.keyword.slportal}} upload's size limit of 20 MB, you might consider other means to upload larger files. For more information, see the following instructions.
+- [Connecting to {{site.data.keyword.objectstorageshort}} OpenStack Swift by using the Command Line](connect-object-storage-using-command-line.html)
+- [Connecting to {{site.data.keyword.objectstorageshort}} OpenStack Swift by using Cyberduck](connect-object-storage-using-cyberduck.html)
+- [Connecting to {{site.data.keyword.objectstorageshort}} OpenStack Swift by using WinSCP](connect-object-storage-using-winscp.html) 
 
 ## Accessing an Object in a Folder or Container
 
-After adding an object, it can be accessed at any time from your {{site.data.keyword.objectstorageshort}} account. To access an object, simply click on the file or folder name. Files can be downloaded according browser settings, while folders are opened to show an extra level of objects.
+After adding an object, it can be accessed at any time from your {{site.data.keyword.objectstorageshort}} account. To access an object, simply click the file or folder name. Files might be downloaded according to browser settings, while folders are opened to show an extra level of objects.
 
 
 ## Viewing and Editing File Details
@@ -111,7 +113,7 @@ After a file was added, details regarding the file can be viewed and edited at a
 
 1. Access the **Container** containing the file requiring edit. <br/>
    **Note**: If the file for edit is located within a folder, click the **Folder Name** to access the folder's contents and locate the file.
-2. Click the check box next to the file you wish to view. The file details appear in the window to the right of the Object List. 
+2. Click the check box next to the file you want to view. The file details appear in the window to the right of the Object List. 
 3. Click **Actions**.
 4. Select one of the following options and follow the corresponding instructions based on the action to be completed for the file: 
 <table>
@@ -124,28 +126,27 @@ After a file was added, details regarding the file can be viewed and edited at a
 <tr><td>Delete</td><td><li>Select <strong>Delete</strong> from the <strong>Actions<strong> list.</li><li>Click </strong>Yes<strong> to delete the file. Click <strong>No</strong> to cancel the transaction.</li></td></tr>
 </table>
 
-The next actions are dependent upon the selections made using the previous steps. Generally, the selections dictate the actions that are taken by the system on the file, however, when you delete a file, it cannot be retrieved. If a file was downloaded, it generally is available within a location in your browser. Additional actions can be taken on the same file consecutively, so long as the file was not deleted.
+The next actions are dependent upon the selections that were made. Generally, the selections dictate the actions that are taken by the system on the file, however, when you delete a file, it cannot be retrieved. If a file was downloaded, it generally is available within a location in your browser. More actions can be taken on the same file consecutively, as long as the file was not deleted.
 
 ## Adding and Editing Metadata for an Object
 
 After an object is uploaded to the container, metadata can be associated with the object at the object view level. Adding metadata to an object help to identify an object without having to download and open the object. Metadata can be edited at any time. 
 
 1. View the object.
-2. Click the **Add Metadata** icon.
-3. Enter the **metadata key** in the first text box. The metadata key must indicate the type of metadata you want to enter. Examples for metadata keys are things like Artist, Song and Topic.
-4. Enter the **metadata value** in the second text box. The metadata value corresponds with the key entered.
+2. Click **Add Metadata**.
+3. Enter the metadata key in the first text box. The metadata key must indicate the type of metadata you want to enter. Examples for metadata keys are things like `Artist`, `Song` and `Topic`.
+4. Enter the metadata value in the second text box. The metadata value corresponds with the key entered.
 5. Click **Update** to add the metadata. Click **Cancel** to cancel the action.
 
-
-After adding metadata to a file, files can be located more easily, and metadata values can also be searched when trying to locate a file using {{site.data.keyword.objectstorageshort}} search functionality. More than one set of metadata can be added. Repeat the steps above to add additional metadata to the same file.
+After you added metadata to a file, files can be located more easily, and metadata values can also be searched when trying to locate a file by using {{site.data.keyword.objectstorageshort}} search functionality. More than one set of metadata can be added. Repeat these steps to add more metadata to the same file.
 
 
 ## Searching within a Cluster
 
-In addition to cluster, container, and object interactions, a search can be across the entire cluster, regardless of what level of data is currently being viewed.
+In addition to cluster, container, and object interactions, a search can be across the entire cluster, regardless of what level of data is being viewed.
 
 1. Access the {{site.data.keyword.objectstorageshort}} screen in the [{{site.data.keyword.slportal}}](https://control.softlayer.com/){:new_window}.
-2. Enter the search term(s) in the Search field. <br/>
+2. Enter the search term or terms in the Search field. <br/>
    **Note**: The Search field for {{site.data.keyword.objectstorageshort}} is on the middle of the screen, to the right of your current location within the cluster hierarchy.
 3. Click **Search**.
 
@@ -153,7 +154,7 @@ The system returns all containers and objects that match the search criteria whe
 
 ## Deleting an Object in a Cluster
 
-Similar to containers, users can also delete an object at any time. Like containers, folders must be completely empty prior to deletion. No restrictions are set for files.
+Similar to containers, users can also delete an object at any time. Like containers, folders must be completely empty before the deletion. No restrictions are set for files.
 
 1. Access the **{{site.data.keyword.objectstorageshort}}** screen in the [{{site.data.keyword.slportal}}](https://control.softlayer.com/){:new_window}.
 2. Scroll over the **Container Name**.
@@ -169,7 +170,7 @@ Objects can be deleted when they are no longer needed. After deleting an object,
 At any point in time, a container can be deleted from the cluster, so long as the container holds no data (files or folders). Before you can delete the container, all files and folders must also be deleted or, if they are still needed, can be copied, moved or downloaded to another location.
 
 1. Access the {{site.data.keyword.objectstorageshort}} screen on the [{{site.data.keyword.slportal}}](https://control.softlayer.com/){:new_window}.
-2. Click **Delete** . A **Delete Container** confirmation box appears.
+2. Click **Delete**. A **Delete Container** confirmation box appears.
 3. Click **Yes** to delete the container. Click **No** to cancel the request.
 
-After a container wasn deleted, it can't be retrieved. It must be re-added and all files or folders that were within the container must also be added back to the cluster.
+After a container was deleted, it can't be retrieved. It must be re-added and all files or folders that were within the container must also be added back to the cluster.
