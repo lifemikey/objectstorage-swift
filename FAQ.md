@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-07-03"
+lastupdated: "2018-07-09"
 
 ---
 {:new_window: target="_blank"}
@@ -42,7 +42,7 @@ The authentication endpoints for {{site.data.keyword.objectstorageshort}} are cl
 
 ## Can a Sub-User Access {{site.data.keyword.objectstorageshort}}?
 
-Any [{{site.data.keyword.slportal}}](https://control.softlayer.com/){:new_window} user with appropriate permissions may access and interact with {{site.data.keyword.objectstorageshort}}. If permissions have not been granted, the {{site.data.keyword.objectstorageshort}} menu option will not appear within the {{site.data.keyword.slportal}}. To grant or remove permissions for {{site.data.keyword.objectstorageshort}}, refer to [Manage an {{site.data.keyword.objectstorageshort}} User](manage-object-storage-user.html).
+Any [{{site.data.keyword.slportal}}](https://control.softlayer.com/){:new_window} user with appropriate permissions may access and interact with {{site.data.keyword.objectstorageshort}}. If permissions have not been granted, the {{site.data.keyword.objectstorageshort}} menu option will not appear within the {{site.data.keyword.slportal}}. To grant or remove permissions for {{site.data.keyword.objectstorageshort}}, refer to [Managing an {{site.data.keyword.objectstorageshort}} User](interacting-in-portal.html).
 
 ## Can a User Have Edgecast CDN and StorageLayer Permissions Granted but be Prohibited from Accessing {{site.data.keyword.objectstorageshort}}?
 
