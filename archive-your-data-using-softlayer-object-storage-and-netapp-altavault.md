@@ -5,6 +5,7 @@ copyright:
 lastupdated: "2018-07-09"
 
 ---
+{:note: .deprecated}
 {:new_window: target="_blank"}
 
 # Archiving Your Data Using {{site.data.keyword.BluSoftlayer_notm}} {{site.data.keyword.objectstorageshort}} and NetApp AltaVault 
