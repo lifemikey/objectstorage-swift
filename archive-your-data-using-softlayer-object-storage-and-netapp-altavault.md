@@ -34,7 +34,6 @@ AltaVault is considered a cloud-enabled storage appliance. It exposes a Network 
 Be aware that in archive, or cold-storage mode, AltaVault primarily uses the local disk assigned for metadata cache rather than local data cache. AltaVault also provides AES 256-bit encryption for data that is in-flight and at-rest on {{site.data.keyword.BluSoftlayer}}’s Object Store. The appliance features inline variable-length deduplication and compression, which reduces the amount of data needed to transfer and store at {{site.data.keyword.BluSoftlayer}}. Visit the [NetApp AltaVault page](http://www.netapp.com/us/products/protection-software/altavault/) for a more complete list of features and functions .
 
 Since the data replicated by AltaVault is encrypted, users cannot directly access the same data residing on the {{site.data.keyword.objectstorageshort}} through the traditional {{site.data.keyword.objectstorageshort}} REST APIs or FTP. They must use one of two methods to access the data in {{site.data.keyword.objectstorageshort}}. The first method is to use the on-premises AltaVault to read, write, and delete data to, from, and in the cloud. The second, if accessing the data remotely, is to deploy another AltaVault appliance within {{site.data.keyword.BluSoftlayer}}, import the on-premises configuration (a built-in function), and access an NFS/SMB/CIFS mount presented by the AltaVault.
-Deploy AltaVault
 
 This section describes the process of deploying the AltaVault appliance both on-premises and at {{site.data.keyword.BluSoftlayer}}. Note that AltaVault can be purchased as a physical or virtual appliance. Only the deployment of the trial version VMware vSphere ESXi-based AltaVault virtual appliance is covered.
 
@@ -43,7 +42,7 @@ This section describes the process of deploying the AltaVault appliance both on-
 
 ### Verifying the Requirements for On-Premises
 
- - Obtain a copy of the AltaVault Virtual Appliance [in Open Virtualization Appliance (OVA) format]. Contact your NetApp representative for this appliance, or download a 90-day trial version from [NetApp’s AltaVault](http://www.netapp.com/us/forms/cloud-backup-nurture-m3-offer2.aspx) website.
+ - Obtain a copy of the AltaVault Virtual Appliance [in Open Virtualization Appliance (OVA) format]. Contact your [NetApp representative](https://www.netapp.com/us/products/cloud-storage/altavault-cloud-backup.aspx) for this appliance.
  - Available existing on-premises vSphere ESXi 5.5 environment with the minimum CPU, memory, and disk space for the AltaVault appliance. If using the trial version, the requirements are four virtual CPUs (vCPUs), 24GB of memory, and up to 8TB of disk space.
  - Available 2x10Gbps Network Interface Cards (NICs) within the vSphere environment. One NIC will be used for data ingest and the other used for data replication to {{site.data.keyword.BluSoftlayer}} {{site.data.keyword.objectstorageshort}}.
  - Define two networks – replication and data access – within the vSphere environment in addition to the NICs. The replication network cannot be assigned to the same network as the data access network since it might create a loop.
