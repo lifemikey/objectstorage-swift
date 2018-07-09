@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-07-03"
+lastupdated: "2018-07-09"
 
 ---
 
@@ -24,7 +24,7 @@ The command line is a powerful and flexible method to access {{site.data.keyword
 
 >**Note** - The instructions here use version 14.04 of Ubuntu. Steps might vary depending on your distribution.
 
-1. [Access the {{site.data.keyword.objectstorageshort}} Screen](access-object-storage-screen.html)
+1. [Access the {{site.data.keyword.objectstorageshort}} Screen](interacting-in-portal.html)
 2. Click **View Credentials** (record your credentials).
 3. Access the server's command line.
 4. Install the `python-swiftclient` (this command is for Ubuntu, your distribution's commands might vary).<br/>
