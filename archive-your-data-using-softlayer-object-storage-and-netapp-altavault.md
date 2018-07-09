@@ -1,19 +1,18 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2017-10-11"
+  years: 2017, 2018
+lastupdated: "2018-07-09"
 
 ---
 {:new_window: target="_blank"}
-{:shortdesc: .shortdesc}
 
 # Archiving Your Data Using {{site.data.keyword.BluSoftlayer_notm}} {{site.data.keyword.objectstorageshort}} and NetApp AltaVault 
 
 The continued growth of large, unstructured data is fueling the consumption of storage resources. This consumption has enterprises seeking to alleviate the capital and operational costs associated with storing infrequently accessed data sets and archives on high-performance storage and or tape libraries. Items in the data sets can include email archives (per regulation), product diagrams and manuals, medical images, and other unstructured data. {{site.data.keyword.BluSoftlayer_full}} {{site.data.keyword.objectstorageshort}} is one such solution that assists with reducing costs. It offers the same durability, protection, and access of traditional, monolithic storage arrays at a much lower price point and enhanced scale.
 
 
-### Get to the Cloud
+### Getting to the Cloud
 
 One of the issues with using {{site.data.keyword.objectstorageshort}} is the current methodology of using REST APIs to ingest (i.e., upload) and access data. As a result, businesses are faced with a decision to either write scripts or applications that incorporate REST APIs to use {{site.data.keyword.objectstorageshort}}. The other option is to keep large, infrequently used data sets on expensive, in-house storage arrays. AltaVault Cloud Gateway Appliance from NetApp (formerly Riverbed SteelStore) provides enterprises another choice. Together with {{site.data.keyword.BluSoftlayer}} {{site.data.keyword.objectstorageshort}}, AltaVault lets customers effortlessly archive, manage, and serve large amounts of unstructured data. Additionally, {{site.data.keyword.BluSoftlayer}}’s pay-as-you-go pricing model and full integration with the content delivery network (CDN) provide the ability to store and distribute data in 24 geographically diverse nodes.
 
@@ -24,7 +23,7 @@ AltaVault can be deployed in two modes: archive (i.e., Cold Storage) and back up
 ![Figure 1: AltaVault end-to-end flow](/images/altavault_fig1.png)
 
 
-### AltaVault Cloud-Integrated Storage Appliance
+**AltaVault Cloud-Integrated Storage Appliance**
 
 AltaVault is considered a cloud-enabled storage appliance. It exposes a Network File System (NFS) and or Server Message Block (SMB)/Common Internet File System (CIFS) mount point on the front end. AltaVault then securely connects to {{site.data.keyword.BluSoftlayer}}’s {{site.data.keyword.objectstorageshort}} interface on the backend. Customers can simply mount or point to the aforementioned mount points and begin copying data into the cloud as shown in Figure 2.
 
@@ -39,14 +38,9 @@ Deploy AltaVault
 This section describes the process of deploying the AltaVault appliance both on-premises and at {{site.data.keyword.BluSoftlayer}}. Note that AltaVault can be purchased as a physical or virtual appliance. Only the deployment of the trial version VMware vSphere ESXi-based AltaVault virtual appliance is covered.
 
 
-## Deploy AltaVault On-Premises
+## Deploying AltaVault On-Premises
 
-The necessary steps needed to deploy AltaVault as an on-premises archive solution to {{site.data.keyword.BluSoftlayer}} {{site.data.keyword.objectstorageshort}} are listed below.
-
-
-### Requirements
-
-Verify the following requirements have been met before proceeding:
+### Verifying the Requirements for On-Premises
 
  - Obtain a copy of the AltaVault Virtual Appliance [in Open Virtualization Appliance (OVA) format]. Contact your NetApp representative for this appliance, or download a 90-day trial version from [NetApp’s AltaVault](http://www.netapp.com/us/forms/cloud-backup-nurture-m3-offer2.aspx) website.
  - Available existing on-premises vSphere ESXi 5.5 environment with the minimum CPU, memory, and disk space for the AltaVault appliance. If using the trial version, the requirements are four virtual CPUs (vCPUs), 24GB of memory, and up to 8TB of disk space.
@@ -55,7 +49,7 @@ Verify the following requirements have been met before proceeding:
  - Acquire the credentials used for {{site.data.keyword.BluSoftlayer}} {{site.data.keyword.objectstorageshort}} including the {{site.data.keyword.BluSoftlayer}} username, {{site.data.keyword.BluSoftlayer}} {{site.data.keyword.objectstorageshort}} username, and the API key associated with the {{site.data.keyword.BluSoftlayer}}username.
  - Knowledge of VMware Sphere terminology and administering vSphere ESXi environments. This knowledge includes, but is not limited to, use of the vSphere web client, vSphere client, and assignment of hardware resources including networking and storage.
 
-### Deploy AltaVault OVA
+### Deploying AltaVault OVA for On-Premises
 
 Deploy the AltaVault OVA to the vSphere environment once all the requirements have been met. Instructions for OVA deployment can be found in the [NetApp AltaVault Installation and Service Guide](https://library.netapp.com/ecm/ecm_download_file/ECMLP2317733).
 
@@ -77,7 +71,7 @@ In the example configuration we used, the AltaVault appliance uses the Primary i
 The [NetApp AltaVault Installation and Service Guide](https://library.netapp.com/ecm/ecm_download_file/ECMLP2317733) has more information on the installation of the OVA and configuration of the VM settings for the appliance.
 
 
-### Initial Configuration of the AltaVault Appliance
+### Setting up Initial Configuration of the AltaVault Appliance for On-Premises
 
 After the AltaVault VM has been configured with the appropriate hardware, you can now power on the VM. Be aware that upon first boot, the boot process will take some time as the appliance is formatting the secondary metadata cache disk.
 
@@ -98,7 +92,7 @@ After the AltaVault VM has been configured with the appropriate hardware, you ca
    Table 1: AltaVault initial configuration values
 4. Press **Enter** to save your changes. You have completed the initial configuration of the appliance and can move onto the configuration of the {{site.data.keyword.BluSoftlayer}} {{site.data.keyword.objectstorageshort}}.
 
-### Configure AltaVault for {{site.data.keyword.BluSoftlayer_notm}} {{site.data.keyword.objectstorageshort}}
+### Configuring AltaVault for {{site.data.keyword.BluSoftlayer_notm}} {{site.data.keyword.objectstorageshort}} for On-Premises
 
 The appliance will be configured to connect to {{site.data.keyword.BluSoftlayer}}’s {{site.data.keyword.objectstorageshort}} Service in this step.
 
@@ -124,7 +118,7 @@ At this point, AltaVault will attempt to contact {{site.data.keyword.BluSoftlaye
 ![Figure 6: AltaVault Optimization Service](/images/altavault_fig6.png)
 
 
-### Configure AltaVault for NFS Mount Point
+### Configuring AltaVault for NFS Mount Point
 
 Once the connection to {{site.data.keyword.BluSoftlayer}} has been established, the e0b interface needs to be configured so that an NFS/CIFS mount point can be created.
 
@@ -140,7 +134,7 @@ Once the connection to {{site.data.keyword.BluSoftlayer}} has been established, 
 9. For the client access radio buttons, it is preferable to whitelist the clients that will utilize the NFS mount point. However, you may select Allow All Clients if security is not an issue.
 10. Click Apply when done.
 
-### Mount NFS Share and Begin Transfer
+### Mounting NFS Share and Beginning Transfer
 
 You will have a minimally configured the AltaVault appliance in your on-premises environment at this point. The next step is to mount the NFS share you previously configured.
 
@@ -150,19 +144,19 @@ You will have a minimally configured the AltaVault appliance in your on-premises
 3. Use the AltaVault data interface IP address when establishing the mount.
 4. Copy/write data to the mount point once the share is mounted. AltaVault will ingest the data, deduplicate, compress, and then transfer the data to the {{site.data.keyword.BluSoftlayer}} {{site.data.keyword.objectstorageshort}} Service you previously configured.
 
-### Save the On-Premises AltaVault Configuration
+### Saving the On-Premises AltaVault Configuration
 
 Once the data is archived in {{site.data.keyword.BluSoftlayer}}’s {{site.data.keyword.objectstorageshort}} Service, the on-premises AltaVault configuration needs to be exported so that you can access the data within a {{site.data.keyword.BluSoftlayer}} environment.
 
 - Select the **Export Configuration** option within the Wizard Dashboard and click **Export Configuration** to initiate the download of the configuration of the AltaVault appliance. It is strongly recommended that you store this file in a location that can be accessed during a disaster recovery event.
 
-## Deploy AltaVault at {{site.data.keyword.BluSoftlayer_notm}}
+## Deploying AltaVault at {{site.data.keyword.BluSoftlayer_notm}}
 
 In order to access the data archived to {{site.data.keyword.BluSoftlayer}}’s {{site.data.keyword.objectstorageshort}}, you can request the files via the AltaVault appliance already located on-premises or through another AltaVault appliance located within {{site.data.keyword.BluSoftlayer}}. We will simulate a disaster recovery event at the on-premises location and will deploy another AltaVault appliance within {{site.data.keyword.BluSoftlayer}} to perform the recovery.
 
 Note the representative environment in {{site.data.keyword.BluSoftlayer}} will consist of a single ESXi host with local storage to execute and house the AltaVault appliance. The infrastructure will be representative of the basic single-site architecture consisting of a single ESXi host managed by a vCenter server within a {{site.data.keyword.BluSoftlayer}} Virtual Service Instance (VSI). Click here if you require a more substantial infrastructure with shared storage and supporting features such as vSphere High Availability (HA), data retention services (DRS), and vMotion.
 
-### Requirements
+### Verifying Requirements for {{site.data.keyword.BluSoftlayer_notm}}
 
 Before proceeding any further, verify the following requirements have been met:
 
@@ -176,7 +170,7 @@ Before proceeding any further, verify the following requirements have been met:
 - Turn off the on-premises AltaVault appliance, or Suspend Replication using the **Replication >Storage > Cloud Settings** page. The on-premises AltaVault appliance cannot be actively replicating data or connected to the container/bucket you are going to use to access the archive in {{site.data.keyword.BluSoftlayer}}.
 - Obtain a copy of the exported configuration file of the on-premises AltaVault or access it via a URL.
 
-### Order Two Portable Private Networks and Configure vSphere
+### Ordering Two Portable Private Networks and Configure vSphere
 
 AltaVault requires the network interfaces to be on different networks within an environment. Therefore, we must order two portable private networks and configure the vSphere environment so that the networks are logically segregated.
 
@@ -193,7 +187,7 @@ Next, you will need to log in to your vSphere environment and create a Virtual M
 
 ![Figure 9: {{site.data.keyword.BluSoftlayer}} ESXi Network](/images/altavault_fig9.png)
 
-### Deploy AltaVault OVA
+### Deploying AltaVault OVA for {{site.data.keyword.BluSoftlayer_notm}}
 
 Deploy the AltaVault OVA to the vSphere environment using the utility server once all of the above requirements have been met.
 
@@ -211,14 +205,14 @@ In the example configuration, the AltaVault appliance uses the Primary interface
 
 See the [NetApp AltaVault Installation and Service Guide](https://library.netapp.com/ecm/ecm_download_file/ECMP12510040){:new_window} for more information on the installation of the OVA and configuration of the VM settings for the appliance.
 
-### Initial Configuration of the AltaVault Appliance
+### Setting up Initial Configuration of the AltaVault Appliance
 
 After the AltaVault VM has been configured with the appropriate virtualized hardware, you can now power on the VM. Note that upon first boot, the boot process will take some time as the appliance is formatting the secondary metadata cache disk.
 
 1. Log in to the console using **admin** as the **Username**, and **password** as the **Password** once the appliance has completed the boot process.
 2.  After logging into the appliance, the console displays a question whether you want to use the wizard for initial configuration. Enter y.
 3. Use the information in Table 2once you have entered the wizard. 
-   <table><tbody>
+   <table>
      <tr><th>Question</th><th>Answer</th></tr>
      <tr><td>Step 1: Admin password?</td><td>Enter a new admin password</td></tr>
      <tr><td>Step 2: Hostname?</td><td>Enter the hostname you wish to use</td></tr>
@@ -228,11 +222,11 @@ After the AltaVault VM has been configured with the appropriate virtualized hard
      <tr><td>Step 6: Default gateway?</td><td>Enter the default gateway (e.g., 192.168.64.1)</td></tr>
      <tr><td>Step 7: Primary DNS server?</td><td>Enter the primary DNS server in your environment</td></tr>
      <tr><td>Step 8: Domain name?</td><td>Enter the domain name of your environment (e.g., testenv.org)</td></tr>
-   </tbody></table>    
+   </table>    
     Table 2: AltaVault Setup Wizard
 4. Press the **Enter key** to save your changes. You have completed the initial configuration of the appliance and can move onto the AltaVault configuration of the {{site.data.keyword.BluSoftlayer}} {{site.data.keyword.objectstorageshort}}.
 
-### Set Up AltaVault for {{site.data.keyword.BluSoftlayer_notm}} {{site.data.keyword.objectstorageshort}}
+### Configuring AltaVault for {{site.data.keyword.BluSoftlayer_notm}} {{site.data.keyword.objectstorageshort}}
 
 In this step, the appliance will be configured to connect to {{site.data.keyword.BluSoftlayer}}’s {{site.data.keyword.objectstorageshort}} Service. For the on-premises configuration, we used the public DNS to connect to the {{site.data.keyword.objectstorageshort}} Service. For our example, we will use the internal DNS name to connect to the service.
 
@@ -271,7 +265,7 @@ If the settings and setup are correct, you will notice the Storage Optimization 
 ![Figure 12: AltaVault Service Status](/images/altavault_fig12.png)
 
 
-### Configure AltaVault for NFS Mount Access
+### Configuring AltaVault for NFS Mount Access (for {{site.data.keyword.BluSoftlayer_notm}})
 
 Once the connection to the internal {{site.data.keyword.objectstorageshort}} server has been established, the Eth0_0 interface needs to be configured so that an NFS/SMB/CIFS mount point can be accessed. Use the following steps to configure Eth0_0.
 
@@ -286,7 +280,7 @@ You now have a minimally configured AltaVault appliance in your {{site.data.keyw
 2. Enter the command on a Linux machine in your environment (see Figure 8.
 3. Use the AltaVault data interface when establishing the mount. Once the export is mounted, you can then read data from the mount point to prove the disaster recovery capabilities of AltaVault.
 
-## Conclusion
+## Closing notes
 
 As large, unstructured data sets continue to grow, companies are seeking alternative ways to store and retain archives while lowering operational and capital expenditures. The economics of data archiving and retention become feasible with cloud {{site.data.keyword.objectstorageshort}}, but inject various hurdles involving the migration from traditional storage systems to the cloud. By using NetApp’s AltaVault Cloud-Integrated Storage Appliance, organizations can quickly realize the value of cloud {{site.data.keyword.objectstorageshort}}. It allows straightforward deployment, set up, and migration from on-premises to {{site.data.keyword.BluSoftlayer}} using the steps highlighted above.
 
