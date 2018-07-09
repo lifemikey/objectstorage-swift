@@ -137,7 +137,7 @@ After an object is uploaded to the container, metadata can be associated with th
 5. Click **Update** to add the metadata. Click **Cancel** to cancel the action.
 
 
-After adding metadata to a file, files can be located more easily, and metadata values can also be searched when trying to locate a file using [{{site.data.keyword.objectstorageshort}} search functionality](search-within-cluster.html). More than one set of metadata can be added. Repeat the steps above to add additional metadata to the same file.
+After adding metadata to a file, files can be located more easily, and metadata values can also be searched when trying to locate a file using {{site.data.keyword.objectstorageshort}} search functionality. More than one set of metadata can be added. Repeat the steps above to add additional metadata to the same file.
 
 
 ## Searching within a Cluster
@@ -168,7 +168,7 @@ Objects can be deleted when they are no longer needed. After deleting an object,
 
 At any point in time, a container can be deleted from the cluster, so long as the container holds no data (files or folders). Before you can delete the container, all files and folders must also be deleted or, if they are still needed, can be copied, moved or downloaded to another location.
 
-1. Access the {{site.data.keyword.objectstorageshort}} screen on the [{{site.data.keyword.slportal}}](https://control.softlayer.com/){:new_window}. Refer to [Access the {{site.data.keyword.objectstorageshort}} Screen](access-object-storage-screen.html).
+1. Access the {{site.data.keyword.objectstorageshort}} screen on the [{{site.data.keyword.slportal}}](https://control.softlayer.com/){:new_window}.
 2. Click **Delete** . A **Delete Container** confirmation box appears.
 3. Click **Yes** to delete the container. Click **No** to cancel the request.
 
