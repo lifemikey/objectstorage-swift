@@ -2,11 +2,11 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-10-11"
+lastupdated: "2018-07-09"
 
 ---
 {:new_window: target="_blank"}
-{:shortdesc: .shortdesc}
+
 
 # Viewing and Editing {{site.data.keyword.objectstorageshort}} OpenStack Swift File Details
 
