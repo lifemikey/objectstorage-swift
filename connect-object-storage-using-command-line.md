@@ -5,7 +5,7 @@ copyright:
 lastupdated: "2018-07-09"
 
 ---
-
+{:note: .deprecated}
 {:codeblock: .codeblock} 
 {:pre: .pre}
 {:new_window: target="_blank"}
