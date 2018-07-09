@@ -2,11 +2,10 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-05-15"
+lastupdated: "2018-07-09"
 
 ---
 {:new_window: target="_blank"}
-{:shortdesc: .shortdesc}
 
 # Deleting an Object in a Cluster
 
