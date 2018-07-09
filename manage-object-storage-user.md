@@ -2,11 +2,10 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-12-15"
+lastupdated: "2018-07-09"
 
 ---
 {:new_window: target="_blank"}
-{:shortdesc: .shortdesc}
 
 # Managing {{site.data.keyword.objectstorageshort}} OpenStack Swift User Permissions
 
