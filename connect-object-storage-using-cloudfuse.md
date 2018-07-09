@@ -38,7 +38,7 @@ lastupdated: "2018-07-09"
    which cloudfuse => /usr/local/bin/cloudfuse
    ```
 
-Before you can mount your {{site.data.keyword.objectstorageshort}} account, you need to create a file in your home directory with your {{site.data.keyword.Bluemix} {{site.data.keyword.objectstorageshort}} account details. The file must be named `.cloudfuse` and contain the following information.
+Before you can mount your {{site.data.keyword.objectstorageshort}} account, you need to create a file in your home directory with your {{site.data.keyword.Bluemix}} {{site.data.keyword.objectstorageshort}} account details. The file must be named `.cloudfuse` and contain the following information.
 
 ```
 username=[your username]
