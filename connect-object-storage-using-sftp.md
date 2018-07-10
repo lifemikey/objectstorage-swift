@@ -1,21 +1,22 @@
 ---
 
 copyright:
-  years: 2017
-lastupdated: "2017-10-11"
+  years: 2017, 2018
+lastupdated: "2018-07-10"
 
 ---
 {:new_window: target="_blank"}
-{:shortdesc: .shortdesc}
 
-# Connecting to {{site.data.keyword.objectstorageshort}} OpenStack Swift using SFTP
 
-In order to connect to {{site.data.keyword.objectstorageshort}} using SFTP, you will need the below login information.
+# Connecting to {{site.data.keyword.objectstorageshort}} OpenStack Swift with SFTP
+
+To connect to {{site.data.keyword.objectstorageshort}} using SFTP, you need the following login information.
 
 - Protocol - SFTP 
 - Port - 22
-- Host Name - (dc endpoint).objectstorage.softlayer.net
-- Username - SLOS(accountID)-2:(portal username) <br/> Note: This may also start with IBMOS in some cases, please check the Object Storage page in the [{{site.data.keyword.slportal}}](https://control.softlayer.com/){:new_window} to see which you should use.
+- Host name - `(dc endpoint).objectstorage.softlayer.net`
+- User name - SLOS(account ID)-2:(portal user name) 
+  **Note** - The user name can also start with IBMOS in some cases. Check the Object Storage page in the [{{site.data.keyword.slportal}}](https://control.softlayer.com/){:new_window} to confirm.
 - Password - (API Key)
 
-To see what endpoint you will want to use, please see what our [{{site.data.keyword.objectstorageshort}} authentication endpoints](FAQ.html) are.
+For more information about available endpoints, see the [{{site.data.keyword.objectstorageshort}} authentication endpoints](FAQ.html).
