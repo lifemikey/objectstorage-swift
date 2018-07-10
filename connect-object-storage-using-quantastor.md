@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-07-09"
+lastupdated: "2018-07-10"
 
 ---
 {:new_window: target="_blank"}
@@ -11,11 +11,10 @@ lastupdated: "2018-07-09"
 
 # Connecting to {{site.data.keyword.objectstorageshort}} OpenStack Swift with QuantaStor 
 
-The QuantaStor appliance available from {{site.data.keyword.BluSoftlayer_full}} offers a more permanent solution for accessing your {{site.data.keyword.objectstorageshort}} account. The QuantaStor appliance acts as a storage gateway and allows you to create nfs/cifs endpoints from your {{site.data.keyword.objectstorageshort}} clusters. The endpoints can then be mounted and accessed like any other nfs/cifs share. The QuantaStor appliance uses the S3QL Python library to access your {{site.data.keyword.objectstorageshort}} account and shares many of the same features, such as data-deduplication, encryption, and compression. The QuantaStor appliance also provides the ability to schedule backups and push them to your {{site.data.keyword.objectstorageshort}} account.
+The QuantaStor appliance available from {{site.data.keyword.BluSoftlayer_full}} offers a more permanent solution for accessing your {{site.data.keyword.objectstorageshort}} account. The QuantaStor appliance acts as a storage gateway so you can create nfs/cifs endpoints from your {{site.data.keyword.objectstorageshort}} clusters. The endpoints can then be mounted and accessed like any other nfs/cifs share. The QuantaStor appliance uses the S3QL Python library to access your {{site.data.keyword.objectstorageshort}} account and shares many of the same features, such as data-deduplication, encryption, and compression. With the QuantaStor appliance, you can also schedule backups and push them to your {{site.data.keyword.objectstorageshort}} account.
 
-**Advantages and Disadvantages of using QuantaStor**
-- Advantages - GUI, advanced features (encryption, compression, dedup, local caching), scheduled backup of volumes to {{site.data.keyword.objectstorageshort}}.
-- Disadvantages - {{site.data.keyword.objectstorageshort}} containers cannot be shared by multiple hosts, configuration options are lacking (defaults are assumed by QuantaStor).
+- Advantages - GUI; advanced features (encryption, compression, deduplication, local caching); scheduled backup of volumes to {{site.data.keyword.objectstorageshort}}.
+- Disadvantages - {{site.data.keyword.objectstorageshort}} containers cannot be shared by multiple hosts; configuration options are lacking (defaults are assumed by QuantaStor).
 
 QuantaStor works great for integrated solutions, automated backups to the cloud, and permanent storage mounts.
 	
