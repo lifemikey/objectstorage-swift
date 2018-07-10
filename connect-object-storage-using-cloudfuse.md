@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-07-09"
+lastupdated: "2018-07-10"
 
 ---
 {:new_window: target="_blank"}
@@ -10,7 +10,7 @@ lastupdated: "2018-07-09"
 
 # Connecting to {{site.data.keyword.objectstorageshort}} OpenStack Swift by using Cloudfuse
 
-{{site.data.keyword.BluSoftlayer}}'s {{site.data.keyword.objectstorageshort}} product can be mounted in Linux or Windows, and navigated as a native directory. While you can interact with your {{site.data.keyword.objectstorageshort}} containers similar to a native file/folder structure; it isn't recommended to run programs from this mount point.
+{{site.data.keyword.BluSoftlayer}}'s {{site.data.keyword.objectstorageshort}} product can be mounted in Linux or Windows, and navigated as a native directory. While you can interact with your {{site.data.keyword.objectstorageshort}} containers similar to a native file/folder structure. It's not recommended to run programs from this mount point.
 
 1. Download the `cloudfuse` files.
    ```
@@ -46,12 +46,12 @@ api_key=[key or password string]
 authurl=https://dal05.objectstorage.softlayer.net/auth/v1.0/
 ```
 
-**Note** - Your `authurl` is dependent on the location of your {{site.data.keyword.objectstorageshort}}.
+**Note** - Your `authurl` depends on the location of your {{site.data.keyword.objectstorageshort}}.
 
-You can set more option for the {{site.data.keyword.objectstorageshort}} mount. These options are located under the **USE:** section in the README file found in the cloudfuse tar file. A common option is the following setting.
+You can set more option for the {{site.data.keyword.objectstorageshort}} mount. These options are located under the **USE:** section in the `README` file found in the cloudfuse `.tar` file. A common option is the following setting.
 
 ```
 cache_timeout
 ```
 
-This option sets the duration of directory caching, the default is 600 seconds.
+This option sets the duration of directory caching. The default is 600 seconds.
