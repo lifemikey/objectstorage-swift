@@ -16,40 +16,47 @@ The {{site.data.keyword.BluSoftlayer_full}} QuantaStor platform includes the abi
 ## Adding Cloud Credential to QuantaStor
 
 1. In the QuantStor Web Administration, select the Cloud Container Tab. Then, right-click in the Cloud Storage Provider window, and select **Add Credentials**.<br/>![Add Credentials](/images/add_credentials.png)
-2. Select `Softlayer Object Storage`in the **Cloud Provider** list, then enter the account credentials into the appropriate fields.
+2. Select `Softlayer Object Storage`in the **Cloud Provider** list, Then, enter the account credentials into the appropriate fields.
 3. The {{site.data.keyword.objectstorageshort}} account information that is needed for the configuration can be obtained from the [{{site.data.keyword.slportal}}](https://control.softlayer.com/){:new_window}.
     1. Select **{{site.data.keyword.objectstorageshort}}** from the Storage menu.
     2. The {{site.data.keyword.objectstorageshort}} accounts are listed under the SL Master account, and you can also order another {{site.data.keyword.objectstorageshort}} account. All {{site.data.keyword.objectstorageshort}} accounts that are requested by child accounts under the Master Account are visible to and accessible by all other child accounts. Ensure that only the appropriate {{site.data.keyword.objectstorageshort}} account is used.
-    3. Select a {{site.data.keyword.objectstorageshort}} account, then select the data center for where the Backup data sis to be stored.
-    4. The {{site.data.keyword.objectstorageshort}} Data Center Cluster screen provides statistics on the usage within the account.
-    5. Click on **View Credentials** to get the account data needed for the QuantaStor configuration.
+    3. Select a {{site.data.keyword.objectstorageshort}} account. Then, select the data center where the backup data is to be stored.
+    4. The {{site.data.keyword.objectstorageshort}} data center cluster screen provides statistics on the usage within the account.
+    5. Click **View Credentials** to get the account data needed for the QuantaStor configuration.
 
 ## Creating a Cloud Container
 
-1. When the {{site.data.keyword.objectstorageshort}} credential is added, it appears under the **Cloud Storage Providers** pane in the **QuantaStor Cloud Containers** tab. Right-click on the **credential**, and select **Create Cloud Container**.<br/>![Cloud Container](/images/cloud_container.png)
-2. Enter **Name** and **Description** of the Cloud Container. Select which data center to use for backups. After the Container is created, the **Container Name** appears under the credentials in the **Cloud Storage Provider** window.
-   **Note** - The **Enable NFS/CFS Access** check box needs to be  selected for backups. <br/> ![Enabling NFS/CFS Access](/images/NFS_CFS.png)
+1. When the {{site.data.keyword.objectstorageshort}} credential is added, it appears under the **Cloud Storage Providers** pane in the **QuantaStor Cloud Containers** tab. Right-click the **credential**, and select **Create Cloud Container**.<br/>![Cloud Container](/images/cloud_container.png)
+2. Enter **Name** and **Description** of the Cloud Container. Select which data center to use for the backup. After the Container is created, the **Container Name** appears under the credentials in the **Cloud Storage Provider** window.
+   **Note** - The **Enable NFS/CFS Access** check box needs to be selected for backups. <br/> ![Enabling NFS/CFS Access](/images/NFS_CFS.png)
 
 ## Configuring the Backup Policy
 
-The cloud container that was created in the previous step now appears as one of the network shares in the **Storage Management** tab. The cloud container network share acts like a Network Attached Storage (NAS) to {{site.data.keyword.objectstorageshort}} gateway based on the CloudFuse opensource gateway. It is allocated on the QuantaStor boot disk and is limited to 500 MB cache. This is significant if files that are being backed up exceed this size.<br/> ![Backup](/images/backup.png)
+The cloud container that was created in the previous step now appears as one of the network shares in the **Storage Management** tab. The cloud container network share acts like a "network-attached storage (NAS) to {{site.data.keyword.objectstorageshort}} gateway" based on the CloudFuse open source gateway. It is allocated on the QuantaStor boot disk and is limited to 500 MB cache. This limit is significant if files that are being backed up exceed this size.<br/> ![Backup](/images/backup.png)
 
-2. Right click the cloud storage gateway network share, and select **Create Backup Policy**.
+2. Right-click the cloud storage gateway network share, and select **Create Backup Policy**.
    >**Note** - The backup engine is not specifically for cloud storage. It can be configured to back up any NAS file system to any other NAS file system. 
-3. Select the could container network share as the location. Then, select the days and times when backup is to be completed.
-4. Under remote CIFS/NFS source, select the IP address of the remote server and click the **SCAN** button. The **CIFS/NFS Export field** pull down will be populated with the NAS Exports visible from the designated device. If the NAS server is a remote device, the QuantaStor host will need to have been given permission to access the device. In this example, the NAS file system has been set to public, but security controls using A/D domain or local QuantaStor users database can also be configured.
+3. Select the cloud container network share as the location. Then, select the days and times when backup is to be completed.
+4. Under remote CIFS/NFS source, select the IP address of the remote server and click **SCAN**. The **CIFS/NFS Export field** is populated with the NAS exports that are visible from the designated device. If the NAS server is a remote device, the QuantaStor host needs to have permission to access the device. The NAS file system can be set to public, but security controls can also be configured by using the AD domain or local QuantaStor users database.
 
 ## Configuring Advanced Settings
 
-Under Advanced Settings options are available for Backup Mode: All Files (Mirror) or Sliding Backup Window.
+**Backup Mode**
+ - **All Files (Mirror)** - all changes to the source system are reflected in the backup at the next time the backup process runs. For example, if the file is deleted on the source, it is purged from the backup based on the purge policy. 
+ - **Sliding Backup Window** - only those files that were created or modified during the retention period are backed up.
 
- - For All Files, all changes to the source system are reflected in the back up at the next back up –e.g., if the file is deleted on the source, it will purged from the backup based on the purge policy. Purge never can be used to maintain all copied of all files forever.
- - For Sliding Backup Window, only those files created or modified during the retention period will be backed up.
- - Retention period is the time file backups will be retained in the NAS/Cloud storage repository. Also affects the which files are backed up if the Sliding Backup Window is used.
- - Start Date allows policy to be configured but not go into effect until some future date.
- - Backup Concurrency controls the number of simultaneous file copy threads used to backup the data. Five settings are available. For Backups to the NAS – {{site.data.keyword.objectstorageshort}} gateway, care should be used with parallel backups. The NAS/Cloud gateway cache is only 500 MB and highly parallelized backups could fill up the cache faster than the data can be uploaded into {{site.data.keyword.objectstorageshort}}.
- - Purge Policy - controls handling of files in the backup. Four settings are available:
-    - Never Purge – All Backup copies are permanently maintained in the object storage.
-    - Purge Expired & Deleted After Backup – Any files whose retention policy has expired or which were deleted from the primary source are deleted immediately following the backup.
-    - Purge Expired/Deleted File Daily – Candidate files are deleted once per day. If the backup does not run on a daily basis, only expired files will be purged until the next backup detects the files which have been deleted from the primary.
-    - Purge Expired/Deleted File Weekly– Candidate files are deleted once per week. Expired files and files deleted from the primary will be retained in the back up until 1 week after their deletion was detected in a backup.
+**Retention Period**
+ - Retention period is the time when file backups are retained in the NAS/Cloud storage repository. It also affects which files are backed up, if the sliding backup window is used.
+ 
+**Start Date**
+ - By using a start date in the future, you can configure the backup policy now to come into effect later.
+ 
+**Backup Concurrency**
+ - Backup Concurrency controls the number of simultaneous file copy threads that are used to back up the data. Five settings are available. You need to be careful if you run parallel backups through the NAS – {{site.data.keyword.objectstorageshort}} gateway. The NAS/Cloud gateway cache is only 500 MB and highly parallelized backups might fill up the cache faster than the data can be uploaded into {{site.data.keyword.objectstorageshort}}.
+ 
+**Purge Policy**
+ - The purge policy controls handling of files in the backup. Four settings are available:
+    - **Never Purge** – All backup copies are permanently maintained in the {{site.data.keyword.objectstorageshort}}.
+    - **Purge Expired and Deleted After Backup** – Any files whose retention policy expired, or which were deleted from the primary source are deleted immediately following the backup.
+    - **Purge Expired/Deleted File Daily** – Candidate files are deleted once a day. If the backup does not run daily, only expired files are purged until the next backup detects the files, which were deleted from the primary.
+    - **Purge Expired/Deleted File Weekly**– Candidate files are deleted once per week. Expired files and files that were deleted from the primary are retained in the backup for one week after their deletion is detected in a backup.
