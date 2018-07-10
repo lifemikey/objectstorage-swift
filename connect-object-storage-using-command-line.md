@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-07-09"
+lastupdated: "2018-07-10"
 
 ---
 {:note: .deprecated}
@@ -12,7 +12,7 @@ lastupdated: "2018-07-09"
 
 # Connecting to {{site.data.keyword.objectstorageshort}} OpenStack Swift by using the Command Line
 
-{{site.data.keyword.BluSoftlayer_full}} {{site.data.keyword.objectstorageshort}} provides a low-cost storage solution that can be used for many applications. Unlike {{site.data.keyword.filestorage_short}} and {{site.data.keyword.blockstorageshort}}, {{site.data.keyword.objectstorageshort}} manages data as objects. Each object includes the data itself, some metadata, and a globally unique identifier. For more information about the right storage solution for your application, read [which storage solution is best for your project?](http://blog.softlayer.com/2014/which-storage-solution-best-your-project){:new_window}. 
+{{site.data.keyword.BluSoftlayer_full}} {{site.data.keyword.objectstorageshort}} provides a low-cost storage solution that can be used for many applications. Unlike {{site.data.keyword.filestorage_short}} and {{site.data.keyword.blockstorageshort}}, {{site.data.keyword.objectstorageshort}} manages data as objects. Each object includes the data itself, some metadata, and a globally unique identifier.
 
 The command line is a powerful and flexible method to access {{site.data.keyword.objectstorageshort}}. There are several tools that can be installed and used from a Linux terminal. A common package is the [`python-swiftclient`](https://pypi.python.org/pypi/python-swiftclient). 
 
