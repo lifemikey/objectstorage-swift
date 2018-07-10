@@ -108,7 +108,7 @@ You can create a {{site.data.keyword.Bluemix_short}} application, make some edit
  2. Select **Storage** > **{{site.data.keyword.objectstorageshort}}**. Find your device, and click the **View Credentials** link.<br/>
     ![Figure 7. Account Credentials](/images/bluemix_fig7.png)
  
- 3. Make note of your **User name** and **API Key**.
+ 3. Make note of your user name and API Key.
  
  4. Restore the {{site.data.keyword.jazzhub_short}} window and input your credentials (see screen capture in Step 14, lines 45, 47, and 48).
     ```
