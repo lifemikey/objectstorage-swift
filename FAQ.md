@@ -2,14 +2,14 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-07-09"
+lastupdated: "2018-08-08"
 
 ---
 {:new_window: target="_blank"}
 {:note: .deprecated}
 
 
-# {{site.data.keyword.cloud_notm}} {{site.data.keyword.objectstorageshort}} OpenStack Swift - Frequently Asked Questions
+# FAQs
 
 ## What Are the {{site.data.keyword.objectstorageshort}} Authentication Endpoints on the Public and Private Networks?
 
