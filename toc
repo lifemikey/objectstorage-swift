@@ -1,7 +1,7 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="objectstorage-swift" audience="services" arm="361" href="/docs/infrastructure/objectstorage-swift/index.html"}
+{: .toc subcollection="objectstorage-swift" audience="services" arm="361" href="/docs/infrastructure/objectstorage-swift/index.html" path="infrastructure/objectstorage-swift"}
 IBM Cloud Storage - Object Storage OpenStack Swift
 
     {: .navgroup id="learn"}
