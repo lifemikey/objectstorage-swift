@@ -47,7 +47,7 @@ The {{site.data.keyword.BluSoftlayer_full}} QuantaStor platform includes the abi
 
 ## Configuring the backup policy
 
-The cloud container that was created in the previous step now appears as one of the network shares in the **Storage Management** tab. The cloud container network share acts like a "network-attached storage (NAS) to {{site.data.keyword.objectstorageshort}} gateway" based on the CloudFuse open source gateway. It is allocated on the QuantaStor boot disk and is limited to 500-MB cache. This limit is significant if files that are being backed up exceed this size.<br/> ![backup](/images/backup.png)
+The cloud container that was created in the previous step now appears as one of the network shares in the **Storage Management** tab. The cloud container network share acts like a "network-attached storage (NAS) to {{site.data.keyword.objectstorageshort}} gateway" based on the CloudFuse open source gateway. It is allocated on the QuantaStor boot disk and is limited to 500-MB cache. This limit is significant if files that are being backed up exceed this size.<br/> ![Backup](/images/backup.png)
 
 2. Right-click the cloud storage gateway network share, and select **Create backup Policy**.
 
