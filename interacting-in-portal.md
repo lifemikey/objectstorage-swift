@@ -175,7 +175,7 @@ Similar to containers, users can also delete an object at any time. Like contain
 Objects can be deleted when they are no longer needed. After an object is deleted, it can't be retrieved.
 
 
-# Deleting a Container
+## Deleting a Container
 
 At any point in time, a container can be deleted from the cluster, while the container holds no data (files or folders). Before you can delete the container, all files and folders must be deleted or, if they are still needed, they can be copied, moved, or downloaded to another location.
 
