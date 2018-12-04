@@ -108,7 +108,7 @@ Adding an object (file) in the {{site.data.keyword.slportal}} allows the user to
 5. Click **Add** to upload the selected file. Click **Cancel** to cancel the upload.
 
 Due to the {{site.data.keyword.slportal}} upload's size limit of 20 MB, you might consider other means to upload larger files. For more information, see the following instructions.
-- [Connecting to {{site.data.keyword.objectstorageshort}} OpenStack Swift by using the Command Line](connect-object-storage-using-command-line.html)
+- [Connecting to {{site.data.keyword.objectstorageshort}} OpenStack Swift by using the command-line](connect-object-storage-using-command-line.html)
 - [Connecting to {{site.data.keyword.objectstorageshort}} OpenStack Swift by using Cyberduck](connect-object-storage-using-cyberduck.html)
 - [Connecting to {{site.data.keyword.objectstorageshort}} OpenStack Swift by using WinSCP](connect-object-storage-using-winscp.html)
 
@@ -117,7 +117,7 @@ Due to the {{site.data.keyword.slportal}} upload's size limit of 20 MB, you migh
 After an object is added, it can be accessed at any time from your {{site.data.keyword.objectstorageshort}} account. To access an object, simply click the file or folder name. Files might be downloaded according to browser settings, while folders are opened to show an extra level of objects.
 
 
-## Viewing and Editing File Details
+## Viewing and editing file details
 
 After a file was added, details regarding the file can be viewed and edited at any time.
 
@@ -128,7 +128,7 @@ After a file was added, details regarding the file can be viewed and edited at a
 4. Select one of the following options and follow the corresponding instructions based on the action to be completed for the file:
 <table>
   <caption><Table 1 shows the Actions on the left and the steps that you need to take for each action on the right.>
-<tr><th>Action</th><th>Steps to Complete</th></tr>
+<tr><th>Action</th><th>Steps to complete</th></tr>
 <tr><td>Copy</td><td><li>Select <strong>Copy</strong> from the <strong>Actions</strong> list.</li><li>Select a location to copy the file from the <strong>Browse Locations</strong> window.</li><li>Click <strong>Copy</strong> to copy the file. Click <strong>Cancel</strong> to cancel the action.</li></td></tr>
 <tr><td>Move</td><td><li>Select <strong>Move</strong> from the <strong>Actions</strong> list.</li><li>Select the location to move the file from the <strong>Browse Locations</strong> window.</li><li>Click <strong>Move</strong> to move the file to its new location. Click <strong>Cancel</strong> to cancel the action.</li></td></tr>
 <tr><td>Download</td><td><li>Select <strong>Download</strong> from the <strong>Actions</strong> list. The file is downloaded to your system in accordance with your browser's settings.</li></td></tr>

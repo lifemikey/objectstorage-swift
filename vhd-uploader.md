@@ -56,7 +56,7 @@ The idea behind this script is to walk you through the process of uploading a fi
 
 3. Select the container that you want to upload to and the script begins uploading the VHD to {{site.data.keyword.objectstorageshort}}.
 
-If you prefer the command line arguments approach, you can pass in arguments to this script too. The signature is slightly different since all the opinions are optional.
+If you prefer the command-line arguments approach, you can pass in arguments to this script too. The signature is slightly different since all the opinions are optional.
 
 `$ python ObjectStorageUpload.py -f myOS.vhd -t 'myContainer/myOS.vhd' -u 'SLOS1234-1:SL1234'`
 

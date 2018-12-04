@@ -17,13 +17,13 @@ lastupdated: "2018-12-03"
 {:DomainName: data-hd-keyref="APPDomain"}
 {:DomainName: data-hd-keyref="DomainName"}
 
-# Connecting to {{site.data.keyword.objectstorageshort}} with the Command Line
+# Connecting to {{site.data.keyword.objectstorageshort}} with the command-line
 
 {{site.data.keyword.BluSoftlayer_full}} {{site.data.keyword.objectstorageshort}} provides a low-cost storage solution that can be used for many applications. Unlike {{site.data.keyword.filestorage_short}} and {{site.data.keyword.blockstorageshort}}, {{site.data.keyword.objectstorageshort}} manages data as objects. Each object includes the data itself, some metadata, and a globally unique identifier.
 
-The command line is a powerful and flexible method to access {{site.data.keyword.objectstorageshort}}. Several tools can be installed and used from a Linux terminal. A common package is the [`python-swiftclient` ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://pypi.python.org/pypi/python-swiftclient).
+The command-line is a powerful and flexible method to access {{site.data.keyword.objectstorageshort}}. Several tools can be installed and used from a Linux terminal. A common package is the [`python-swiftclient` ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://pypi.python.org/pypi/python-swiftclient).
 
-**Advantages and disadvantages of using the command line**
+**Advantages and disadvantages of using the command-line**
 - Disadvantages include no advanced features (such as encryption, or compression), and no graphical interface.
 - Advantages are that large files (bigger than 5 GB) and file segmentation are supported.
 
@@ -34,7 +34,7 @@ The instructions use version 14.04 of Ubuntu. Steps can vary depending on your d
 
 1. [Access the {{site.data.keyword.objectstorageshort}} Screen](interacting-in-portal.html)
 2. Click **View Credentials** to view and record your credentials.
-3. Access the server's command line.
+3. Access the server's command-line.
 4. Install the `python-swiftclient`. This command is for Ubuntu, your distribution's commands might vary.<br/>
    ```
    apt-get install python-swiftclient

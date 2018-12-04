@@ -248,8 +248,8 @@ After the AltaVault VM is configured with the appropriate virtualized hardware, 
 3. In the wizard, use the information in Table 2.
    <table>
      <tr><th>Question</th><th>Answer</th></tr>
-     <tr><td>Step 1. `Admin password?``</td><td>Enter a new admin password</td></tr>
-     <tr><td>Step 2. `Host name? </td><td>Enter the host name that you want to use</td></tr>
+     <tr><td>Step 1. `Admin password?`</td><td>Enter a new admin password</td></tr>
+     <tr><td>Step 2. `Host name?`</td><td>Enter the host name that you want to use</td></tr>
      <tr><td>Step 3. `Use DHCP on primary interface?`</td><td>Enter n</td></tr>
      <tr><td>Step 4. `Primary IP address?`</td><td>Enter the primary network IP address.  In our configuration, this is the network that is used for cloud replication and appliance management (for example, 192.168.64.5)</td></tr>
      <tr><td>Step 5. `Netmask?`</td><td>Enter the netmask (for example, 255.255.255.0)</td></tr>
