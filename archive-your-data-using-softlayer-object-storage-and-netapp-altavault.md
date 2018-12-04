@@ -212,7 +212,7 @@ AltaVault requires the network interfaces to be on different networks within an 
 5. Click **Continue** and complete the requested information on the next screen, and click **Place Order**. The creation of the IP addresses is quick and can be displayed by selecting **Network > IP Management > Subnets**. These are the addresses to be used for your VMs that you plan to place in the default virtual machine port group.
 6. Repeat this process so that you have two portable private IP address subnets.
 
-   Keep track of the IP assignments. You can keep track by clicking on the **Notes** section of the IP address and entering the hostname or description of the machine assigned to the IP address.
+   Keep track of the IP assignments. You can keep track by clicking the **Notes** section of the IP address and entering the hostname or description of the machine assigned to the IP address.
    {:important}
 
 Next, log in to your vSphere environment and create a VM port group to reflect the addition of the portable IP block. In our environment, we created a VM port group that is labeled **Share Network** to denote that it is going to be used for `Eth0_0` to export an NFS mount point.
