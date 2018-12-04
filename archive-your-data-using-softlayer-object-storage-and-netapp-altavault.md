@@ -186,7 +186,7 @@ Note the representative environment in {{site.data.keyword.BluSoftlayer}} consis
 
 ### Verifying Requirements for {{site.data.keyword.BluSoftlayer_notm}}
 
-Before you proceed any further, verify the following requirements are met:
+Before you proceed any further, verify that the following requirements are met.
 
 - Make sure that your environment consists of a single ESXi host that is managed by a vCenter server within a {{site.data.keyword.BluSoftlayer}} VSI or matches the [Advanced Single-Site VMware Reference Architecture ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://{DomainName}/docs/infrastructure/virtualization/advanced-single-site-vmware-reference-architecturesoftlayer.html){:new_window}.
 - Obtained a copy of AltaVault Virtual Appliance (in OVA format) and it resides on the utility server (which was provisioned when you were setting up the previously mentioned VMware environment). Contact your NetApp representative for this appliance, or download a 90-day trial version on NetApp’s AltaVault website.
