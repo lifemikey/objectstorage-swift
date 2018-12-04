@@ -37,7 +37,7 @@ The {{site.data.keyword.BluSoftlayer_full}} QuantaStor platform includes the abi
 ## Creating a Cloud Container
 
 1. When the {{site.data.keyword.objectstorageshort}} credential is added, it appears under the **Cloud Storage Providers** pane in the **QuantaStor Cloud Containers** tab. Right-click the **credential**, and select **Create Cloud Container**.<br/>![Cloud Container](/images/cloud_container.png)
-2. Enter **Name** and **Description** of the Cloud Container. Select the data center you want to use for the backup. After the Container is created, the **Container Name** appears under the credentials in the **Cloud Storage Provider** window.
+2. Enter **Name** and **Description** of the Cloud Container. Select the data center that you want to use for the backup. After the Container is created, the **Container Name** appears under the credentials in the **Cloud Storage Provider** window.
 
    The **Enable NFS/CFS Access** check box needs to be selected for backups.
    {:important}
