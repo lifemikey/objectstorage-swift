@@ -25,7 +25,7 @@ Being able to import and deploy your own instance by using a custom VHD or ISO i
 You can access the [{{site.data.keyword.objectstorageshort}} Screen](interacting-in-portal.html) and click **View Credentials** to see your credentials.
 {:tip}
 
-1. Authenticate against the specific ObjectStorage cluster you want to interact with.
+1. Authenticate against the specific [{{site.data.keyword.objectstorageshort}} cluster you want to interact with.
    - Run the following command to authenticate against the Dallas {{site.data.keyword.objectstorageshort}} Cluster, substituting your own {{site.data.keyword.objectstorageshort}} credentials.
 
    ```
