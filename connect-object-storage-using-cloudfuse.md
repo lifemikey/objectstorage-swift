@@ -19,7 +19,7 @@ lastupdated: "2018-12-03"
 
 # Connecting to {{site.data.keyword.objectstorageshort}} with Cloudfuse
 
-{{site.data.keyword.BluSoftlayer}}'s {{site.data.keyword.objectstorageshort}} product can be mounted in Linux or Windows, and navigated as a native directory. You can interact with your {{site.data.keyword.objectstorageshort}} containers similar to a native file/folder structure. However, it's not recommended to run programs from this mount point.
+{{site.data.keyword.BluSoftlayer}}'s {{site.data.keyword.objectstorageshort}} product can be mounted in Linux or Windows, and navigated as a native directory. You can interact with your {{site.data.keyword.objectstorageshort}} containers similar to a native file and folder structure. However, it is not recommended to run programs from this mount point.
 
 1. Download the `cloudfuse` files.
    ```
@@ -58,7 +58,7 @@ authurl=https://dal05.objectstorage.softlayer.net/auth/v1.0/
 Your `authurl` depends on the location of your {{site.data.keyword.objectstorageshort}}.
 {:tip}
 
-You can set more option for the {{site.data.keyword.objectstorageshort}} mount. These options are located under the **USE:** section in the `README` file found in the cloudfuse `.tar` file. A common option is the following setting.
+You can set more option for the {{site.data.keyword.objectstorageshort}} mount. These options are located under the `USE:` section in the `README` file found in the `cloudfuse .tar` file. A common option is the following setting.
 
 ```
 cache_timeout
