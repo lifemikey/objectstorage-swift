@@ -96,7 +96,7 @@ After the AltaVault VM is configured with the appropriate hardware, you can powe
    <table>
      <tr><th>Question</th><th>Answer</th></tr>
      <tr><td>Step 1. `Admin password?`</td><td>Enter a new admin password</td></tr>
-     <tr><td>Step 2. `Hostname?`</td><td>Enter the host name that you want to use</td></tr>
+     <tr><td>Step 2. `Host name?`</td><td>Enter the host name that you want to use</td></tr>
      <tr><td>Step 3. `Use DHCP on primary interface?`</td><td>Enter n</td></tr>
      <tr><td>Step 4. `Primary IP address?`</td><td>Enter the primary network IP address.  In our configuration, this is the network that is used for cloud replication and appliance management (for example, 192.168.64.5)</td></tr>
      <tr><td>Step 5. `Netmask?`</td><td>Enter the netmask (for example, 255.255.255.0)</td></tr>
@@ -119,9 +119,9 @@ After the AltaVault VM is configured with the appropriate hardware, you can powe
 7. Select **{{site.data.keyword.BluSoftlayer}} {{site.data.keyword.objectstorageshort}}** from the **Provider** menu on the **Cloud Settings Wizard**.
 8. Select the **{{site.data.keyword.objectstorageshort}} Region** within {{site.data.keyword.BluSoftlayer}} that you want to use.
 
-   Not all regions are displayed (for example, Melbourne). However, the host name of the {{site.data.keyword.objectstorageshort}} Service can be modified by using the host name field. For example, if you want to use Melbourne as the region, you can select San Jose 1 from the menu and modify the hostname field to `mel01.objectstorage.softlayer.net`.
+   Not all regions are displayed (for example, Melbourne). However, the host name of the {{site.data.keyword.objectstorageshort}} Service can be modified by using the host name field. For example, if you want to use Melbourne as the region, you can select San Jose 1 from the menu and modify the host name field to `mel01.objectstorage.softlayer.net`.
    {:note}
-9. Enter the {{site.data.keyword.objectstorageshort}} user name and {{site.data.keyword.BluSoftlayer}} user name in the **User name** field.
+9. Enter the {{site.data.keyword.objectstorageshort}} user name and {{site.data.keyword.BluSoftlayer}} user name in the **user name** field.
 
    The format of the user name must be `{{site.data.keyword.objectstorageshort}} User name:{{site.data.keyword.BluSoftlayer}} User name`. For example: `XXX-OS279888:lionelmessi`. You can find your {{site.data.keyword.objectstorageshort}} user name in **Storage > {{site.data.keyword.objectstorageshort}}** in the [{{site.data.keyword.slportal}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/){:new_window}.
    {:important}
@@ -139,7 +139,7 @@ This service restarts and can take a few minutes to update its status to ready (
 ![Figure 6 - AltaVault Optimization Service](/images/altavault_fig6.png)
 
 
-### Configuring AltaVault for NFS Mount Point
+### Configuring AltaVault for NFS mount point
 
 When the connection to {{site.data.keyword.BluSoftlayer}} is established, the e0b interface needs to be configured so that an NFS/CIFS mount point can be created.
 
@@ -212,7 +212,7 @@ AltaVault requires the network interfaces to be on different networks within an 
 5. Click **Continue** and complete the requested information on the next screen, and click **Place Order**. The creation of the IP addresses is quick and can be displayed by selecting **Network > IP Management > Subnets**. These are the addresses to be used for your VMs that you plan to place in the default virtual machine port group.
 6. Repeat this process so that you have two portable private IP address subnets.
 
-   Keep track of the IP assignments. You can keep track by clicking the **Notes** section of the IP address and entering the hostname or description of the machine assigned to the IP address.
+   Keep track of the IP assignments. You can keep track by clicking the **Notes** section of the IP address and entering the host name or description of the machine assigned to the IP address.
    {:important}
 
 Next, log in to your vSphere environment and create a VM port group to reflect the addition of the portable IP block. In our environment, we created a VM port group that is labeled **Share Network** to denote that it is going to be used for `Eth0_0` to export an NFS mount point.
@@ -279,7 +279,7 @@ In this step, the appliance is configured to connect to {{site.data.keyword.BluS
 
 Although we imported the on-premises configuration to the {{site.data.keyword.BluSoftlayer}} AltaVault appliance, the cloud settings within the appliance must be modified to access the {{site.data.keyword.BluSoftlayer}} {{site.data.keyword.objectstorageshort}} Service through the private network.
 
-1. Browse to the **Cloud Settings** screen within the AltaVault appliance, and modify the **Hostname** to reflect the private address of the {{site.data.keyword.BluSoftlayer}} {{site.data.keyword.objectstorageshort}}. The private network name syntax is `location.objectstorage.service.networklayer.com`, where location designates the shortened data center name (for example, `mel01` for Melbourne 01 data center).
+1. Browse to the **Cloud Settings** screen within the AltaVault appliance, and modify the **host name** to reflect the private address of the {{site.data.keyword.BluSoftlayer}} {{site.data.keyword.objectstorageshort}}. The private network name syntax is `location.objectstorage.service.networklayer.com`, where location designates the shortened data center name (for example, `mel01` for Melbourne 01 data center).
 2. Click **Apply**.
 
 After you configured the connection to {{site.data.keyword.BluSoftlayer}} {{site.data.keyword.objectstorageshort}}, place the appliance in recovery mode so that it can sync the data from the {{site.data.keyword.objectstorageshort}}. SSH to the AltaVault appliance and enter the following commands.

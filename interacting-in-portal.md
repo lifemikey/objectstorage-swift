@@ -138,12 +138,12 @@ After a file was added, details regarding the file can be viewed and edited at a
 
 The next actions are dependent upon the selections that were made. Generally, the selections dictate the actions that are taken by the system on the file, however, when you delete a file, it can't be retrieved. If a file was downloaded, it generally is available within a location in your browser. More actions can be taken on the same file consecutively, unless the file was not deleted.
 
-## Adding and Editing Metadata for an Object
+## Adding and editing metadata for an Object
 
 After an object is uploaded to the container, metadata can be associated with the object at the object view level. Adding metadata to an object help to identify an object without having to download and open the object. Metadata can be edited at any time.
 
 1. View the object.
-2. Click **Add Metadata**.
+2. Click **Add metadata**.
 3. Enter the metadata key in the first text box. The metadata key must indicate the type of metadata you want to enter. Examples for metadata keys are things like `Artist`, `Song` and `Topic`.
 4. Enter the metadata value in the second text box. The metadata value corresponds with the key entered.
 5. Click **Update** to add the metadata. Click **Cancel** to cancel the action.

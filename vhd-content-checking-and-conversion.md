@@ -18,7 +18,7 @@ lastupdated: "2018-12-03"
 {:DomainName: data-hd-keyref="DomainName"}
 
 
-# VHD Content Checking and Conversion
+# VHD content checking and conversion
 
 Being able to import and deploy your own instance by using a custom VHD or ISO is one of the many benefits of the {{site.data.keyword.BluSoftlayer_full}}. By using these instructions you can verify that your VHD/ISO is the proper content type, convert it if the content type is incorrect, and even manually import an image if needed. For more information about the Image import option, see the following [article](https://{DomainName}/docs/infrastructure/image-templates/import-image.html){:new_window}.
 
@@ -96,7 +96,7 @@ You can access the [{{site.data.keyword.objectstorageshort}} Screen](interacting
    {: codeblock}
 
 4. Correct the content type.
-   - The correct Content-Type for an ISO is `application/x-iso9660-image`. To correct an erroneous content type, you can change the `Content-Type` header in object storage with an `HTTP POST`. In {{site.data.keyword.objectstorageshort}}, `PUT` is used to create and `POST` is used to modify. The following call modifies the Content-Type.
+   - The correct Content-Type for an ISO is `application/x-iso9660-image`. To correct an erroneous content type, you can change the `Content-Type` header in {{site.data.keyword.objectstorageshort}} with an `HTTP POST`. In {{site.data.keyword.objectstorageshort}}, `PUT` is used to create and `POST` is used to modify. The following call modifies the Content-Type.
 
    ```
    curl -i -H "X-Auth-Token: AUTH_tkcxxxxxxxxxxxxxxxxxxxxxxxx1d2a2a2" -H "Content-Type: application/x-iso9660-image" "https://dal05.objectstorage.service.networklayer.com/v1/AUTH_xxxxxxxx-d4a2-xxxx-xxxx-xxxxxxxxxx/isos/centos.iso" -X POST
@@ -111,7 +111,7 @@ You can access the [{{site.data.keyword.objectstorageshort}} Screen](interacting
    ```
    {: pre}
 
-   - Replace `<SWIFT_USER>` and `<APIKEY>` with your {{site.data.keyword.BluSoftlayer}} account username and API key.
+   - Replace `<SWIFT_USER>` and `<APIKEY>` with your {{site.data.keyword.BluSoftlayer}} account user name and API key.
 
    The command requires both parts of the user name. For example, in case of `SLOSXXXXX-35:johndoe` the `<SWIFT_USER>` entry is `johndoe` and the `<SWIFT_ACCOUNT>` entry is `SLOSXXXXX-35`.
    {:important}

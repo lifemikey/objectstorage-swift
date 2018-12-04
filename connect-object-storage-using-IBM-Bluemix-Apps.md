@@ -21,7 +21,7 @@ lastupdated: "2018-12-03"
 
 **Apps**
 
-Limited storage size is an issue for all workloads. {{site.data.keyword.BluSoftlayer}} furnishes its customers cloud storage as {{site.data.keyword.objectstorageshort}}, which helps solve the problem for keeping static content in unlimited capacity. IBM provides {{site.data.keyword.Bluemix}}, a Platform as a Service (PaaS) that offers a cost-effective cloud platform for developers to programmatically implement owned services. You can use {{site.data.keyword.objectstorageshort}} through `Node.JS`, assuming you have an active {{site.data.keyword.BluSoftlayer}} account and existing {{site.data.keyword.objectstorageshort}} deployed.
+Limited storage size is an issue for all workloads. {{site.data.keyword.BluSoftlayer}} furnishes its customers cloud storage as {{site.data.keyword.objectstorageshort}}, which helps solve the problem for keeping static content in unlimited capacity. IBM provides {{site.data.keyword.Bluemix}}, a Platform as a Service (PaaS) that offers a cost-effective cloud platform for Developers to programmatically implement owned services. You can use {{site.data.keyword.objectstorageshort}} through `Node.JS`, assuming you have an active {{site.data.keyword.BluSoftlayer}} account and existing {{site.data.keyword.objectstorageshort}} deployed.
 
 You can create a {{site.data.keyword.Bluemix_short}} application, make some edits to connect existing {{site.data.keyword.objectstorageshort}}, and deploy the application in the cloud.  For more information about {{site.data.keyword.BluSoftlayer}}, see [IBM Cloud and OpenStack ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://blog.softlayer.com/2015/softlayer-bluemix-and-openstack-powerful-combination).
 

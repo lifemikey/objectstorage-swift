@@ -84,7 +84,7 @@ Each {{site.data.keyword.objectstorageshort}} account requires the API Key for t
 
 ## How do I connect {{site.data.keyword.objectstorageshort}} to my server for backups?
 
-Although {{site.data.keyword.objectstorageshort}} is a solution for archiving, it isn't the ideal solution for targeting your active backups. {{site.data.keyword.BluSoftlayer}} recommends leveraging [our EVault services](/docs/infrastructure/Backup/index.html) to ensure the best results when you back up your data. To use {{site.data.keyword.objectstorageshort}} as a mount point for archiving data, connect the server to the storage container and set up your archive process. For example, run a database dump, and then, schedule a job to move the file to the object storage mount point.
+Although {{site.data.keyword.objectstorageshort}} is a solution for archiving, it isn't the ideal solution for targeting your active backups. {{site.data.keyword.BluSoftlayer}} recommends leveraging [our EVault services](/docs/infrastructure/Backup/index.html) to ensure the best results when you back up your data. To use {{site.data.keyword.objectstorageshort}} as a mount point for archiving data, connect the server to the storage container and set up your archive process. For example, run a database dump, and then, schedule a job to move the file to the {{site.data.keyword.objectstorageshort}} mount point.
 
 ## Do I have to adhere to the 5 GB per Object Limit when I use SFTP?
 
