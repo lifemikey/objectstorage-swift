@@ -156,7 +156,7 @@ When the connection to {{site.data.keyword.BluSoftlayer}} is established, the e0
 
 ### Mounting NFS Share and Beginning Transfer
 
-You have a minimally configured the AltaVault appliance in your on-premises environment at this point. The next step is to mount the NFS share to the host.
+You have a configured the AltaVault appliance in your on-premises environment. The next step is to mount the NFS share to the host.
 
 1. Click the **Mount Commands** tab on the **NFS** screen.
 2. Enter the command shown on the AltaVault screen within a Linux machine in your environment.</br> ![Figure 8 - Commands](/images/altavault_fig8.png)
@@ -306,7 +306,7 @@ When the connection to the internal {{site.data.keyword.objectstorageshort}} ser
    {:important}
 4. Click **Apply**.
 
-You now have a minimally configured AltaVault appliance in your {{site.data.keyword.BluSoftlayer}} environment. The next step is to mount the NFS share you previously configured.
+You now have a configured AltaVault appliance in your {{site.data.keyword.BluSoftlayer}} environment. The next step is to mount the NFS share you previously configured.
 
 1. Click the **Mount Commands** tab on the **NFS** screen.
 2. Enter the command on a Linux machine in your environment (see Figure 8.)
