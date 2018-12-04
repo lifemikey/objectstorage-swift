@@ -57,7 +57,7 @@ Any [{{site.data.keyword.slportal}} ![External link icon](../../icons/launch-gly
 
 If a user has the Manage CDN Account, Manage CDN File Transfers and Manage StorageLayer permissions, the user automatically has access to {{site.data.keyword.objectstorageshort}}, as well. At the current time, you can't grant access to CDN and StorageLayer while you prohibit access to {{site.data.keyword.objectstorageshort}}, or vice versa.
 
-## Whatis the file upload limit of {{site.data.keyword.objectstorageshort}}?
+## What is the file upload limit of {{site.data.keyword.objectstorageshort}}?
 
 The upload limit is approximately 5 GB for a single file. You have to consider any device limitation - iOS (iPhone, iPod Touch, iPad) Android and Windows Phone are supported. If you require a file size larger than 5 GB, use segmentation. For more information about segmentation, see OpenStack’s [segmentation overview ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://docs.openstack.org/developer/swift/overview_large_objects.html) for swift.
 
