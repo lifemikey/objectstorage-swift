@@ -17,7 +17,7 @@ The {{site.data.keyword.BluSoftlayer_full}} QuantaStor platform includes the abi
 
 1. In the QuantStor Web Administration, select the Cloud Container Tab. Then, right-click in the Cloud Storage Provider window, and select **Add Credentials**.<br/>![Add Credentials](/images/add_credentials.png)
 2. Select `Softlayer Object Storage`in the **Cloud Provider** list, Then, enter the account credentials into the appropriate fields.
-3. The {{site.data.keyword.objectstorageshort}} account information that is needed for the configuration can be obtained from the [{{site.data.keyword.slportal}}](https://control.softlayer.com/){:new_window}.
+3. The {{site.data.keyword.objectstorageshort}} account information that is needed for the configuration can be obtained from the [{{site.data.keyword.slportal}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/){:new_window}.
     1. Select **{{site.data.keyword.objectstorageshort}}** from the Storage menu.
     2. The {{site.data.keyword.objectstorageshort}} accounts are listed under the SL Master account, and you can also order another {{site.data.keyword.objectstorageshort}} account. All {{site.data.keyword.objectstorageshort}} accounts that are requested by child accounts under the Master Account are visible to and accessible by all other child accounts. Ensure that only the appropriate {{site.data.keyword.objectstorageshort}} account is used.
     3. Select a {{site.data.keyword.objectstorageshort}} account. Then, select the data center where the backup data is to be stored.
@@ -35,25 +35,25 @@ The {{site.data.keyword.BluSoftlayer_full}} QuantaStor platform includes the abi
 The cloud container that was created in the previous step now appears as one of the network shares in the **Storage Management** tab. The cloud container network share acts like a "network-attached storage (NAS) to {{site.data.keyword.objectstorageshort}} gateway" based on the CloudFuse open source gateway. It is allocated on the QuantaStor boot disk and is limited to 500 MB cache. This limit is significant if files that are being backed up exceed this size.<br/> ![Backup](/images/backup.png)
 
 2. Right-click the cloud storage gateway network share, and select **Create Backup Policy**.
-   >**Note** - The backup engine is not specifically for cloud storage. It can be configured to back up any NAS file system to any other NAS file system. 
+   >**Note** - The backup engine is not specifically for cloud storage. It can be configured to back up any NAS file system to any other NAS file system.
 3. Select the cloud container network share as the location. Then, select the days and times when backup is to be completed.
 4. Under remote CIFS/NFS source, select the IP address of the remote server and click **SCAN**. The **CIFS/NFS Export field** is populated with the NAS exports that are visible from the designated device. If the NAS server is a remote device, the QuantaStor host needs to have permission to access the device. The NAS file system can be set to public, but security controls can also be configured by using the AD domain or local QuantaStor users database.
 
 ## Configuring Advanced Settings
 
 **Backup Mode**
- - **All Files (Mirror)** - all changes to the source system are reflected in the backup at the next time the backup process runs. For example, if the file is deleted on the source, it is purged from the backup based on the purge policy. 
+ - **All Files (Mirror)** - all changes to the source system are reflected in the backup at the next time the backup process runs. For example, if the file is deleted on the source, it is purged from the backup based on the purge policy.
  - **Sliding Backup Window** - only those files that were created or modified during the retention period are backed up.
 
 **Retention Period**
  - Retention period is the time when file backups are retained in the NAS/Cloud storage repository. It also affects which files are backed up, if the sliding backup window is used.
- 
+
 **Start Date**
  - By using a start date in the future, you can configure the backup policy now to come into effect later.
- 
+
 **Backup Concurrency**
  - Backup Concurrency controls the number of simultaneous file copy threads that are used to back up the data. Five settings are available. You need to be careful if you run parallel backups through the NAS – {{site.data.keyword.objectstorageshort}} gateway. The NAS/Cloud gateway cache is only 500 MB and highly parallelized backups might fill up the cache faster than the data can be uploaded into {{site.data.keyword.objectstorageshort}}.
- 
+
 **Purge Policy**
  - The purge policy controls handling of files in the backup. Four settings are available:
     - **Never Purge** – All backup copies are permanently maintained in the {{site.data.keyword.objectstorageshort}}.

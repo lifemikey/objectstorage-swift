@@ -22,7 +22,7 @@ You can use a Bash script or a Python 3 script. Both do the same thing, but depe
 
 First, find your {{site.data.keyword.objectstorageshort}} user name and password.
 
-1. Log in to [{{site.data.keyword.slportal}}](https://control.softlayer.com/){:new_window}
+1. Log in to [{{site.data.keyword.slportal}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/){:new_window}
 2. Go to **Storage** > **{{site.data.keyword.objectstorageshort}}**, and select your cluster.
 3. Click **View Credentials** in the upper left. A modal window appears that contains your user name and API Key (or password) for {{site.data.keyword.objectstorageshort}}.
 
@@ -55,8 +55,8 @@ If you prefer the command line arguments approach, you can pass in arguments to 
 
 Now that your image is in {{site.data.keyword.objectstorageshort}} you can import your VHD into the {{site.data.keyword.BluSoftlayer}} template, so you can use it to provision a new virtual server!
 
-1. Go to your image templates page in the [{{site.data.keyword.slportal}}](https://control.softlayer.com/){:new_window} and click the **Import Image** tab. 
-2. Select the **Swift account**, **cluster**, **container**, and **file** that you uploaded. 
+1. Go to your image templates page in the [{{site.data.keyword.slportal}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/){:new_window} and click the **Import Image** tab.
+2. Select the **Swift account**, **cluster**, **container**, and **file** that you uploaded.
 3. Give your new template a name and some notes. Make sure to complete the Operating System information properly as this information is used when setting up your new server.
 4. Click **Import.**
 5. Lastly, after the VHD is processed by the system, you receive an email confirmation.

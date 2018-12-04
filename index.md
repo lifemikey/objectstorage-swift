@@ -13,7 +13,7 @@ lastupdated: "2018-07-10"
 
 {{site.data.keyword.objectstorageshort}} OpenStack Swift is a redundant and expandable cloud storage service. With {{site.data.keyword.objectstorageshort}} users can easily store, search, and retrieve data across the internet, with optional CDN connectivity, or across {{site.data.keyword.BluSoftlayer}}’s global private network. This offering was formerly known as SoftLayer {{site.data.keyword.objectstorageshort}}.
 
-{{site.data.keyword.objectstorageshort}} can be accessed through a RESTful API and through [{{site.data.keyword.slportal}}](https://control.softlayer.com/){:new_window}. By using the {{site.data.keyword.slportal}} you can complete easy, point-and-click interactions with your account without making direct calls to the API.
+{{site.data.keyword.objectstorageshort}} can be accessed through a RESTful API and through [{{site.data.keyword.slportal}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/){:new_window}. By using the {{site.data.keyword.slportal}} you can complete easy, point-and-click interactions with your account without making direct calls to the API.
 
 **How {{site.data.keyword.objectstorageshort}} works**
 
@@ -25,7 +25,7 @@ The primary use of {{site.data.keyword.objectstorageshort}} is the long-term sto
 - Archiving system backups,
 - Storing photos and videos,
 - Storing virtual machine images.
-    
+
 ## Introducing Key Features
 
 Although {{site.data.keyword.objectstorageshort}} is based on OpenStack’s Swift, {{site.data.keyword.BluSoftlayer}} offers many unique features. Among them are:
@@ -48,7 +48,7 @@ Highly expandable read/write access gives users the ability to serve content dir
 
 - **Powerful Management Toolkit**
 
-Full integration into the [{{site.data.keyword.slportal}}](https://control.softlayer.com/){:new_window}, mobile applications (iPhone, iPad, Android, and Windows) and a RESTful API provides a full range of human or machine access.
+Full integration into the [{{site.data.keyword.slportal}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/){:new_window}, mobile applications (iPhone, iPad, Android, and Windows) and a RESTful API provides a full range of human or machine access.
 
 ## Explaining Primary {{site.data.keyword.objectstorageshort}} Concepts
 
@@ -67,11 +67,11 @@ The principle of Eventual Consistency helps {{site.data.keyword.objectstoragesho
 
 **Containers, Folders, and Objects**
 
-Stored within each cluster are containers, folders, and objects (files), which are vital to {{site.data.keyword.objectstorageshort}}. Containers store your data, files help organizing data that is located within the container and an object represents the data that is stored. 
+Stored within each cluster are containers, folders, and objects (files), which are vital to {{site.data.keyword.objectstorageshort}}. Containers store your data, files help organizing data that is located within the container and an object represents the data that is stored.
 
 **Container**
 
-A container is the basic storage unit for all the data within {{site.data.keyword.objectstorageshort}}. Containers work similar to a folder or directory within many operating systems. However, containers can't be nested. 
+A container is the basic storage unit for all the data within {{site.data.keyword.objectstorageshort}}. Containers work similar to a folder or directory within many operating systems. However, containers can't be nested.
 
 One container must be associated with each {{site.data.keyword.objectstorageshort}} account. But the number of containers, which a user can create is unlimited. Aside from nesting, containers can be organized by each user to meet individual business needs.
 
@@ -83,13 +83,13 @@ Container names can't contain a forward slash (`/`) and must be less than 256 by
   Although folders are available for use with your container, the use of folders is not required. When a folder is created, files are not required to be organized within it. That being said, a user can view a container’s contents and see both folders and files at the same level.
 
 - **Object (File)**
-  Any data or metadata for the files that are stored in the system is considered an object, or file. 
+  Any data or metadata for the files that are stored in the system is considered an object, or file.
   Files that are stored on the system can't exceed 5 GB. Files that are larger than 5 GB must be segmented before they are loaded to storage. However, they can be concatenated together so that the eventual download can be viewed as a single file.
-  File names must be shorter than 1024 bytes after URL encoding. 
+  File names must be shorter than 1024 bytes after URL encoding.
 
 ## Accessing the {{site.data.keyword.objectstorageshort}} Screen
 
-The {{site.data.keyword.objectstorageshort}} screen can be accessed through Navigation in the [{{site.data.keyword.slportal}}](https://control.softlayer.com/){:new_window}.
+The {{site.data.keyword.objectstorageshort}} screen can be accessed through Navigation in the [{{site.data.keyword.slportal}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/){:new_window}.
 
 ![Figure 1. {{site.data.keyword.objectstorageshort}} in the {{site.data.keyword.slportal}}](/images/objectstorage1.png)
 
@@ -113,17 +113,17 @@ The {{site.data.keyword.objectstorageshort}} screen can be accessed through Navi
 
 ## Explaining the {{site.data.keyword.objectstorageshort}} User Interface
 
-Upon clicking {{site.data.keyword.objectstorageshort}} in the menu, you are routed directly to the {{site.data.keyword.objectstorageshort}} landing page. From ordering more {{site.data.keyword.objectstorageshort}} on your user account to adding and deleting metadata, all [{{site.data.keyword.slportal}}](https://control.softlayer.com/){:new_window} interactions with your {{site.data.keyword.objectstorageshort}} account begin from this screen. The information that is displayed on the landing page is specific to the selected account and is dependent upon how containers, files and metadata are organized on the cluster. Your {{site.data.keyword.objectstorageshort}} account interactions begin on the **Account** Tab.
+Upon clicking {{site.data.keyword.objectstorageshort}} in the menu, you are routed directly to the {{site.data.keyword.objectstorageshort}} landing page. From ordering more {{site.data.keyword.objectstorageshort}} on your user account to adding and deleting metadata, all [{{site.data.keyword.slportal}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/){:new_window} interactions with your {{site.data.keyword.objectstorageshort}} account begin from this screen. The information that is displayed on the landing page is specific to the selected account and is dependent upon how containers, files and metadata are organized on the cluster. Your {{site.data.keyword.objectstorageshort}} account interactions begin on the **Account** Tab.
 
 - **Account Tab**
 
   The **Account** Tab contains various information about your account, including account and network usage and is the access point to all information stored on your cluster. After an {{site.data.keyword.objectstorageshort}} account is created and is in use, the Account Tab appears similar to the following image.
 
 ![Figure 3. Account Overview](/images/objectstorage3.png)
- 
+
 - **Account Usage**
 
-  This section of the Account tab contains an overview of the number of containers that are currently active on the cluster and the total amount of storage that is used. Also in this section, you can see the **View Credentials** link. The View Credentials link allows the user to view the credentials that are associated with the selected account, including the Authentication Endpoint, user name and API Key (Password). While this information is not vital for interactions through the [{{site.data.keyword.slportal}}](https://control.softlayer.com/){:new_window}, the Account Credentials are needed for interacting with {{site.data.keyword.objectstorageshort}} through the API or another client.
+  This section of the Account tab contains an overview of the number of containers that are currently active on the cluster and the total amount of storage that is used. Also in this section, you can see the **View Credentials** link. The View Credentials link allows the user to view the credentials that are associated with the selected account, including the Authentication Endpoint, user name and API Key (Password). While this information is not vital for interactions through the [{{site.data.keyword.slportal}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/){:new_window}, the Account Credentials are needed for interacting with {{site.data.keyword.objectstorageshort}} through the API or another client.
 
 - **Bandwidth Usage**
 
@@ -135,7 +135,7 @@ Upon clicking {{site.data.keyword.objectstorageshort}} in the menu, you are rout
 
   The third area on the Account tab displays the contents of the cluster. This view varies based on what information you accessed, but defaults to the container-level view upon initial access of the {{site.data.keyword.objectstorageshort}} account. From this section, the check box can be clicked for high-level details on the container that is displayed in the **Details** window. All views that are available within your cluster are filterable through the **Filter** text box at the top of each view.
 
-  In addition to viewing containers, new containers can be added. Click the **Add Container** link to begin the process of adding a container to your cluster. 
+  In addition to viewing containers, new containers can be added. Click the **Add Container** link to begin the process of adding a container to your cluster.
 
   Containers can also be deleted at this level by clicking the **delete** icon and following the prompts.
 
@@ -152,11 +152,10 @@ Upon clicking {{site.data.keyword.objectstorageshort}} in the menu, you are rout
 
 - **Details Pane**
 
-  The Details pane is present throughout the navigation of your container. However, this window displays varied information based on the area in which you are navigating and the boxes, if any, you clicked. Clicking the check box next to a specific line item on the **Account** tab provides high-level details about the item you selected. 
+  The Details pane is present throughout the navigation of your container. However, this window displays varied information based on the area in which you are navigating and the boxes, if any, you clicked. Clicking the check box next to a specific line item on the **Account** tab provides high-level details about the item you selected.
 
   When no items are checked, the **Details** pane displays information about the part of your cluster that you're viewing. For example, in the previous image, the photos container was accessed and the contents of that container are displayed on the folder/file-level view. At this level, the **Details** window displays an overview of the contents of the container and CDN information.
 
   Clicking the **Actions** list within the **Details Pane** on any view allows various actions to be taken on the cluster, based on what area of the cluster is displayed within the **Details Pane**.
 
   ![Figure 6. Actions menu](/images/objectstorage6.png)
-

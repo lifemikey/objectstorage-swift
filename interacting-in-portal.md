@@ -11,10 +11,10 @@ lastupdated: "2018-07-09"
 
 ## Accessing the {{site.data.keyword.objectstorageshort}} Screen
 
-The {{site.data.keyword.objectstorageshort}} screen in the [{{site.data.keyword.slportal}}](https://control.softlayer.com/){:new_window} can be accessed from the main menu after login. 
+The {{site.data.keyword.objectstorageshort}} screen in the [{{site.data.keyword.slportal}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/){:new_window} can be accessed from the main menu after login.
 
 1. Access the {{site.data.keyword.slportal}} by using your unique credentials.
-2. Select **Storage** > **{{site.data.keyword.objectstorageshort}}** from the navigation bar.<br/> 
+2. Select **Storage** > **{{site.data.keyword.objectstorageshort}}** from the navigation bar.<br/>
    ![{{site.data.keyword.objectstorageshort}} menu option](/images/ObjectStorageMenu.png)
 3. Click the **{{site.data.keyword.objectstorageshort}}** link from the list of storage nodes to access the {{site.data.keyword.objectstorageshort}} page. If the account has multiple users, select the user whose {{site.data.keyword.objectstorageshort}} account you want to access.
 4. Select one of the following **Clusters** based on the city that is of nearest proximity to your users.
@@ -32,8 +32,8 @@ The {{site.data.keyword.objectstorageshort}} screen in the [{{site.data.keyword.
    - Sydney 1 (SYD01)
    - Toronto 1 (TOR01)
    - Tokyo 2 (TOK02)
-   
-   
+
+
 ## Managing {{site.data.keyword.objectstorageshort}} OpenStack Swift User Permissions
 
 User permissions for {{site.data.keyword.objectstorageshort}} accounts require that several individual permissions be granted. By using the Manage Users feature for {{site.data.keyword.objectstorageshort}}, the account administrator can manage users' {{site.data.keyword.objectstorageshort}} permissions by clicking a single check box. Additionally, multiple users can be managed at one time on the same screen. It's important to note the following information.
@@ -44,7 +44,7 @@ User permissions for {{site.data.keyword.objectstorageshort}} accounts require t
 
 ### Managing an {{site.data.keyword.objectstorageshort}} User
 
-1. Access the {{site.data.keyword.objectstorageshort}} screen on the [{{site.data.keyword.slportal}}](https://control.softlayer.com/){:new_window}.
+1. Access the {{site.data.keyword.objectstorageshort}} screen on the [{{site.data.keyword.slportal}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/){:new_window}.
 2. On the Account tab, click the **Manage Users**.
 3. Locate the user by scrolling through the list or typing the user's name in the **Filter** field.
 4. Select the **Grant Access** check box to grant the user permission to view and manage the {{site.data.keyword.objectstorageshort}} account. Clear the **Grant Access** check box to remove the user's permission set.
@@ -62,7 +62,7 @@ After you granted or removed permissions for {{site.data.keyword.objectstoragesh
 
 A container houses data that is associated with an {{site.data.keyword.objectstorageshort}} account and is associated with an {{site.data.keyword.objectstorageshort}} cluster. At least one container must exist per account. However, multiple containers can be made and maintained according to the user's needs.
 
-1. Access the **{{site.data.keyword.objectstorageshort}}** screen in the [{{site.data.keyword.slportal}}](https://control.softlayer.com/){:new_window}. 
+1. Access the **{{site.data.keyword.objectstorageshort}}** screen in the [{{site.data.keyword.slportal}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/){:new_window}.
 2. Click **Add Container**.
 3. Enter the name of the container in the **Container Name** field. Container names must be 256 characters or less after URL encoding and cannot contain a forward slash (`/`).
 2. Click **OK** to create your container. The new container appears as the first container within the cluster.
@@ -70,16 +70,16 @@ A container houses data that is associated with an {{site.data.keyword.objectsto
 
 ## Accessing and Exiting a Container
 
-After a container is created, files and folders can be added and organized within the container. Before you can complete any task within a container, it must be accessed first. To complete a task within another container or directly in the cluster, the user must first exit the container. 
+After a container is created, files and folders can be added and organized within the container. Before you can complete any task within a container, it must be accessed first. To complete a task within another container or directly in the cluster, the user must first exit the container.
 
-1. Access the {{site.data.keyword.objectstorageshort}} screen on the [{{site.data.keyword.slportal}}](https://control.softlayer.com/){:new_window}.
+1. Access the {{site.data.keyword.objectstorageshort}} screen on the [{{site.data.keyword.slportal}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/){:new_window}.
 2. Click the **Container Name** to access the container.
 3. Click the **Cluster Name** to exit the container and return to the cluster.
 
 
 ## Adding a Folder to a Container
 
-Adding a folder in the [{{site.data.keyword.slportal}}](https://control.softlayer.com/){:new_window} allows for organization of files that would ordinarily be placed directly in the container. Folders can be added to the container itself or to another folder to provide extra options for organization. The process for adding a folder directly to a container or adding a folder to another folder (nesting folders) is the same. 
+Adding a folder in the [{{site.data.keyword.slportal}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/){:new_window} allows for organization of files that would ordinarily be placed directly in the container. Folders can be added to the container itself or to another folder to provide extra options for organization. The process for adding a folder directly to a container or adding a folder to another folder (nesting folders) is the same.
 
 1. Access the container.
 2. Click **Add Folder**.
@@ -89,9 +89,9 @@ Adding a folder in the [{{site.data.keyword.slportal}}](https://control.softlaye
 
 ## Adding an Object (File) through the {{site.data.keyword.slportal}}
 
-Adding an object (file) in the {{site.data.keyword.slportal}} allows the user to upload files into the selected container that is associated with an {{site.data.keyword.objectstorageshort}} account. An unlimited number of files can be uploaded, but each file can't exceed 20 MB. 
+Adding an object (file) in the {{site.data.keyword.slportal}} allows the user to upload files into the selected container that is associated with an {{site.data.keyword.objectstorageshort}} account. An unlimited number of files can be uploaded, but each file can't exceed 20 MB.
 
-1. Access the {{site.data.keyword.objectstorageshort}} screen in the [{{site.data.keyword.slportal}}](https://control.softlayer.com/){:new_window}.
+1. Access the {{site.data.keyword.objectstorageshort}} screen in the [{{site.data.keyword.slportal}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/){:new_window}.
 2. Click **Add File**.
 3. Click the **Select box** to access the drives on your workstation.
 4. Locate the file for upload and select the file.
@@ -100,7 +100,7 @@ Adding an object (file) in the {{site.data.keyword.slportal}} allows the user to
 Due to the {{site.data.keyword.slportal}} upload's size limit of 20 MB, you might consider other means to upload larger files. For more information, see the following instructions.
 - [Connecting to {{site.data.keyword.objectstorageshort}} OpenStack Swift by using the Command Line](connect-object-storage-using-command-line.html)
 - [Connecting to {{site.data.keyword.objectstorageshort}} OpenStack Swift by using Cyberduck](connect-object-storage-using-cyberduck.html)
-- [Connecting to {{site.data.keyword.objectstorageshort}} OpenStack Swift by using WinSCP](connect-object-storage-using-winscp.html) 
+- [Connecting to {{site.data.keyword.objectstorageshort}} OpenStack Swift by using WinSCP](connect-object-storage-using-winscp.html)
 
 ## Accessing an Object in a Folder or Container
 
@@ -109,13 +109,13 @@ After an object is added, it can be accessed at any time from your {{site.data.k
 
 ## Viewing and Editing File Details
 
-After a file was added, details regarding the file can be viewed and edited at any time. 
+After a file was added, details regarding the file can be viewed and edited at any time.
 
 1. Access the **Container** that contains the file you want to edit. <br/>
    **Note**: If the file for edit is located within a folder, click the **Folder Name** to access the folder's contents and locate the file.
-2. Click the check box next to the file you want to view. The file details appear in the window to the right of the Object List. 
+2. Click the check box next to the file you want to view. The file details appear in the window to the right of the Object List.
 3. Click **Actions**.
-4. Select one of the following options and follow the corresponding instructions based on the action to be completed for the file: 
+4. Select one of the following options and follow the corresponding instructions based on the action to be completed for the file:
 <table>
   <caption><Table 1 shows the Actions on the left and the steps that you need to take for each action on the right.>
 <tr><th>Action</th><th>Steps to Complete</th></tr>
@@ -130,7 +130,7 @@ The next actions are dependent upon the selections that were made. Generally, th
 
 ## Adding and Editing Metadata for an Object
 
-After an object is uploaded to the container, metadata can be associated with the object at the object view level. Adding metadata to an object help to identify an object without having to download and open the object. Metadata can be edited at any time. 
+After an object is uploaded to the container, metadata can be associated with the object at the object view level. Adding metadata to an object help to identify an object without having to download and open the object. Metadata can be edited at any time.
 
 1. View the object.
 2. Click **Add Metadata**.
@@ -145,7 +145,7 @@ After you added metadata to a file, files can be located more easily, and metada
 
 In addition to cluster, container, and object interactions, you can search across the entire cluster, regardless of what level of data is being viewed.
 
-1. Access the {{site.data.keyword.objectstorageshort}} screen in the [{{site.data.keyword.slportal}}](https://control.softlayer.com/){:new_window}.
+1. Access the {{site.data.keyword.objectstorageshort}} screen in the [{{site.data.keyword.slportal}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/){:new_window}.
 2. Enter the search term or terms in the Search field. <br/>
    **Note**: The Search field for {{site.data.keyword.objectstorageshort}} is on the middle of the screen, to the right of your current location within the cluster hierarchy.
 3. Click **Search**.
@@ -156,7 +156,7 @@ The system returns all containers and objects that match the search criteria whe
 
 Similar to containers, users can also delete an object at any time. Like containers, folders must be empty before the deletion. No restrictions are set for files.
 
-1. Access the **{{site.data.keyword.objectstorageshort}}** screen in the [{{site.data.keyword.slportal}}](https://control.softlayer.com/){:new_window}.
+1. Access the **{{site.data.keyword.objectstorageshort}}** screen in the [{{site.data.keyword.slportal}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/){:new_window}.
 2. Scroll over the **Container Name**.
 3. Click **Delete**. A Delete Object confirmation box appears.<br/>
    ![Delete Object](/images/Delete_Object.png)
@@ -169,7 +169,7 @@ Objects can be deleted when they are no longer needed. After an object is delete
 
 At any point in time, a container can be deleted from the cluster, while the container holds no data (files or folders). Before you can delete the container, all files and folders must be deleted or, if they are still needed, they can be copied, moved, or downloaded to another location.
 
-1. Access the {{site.data.keyword.objectstorageshort}} screen on the [{{site.data.keyword.slportal}}](https://control.softlayer.com/){:new_window}.
+1. Access the {{site.data.keyword.objectstorageshort}} screen on the [{{site.data.keyword.slportal}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/){:new_window}.
 2. Click **Delete**. A **Delete Container** confirmation box appears.
 3. Click **Yes** to delete the container. Click **No** to cancel the request.
 
