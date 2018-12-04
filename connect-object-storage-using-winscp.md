@@ -20,7 +20,7 @@ lastupdated: "2018-12-03"
 
 # Connecting to {{site.data.keyword.objectstorageshort}} with WinSCP
 
-{{site.data.keyword.objectstorageshort}} is a useful utility for backing up data and using your own images. (For more information, see [Import an image](https://{DomainName}/docs/infrastructure/image-templates/import-image.html)). While most commonly, people access Object Storage by using its REST API, you can also use WinSCP to upload files to your {{site.data.keyword.objectstorageshort}} account. Use this information to establish connection.
+{{site.data.keyword.objectstorageshort}} is a useful utility for backing up data and storing OS images. (For more information, see [Import an image](https://{DomainName}/docs/infrastructure/image-templates/import-image.html)). While most commonly, people access Object Storage by using its REST API, you can also use WinSCP to upload files to your {{site.data.keyword.objectstorageshort}} account. Use this information to establish connection.
 
  - Protocol - SFTP
  - Port - 22
