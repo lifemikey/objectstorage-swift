@@ -58,7 +58,7 @@ authurl=https://dal05.objectstorage.softlayer.net/auth/v1.0/
 Your `authurl` depends on the location of your {{site.data.keyword.objectstorageshort}}.
 {:tip}
 
-You can set more option for the {{site.data.keyword.objectstorageshort}} mount. These options are located under the `USE:` section in the `README` file found in the `cloudfuse .tar` file. A common option is the following setting.
+You can set more option for the {{site.data.keyword.objectstorageshort}} mount. These options are located under the `USE:` section in the `README` file that is located in the `cloudfuse .tar` file. A common option is the following setting.
 
 ```
 cache_timeout

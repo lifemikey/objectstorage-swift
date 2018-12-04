@@ -24,11 +24,11 @@ The QuantaStor appliance available from {{site.data.keyword.BluSoftlayer_full}} 
 
 - Advantages
   - GUI
-  - advanced features (encryption, compression, deduplication, local caching)
-  - scheduled backup of volumes to {{site.data.keyword.objectstorageshort}}
+  - Advanced features (encryption, compression, deduplication, local caching)
+  - Scheduled backup of volumes to {{site.data.keyword.objectstorageshort}}
 - Disadvantages
   - {{site.data.keyword.objectstorageshort}} containers cannot be shared by multiple hosts
-  - configuration options are lacking (defaults are assumed by QuantaStor)
+  - Configuration options are lacking (defaults are assumed by QuantaStor)
 
 QuantaStor works great for integrated solutions, automated backups to the cloud, and permanent storage mounts.
 
