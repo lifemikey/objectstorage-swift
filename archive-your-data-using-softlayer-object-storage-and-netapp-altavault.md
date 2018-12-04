@@ -19,16 +19,16 @@ lastupdated: "2018-12-03"
 
 # Archiving Your Data Using {{site.data.keyword.BluSoftlayer_notm}} {{site.data.keyword.objectstorageshort}} and NetApp AltaVault
 
-The continued growth of large, unstructured data is fueling the consumption of storage resources. This consumption has enterprises seeking to alleviate the capital and operational costs that are associated with storing infrequently accessed data sets and archives on high-performance storage and or tape libraries. Items in the data sets can include email archives (per regulation), product diagrams and manuals, medical images, and other unstructured data. {{site.data.keyword.BluSoftlayer_full}} {{site.data.keyword.objectstorageshort}} is one such solution that assists with reducing costs. It offers the same durability, protection, and access of traditional, monolithic storage arrays at a much lower price point and enhanced scale.
+The continued growth of large, unstructured data is fueling the consumption of storage resources. This consumption leads enterprises to seek to reduce the capital and operational costs that are associated with the storage of infrequently accessed data sets and archives. Items in the data sets can include email archives (per regulation), product diagrams and manuals, medical images, and other unstructured data. {{site.data.keyword.BluSoftlayer_full}} {{site.data.keyword.objectstorageshort}} is one such solution that assists with reducing costs. It offers the same durability, protection, and access of traditional, monolithic storage arrays at a much lower price point and enhanced scale.
 
 
 ### Getting to the Cloud
 
 One of the issues that is associated with using {{site.data.keyword.objectstorageshort}} is the current methodology of using REST APIs to ingest (that is, upload) and access data. As a result, businesses are faced with a decision to either write scripts or applications that incorporate REST APIs to use {{site.data.keyword.objectstorageshort}}. The other option is to keep large, infrequently used data sets on expensive, in-house storage arrays. AltaVault Cloud Gateway Appliance from NetApp provides enterprises another choice. Together with {{site.data.keyword.BluSoftlayer}} {{site.data.keyword.objectstorageshort}}, AltaVault lets customers effortlessly archive, manage, and serve large amounts of unstructured data. Additionally, {{site.data.keyword.BluSoftlayer}}’s pay-as-you-go pricing model and full integration with the content delivery network (CDN) help you store and distribute data in 24 geographically diverse nodes.
 
-The NetApp AltaVault Cloud-Integrated Storage Appliance is a software solution that allows businesses to seamlessly integrate customer’s on-premises environment to private or public clouds. Subsequently, customers can simply deploy the appliance within their on-premises data center and safely send and migrate data to {{site.data.keyword.BluSoftlayer}} {{site.data.keyword.objectstorageshort}}.
+The NetApp AltaVault Cloud-Integrated Storage Appliance is a software solution that allows businesses to seamlessly integrate customer’s on-premises environment to private or public clouds. Customers can simply deploy the appliance within their on-premises data center and safely send and migrate data to {{site.data.keyword.BluSoftlayer}} {{site.data.keyword.objectstorageshort}}.
 
-AltaVault can be deployed in two modes: archive (also known as Cold Storage) and back up. This solution brief and how-to guide focuses on the end-to-end archiving architecture of AltaVault as shown in Figure 1.
+AltaVault can be deployed in two modes: archive (also known as Cold Storage) and back up. This solution brief focuses on the end-to-end archiving architecture of AltaVault as shown in Figure 1.
 
 ![Figure 1 - AltaVault end-to-end flow](/images/altavault_fig1.png)
 
@@ -40,9 +40,9 @@ AltaVault is considered a cloud-enabled storage appliance. It exposes a Network 
 ![Figure 2 - AltaVault mounts to {{site.data.keyword.BluSoftlayer}}](/images/altavault_fig2.png)
 
 
-In archive, or cold-storage mode, AltaVault primarily uses the local disk that is assigned for metadata cache rather than local data cache. AltaVault also provides AES 256-bit encryption for data that is in-flight and at-rest on {{site.data.keyword.BluSoftlayer}}’s Object Store. The appliance features inline variable-length deduplication and compression, which reduces the amount of data that is needed to transfer and store at {{site.data.keyword.BluSoftlayer}}. Visit the [NetApp AltaVault page](http://www.netapp.com/us/products/protection-software/altavault/) for a more complete list of features and functions.
+In archive, or cold-storage mode, AltaVault primarily uses the local disk that is assigned for metadata cache rather than local data cache. AltaVault also provides AES 256-bit encryption for data that is in-flight and at-rest on {{site.data.keyword.BluSoftlayer}}’s Object Store. The appliance features inline variable-length deduplication and compression, which reduces the amount of data that is needed to transfer and store at {{site.data.keyword.BluSoftlayer}}. Visit the [NetApp AltaVault page](http://www.netapp.com/us/products/protection-software/altavault/) for a complete list of features and functions.
 
-Since the data replicated by AltaVault is encrypted, users cannot directly access the same data that resides on the {{site.data.keyword.objectstorageshort}} through the traditional {{site.data.keyword.objectstorageshort}} REST APIs or FTP. They must use one of two methods to access the data in {{site.data.keyword.objectstorageshort}}. The first method is to use the on-premises AltaVault to read, write, and delete data to, from, and in the cloud. The second, if you want to access the data remotely, is to deploy another AltaVault appliance within {{site.data.keyword.BluSoftlayer}}, import the on-premises configuration (a built-in function), and access an NFS/SMB/CIFS mount presented by the AltaVault.
+Since the data replicated by AltaVault is encrypted, users cannot directly access the same data that resides on the {{site.data.keyword.objectstorageshort}} through the traditional {{site.data.keyword.objectstorageshort}} REST APIs or FTP. They must use 1 of 2 methods to access the data in {{site.data.keyword.objectstorageshort}}. The first method is to use the on-premises AltaVault to read, write, and delete data to, from, and in the cloud. The second, if you want to access the data remotely, is to deploy another AltaVault appliance within {{site.data.keyword.BluSoftlayer}}, import the on-premises configuration (a built-in function), and access an NFS/SMB/CIFS mount presented by the AltaVault.
 
 This section describes the process of deploying the AltaVault appliance both on-premises and at {{site.data.keyword.BluSoftlayer}}.
 
@@ -59,7 +59,7 @@ AltaVault can be purchased as a physical or virtual appliance. Only the deployme
  - Available 2x10Gbps Network Interface Cards (NICs) within the vSphere environment. One NIC is used for data ingest and the other used for data replication to {{site.data.keyword.BluSoftlayer}} {{site.data.keyword.objectstorageshort}}.
  - Define two networks – replication and data access – within the vSphere environment in addition to the NICs. The replication network cannot be assigned to the same network as the data access network since it might create a loop.
  - Acquire the credentials that are used for {{site.data.keyword.BluSoftlayer}} {{site.data.keyword.objectstorageshort}} including the {{site.data.keyword.BluSoftlayer}} user name, {{site.data.keyword.BluSoftlayer}} {{site.data.keyword.objectstorageshort}} user name, and the API key associated with the {{site.data.keyword.BluSoftlayer}} user name.
- - Knowledge of VMware Sphere terminology and administering vSphere ESXi environments. This knowledge includes, but is not limited to, use of the vSphere web client, vSphere client, and assignment of hardware resources such as as networking and storage.
+ - Knowledge of VMware Sphere terminology and administering vSphere ESXi environments. This knowledge includes, but is not limited to, use of the vSphere web client, vSphere client, and assignment of hardware resources such as networking and storage.
 
 ### Deploying AltaVault OVA for On-Premises
 
@@ -71,14 +71,14 @@ Deploy the AltaVault OVA to the vSphere environment when all the requirements ar
 
 The NICs are assigned the following interface functions:
 
-- Primary: Used as the management and or replication-to-the-cloud interface.
-- e0a: An optional interface that can be used to replicated data to the cloud.
-- e0b: An interface that can be used to export the mount point for the NFS/SMB/CIFS share.
-- e0c: Another interface that can be used to export the mount point for the NFS/SMB/CIFS share.
+- `Primary`, it's used as the management and/or replication to the cloud object store interface.
+- `e0a`, an optional interface that can be used to replicated data to the cloud.
+- `e0b`, an interface that can be used to export the mount point for the NFS/SMB/CIFS share.
+- `e0c`, another interface that can be used to export the mount point for the NFS/SMB/CIFS share.
 
 In the example configuration we used, the AltaVault appliance uses the `Primary` interface as the cloud replication interface and `e0b` interface to export an NFS mount point.
 
-You cannot use both an NFS share and SMB/CIFS share to access the same data. In other words, if you place data in an NFS share, you will not be able to access it via the SMB/CIFS share and vice versa.
+You cannot use both an NFS share and SMB/CIFS share to access the same data. In other words, if you place data in an NFS share, you can't access it through the SMB/CIFS share and vice versa.
 {:important}
 
 ![Figure 3 - On-premises and {{site.data.keyword.BluSoftlayer}} overview](/images/altavault_fig3.png)
@@ -98,7 +98,7 @@ After the AltaVault VM is configured with the appropriate hardware, you can powe
      <tr><td>Step 1. `Admin password?`</td><td>Enter a new admin password</td></tr>
      <tr><td>Step 2. `Host name?`</td><td>Enter the host name that you want to use</td></tr>
      <tr><td>Step 3. `Use DHCP on primary interface?`</td><td>Enter n</td></tr>
-     <tr><td>Step 4. `Primary IP address?`</td><td>Enter the primary network IP address.  In our configuration, this is the network that is used for cloud replication and appliance management (for example, 192.168.64.5)</td></tr>
+     <tr><td>Step 4. `Primary IP address?`</td><td>Enter the primary network IP address.  In our configuration, this network is used for cloud replication and appliance management (for example, 192.168.64.5)</td></tr>
      <tr><td>Step 5. `Netmask?`</td><td>Enter the netmask (for example, 255.255.255.0)</td></tr>
      <tr><td>Step 6. `Default gateway?`</td><td>Enter the default gateway (for example, 192.168.64.1)</td></tr>
      <tr><td>Step 7. `Primary DNS server?`</td><td>Enter the primary DNS server in your environment</td></tr>
@@ -123,7 +123,7 @@ After the AltaVault VM is configured with the appropriate hardware, you can powe
    {:note}
 9. Enter the {{site.data.keyword.objectstorageshort}} user name and {{site.data.keyword.BluSoftlayer}} user name in the **user name** field.
 
-   The format of the user name must be `{{site.data.keyword.objectstorageshort}} User name:{{site.data.keyword.BluSoftlayer}} User name`. For example: `XXX-OS279888:lionelmessi`. You can find your {{site.data.keyword.objectstorageshort}} user name in **Storage > {{site.data.keyword.objectstorageshort}}** in the [{{site.data.keyword.slportal}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/){:new_window}.
+   The format of the user name must be `{{site.data.keyword.objectstorageshort}} User name:{{site.data.keyword.BluSoftlayer}} User name`. For example, `XXX-OS279888:lionelmessi`. You can find your {{site.data.keyword.objectstorageshort}} user name in **Storage > {{site.data.keyword.objectstorageshort}}** in the [{{site.data.keyword.slportal}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/){:new_window}.
    {:important}
 10. Enter your API key and type in a bucket name to store the data. The bucket name is simply the container name where you want to store the data in {{site.data.keyword.BluSoftlayer}}’s {{site.data.keyword.objectstorageshort}}.
 11. Enter Archive/Cold Storage mode by selecting **Yes** for **Enable Archiving**. Make sure that your configuration looks similar to Figure 5.
@@ -167,7 +167,7 @@ You have a configured the AltaVault appliance in your on-premises environment. T
 1. Click the **Mount Commands** tab on the **NFS** screen.
 2. Enter the command shown on the AltaVault screen within a Linux machine in your environment.</br> ![Figure 8 - Commands](/images/altavault_fig8.png)
 3. Use the AltaVault data interface IP address to establish the mount.
-4. Copy/write data to the mount point after the share is mounted. AltaVault ingests the data, deduplicates, compresses, and then transfers the data to the {{site.data.keyword.BluSoftlayer}} {{site.data.keyword.objectstorageshort}} Service you previously configured.
+4. Copy and write data to the mount point after the share is mounted. AltaVault ingests the data, deduplicates, compresses, and then transfers the data to the {{site.data.keyword.BluSoftlayer}} {{site.data.keyword.objectstorageshort}} Service you previously configured.
 
 ### Saving the On-Premises AltaVault Configuration
 
@@ -190,9 +190,9 @@ Before you proceed any further, verify the following requirements are met:
 
 - Make sure that your environment consists of a single ESXi host that is managed by a vCenter server within a {{site.data.keyword.BluSoftlayer}} VSI or matches the [Advanced Single-Site VMware Reference Architecture ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://{DomainName}/docs/infrastructure/virtualization/advanced-single-site-vmware-reference-architecturesoftlayer.html){:new_window}.
 - Obtained a copy of AltaVault Virtual Appliance (in OVA format) and it resides on the utility server (which was provisioned when you were setting up the previously mentioned VMware environment). Contact your NetApp representative for this appliance, or download a 90-day trial version on NetApp’s AltaVault website.
-- Available existing vSphere ESXi 5.5 environment @ {{site.data.keyword.BluSoftlayer}} with the minimum CPU, memory, and disk space for the AltaVault appliance. If you're using the trial version, the requirements are four vCPU, 24 GB of memory and up to 8 TB of disk space.
+- Available existing vSphere ESXi 5.5 environment @ {{site.data.keyword.BluSoftlayer}} with the minimum CPU, memory, and disk space for the AltaVault appliance. If you're using the trial version, the requirements are 4 vCPU, 24 GB of memory and up to 8 TB of disk space.
 - Available 2x10Gbps NICs, which are recommended within the vSphere environment.
-- Define two networks – replication and data access – within the vSphere environment in addition to the NICs. The replication network cannot be assigned to the same network as the data access network because it might create a loop. Preventing a loop is handled by ordering an additional portable IP block and is covered in the next step.
+- Define two networks – replication and data access – within the vSphere environment in addition to the NICs. The replication network cannot be assigned to the same network as the data access network because it might create a loop. Preventing a loop is handled by ordering an extra portable IP block and is covered in the next step.
 - Acquire the credentials that are used for {{site.data.keyword.BluSoftlayer}} {{site.data.keyword.objectstorageshort}}, including the {{site.data.keyword.BluSoftlayer}} user name, {{site.data.keyword.BluSoftlayer}} {{site.data.keyword.objectstorageshort}} user name, and the API key associated with the {{site.data.keyword.BluSoftlayer}} user name.
 - Knowledge of VMware Sphere terminology and administering vSphere ESXi environments. This knowledge includes, but is not limited to, use of the vSphere web client, vSphere client, and assignment of hardware resources such as networking and storage.
 - Turn off the on-premises AltaVault appliance, or Suspend Replication by using the **Replication > Storage > Cloud Settings** page. The on-premises AltaVault appliance cannot be actively replicating data or connected to thebucket that you are going to use to access the archive in {{site.data.keyword.BluSoftlayer}}.
@@ -209,7 +209,7 @@ AltaVault requires the network interfaces to be on different networks within an 
    Consider the number of {{site.data.keyword.BluSoftlayer}} reserved IP addresses, which are three to four IP addresses per subnet block. As a result, ordering four IP addresses really net one IP address, or zero if the pod supports the Hot Standby Ready Protocol.
    {:important}
 4. Click **Continue** and select the VLAN that you want to use.
-5. Click **Continue** and complete the requested information on the next screen, and click **Place Order**. The creation of the IP addresses is quick and can be displayed by selecting **Network > IP Management > Subnets**. These are the addresses to be used for your VMs that you plan to place in the default virtual machine port group.
+5. Click **Continue** and complete the requested information on the next screen, and click **Place Order**. The creation of the IP addresses is quick and can be displayed by selecting **Network > IP Management > Subnets**. Use these addresses for the VMs that you plan to place in the default VM port group.
 6. Repeat this process so that you have two portable private IP address subnets.
 
    Keep track of the IP assignments. You can keep track by clicking the **Notes** section of the IP address and entering the host name or description of the machine assigned to the IP address.
@@ -231,7 +231,7 @@ Deploy the AltaVault OVA to the vSphere environment by using the utility server 
      - `e0b`, an interface that can be used to export the mount point for the NFS/SMB/CIFS share. In the example environment, it is assigned the “Share Network” port group.
      - `e0c`, another interface that can be used to export the mount point for the NFS/SMB/CIFS share.
 
-In the example configuration, the AltaVault appliance uses the `Primary` interface as the replicate-to-cloud/object store interface and `e0b` interface to export an NFS mount point. you must use the same type of protocol (such as, NFS or SMB/CIFS) as the one that you used on the on-premises AltaVault to replicate data to the cloud. For example, if you used an NFS share within the on-premises environment, you must use an NFS share to access the same data within {{site.data.keyword.BluSoftlayer}}.
+In the example configuration, the AltaVault appliance uses the `Primary` interface as the replicate-to-cloud/object store interface and `e0b` interface to export an NFS mount point. You must use the same type of protocol (such as NFS or SMB/CIFS) as the one that you used on the on-premises AltaVault to replicate data to the cloud. For example, if you used an NFS share within the on-premises environment, you must use an NFS share to access the same data within {{site.data.keyword.BluSoftlayer}}.
 {:important}
 
 ![Figure 10 - {{site.data.keyword.BluSoftlayer}} setup with VMware](/images/altavault_fig10.png)
@@ -251,7 +251,7 @@ After the AltaVault VM is configured with the appropriate virtualized hardware, 
      <tr><td>Step 1. `Admin password?`</td><td>Enter a new admin password</td></tr>
      <tr><td>Step 2. `Host name?`</td><td>Enter the host name that you want to use</td></tr>
      <tr><td>Step 3. `Use DHCP on primary interface?`</td><td>Enter n</td></tr>
-     <tr><td>Step 4. `Primary IP address?`</td><td>Enter the primary network IP address.  In our configuration, this is the network that is used for cloud replication and appliance management (for example, 192.168.64.5)</td></tr>
+     <tr><td>Step 4. `Primary IP address?`</td><td>Enter the primary network IP address.  In our configuration, this network is used for cloud replication and appliance management (for example, 192.168.64.5)</td></tr>
      <tr><td>Step 5. `Netmask?`</td><td>Enter the netmask (for example, 255.255.255.0)</td></tr>
      <tr><td>Step 6. `Default gateway?`</td><td>Enter the default gateway (for example, 192.168.64.1)</td></tr>
      <tr><td>Step 7. `Primary DNS server?`</td><td>Enter the primary DNS server in your environment</td></tr>
