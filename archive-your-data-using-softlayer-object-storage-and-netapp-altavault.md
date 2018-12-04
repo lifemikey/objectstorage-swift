@@ -44,7 +44,10 @@ In archive, or cold-storage mode, AltaVault primarily uses the local disk that i
 
 Since the data replicated by AltaVault is encrypted, users cannot directly access the same data residing on the {{site.data.keyword.objectstorageshort}} through the traditional {{site.data.keyword.objectstorageshort}} REST APIs or FTP. They must use one of two methods to access the data in {{site.data.keyword.objectstorageshort}}. The first method is to use the on-premises AltaVault to read, write, and delete data to, from, and in the cloud. The second, if accessing the data remotely, is to deploy another AltaVault appliance within {{site.data.keyword.BluSoftlayer}}, import the on-premises configuration (a built-in function), and access an NFS/SMB/CIFS mount presented by the AltaVault.
 
-This section describes the process of deploying the AltaVault appliance both on-premises and at {{site.data.keyword.BluSoftlayer}}. Note that AltaVault can be purchased as a physical or virtual appliance. Only the deployment of the trial version VMware vSphere ESXi-based AltaVault virtual appliance is covered.
+This section describes the process of deploying the AltaVault appliance both on-premises and at {{site.data.keyword.BluSoftlayer}}. 
+
+AltaVault can be purchased as a physical or virtual appliance. Only the deployment of the trial version VMware vSphere ESXi-based AltaVault virtual appliance is covered.
+{:tip}
 
 
 ## Deploying AltaVault On-Premises
@@ -73,11 +76,14 @@ The NICs are assigned the following interface functions:
 - e0b: An interface that can be used to export the mount point for the NFS/SMB/CIFS share.
 - e0c: Another interface that can be used to export the mount point for the NFS/SMB/CIFS share.
 
-In the example configuration we used, the AltaVault appliance uses the Primary interface as the cloud replication interface and e0b interface to export an NFS mount point. Note that you cannot use both an NFS share and SMB/CIFS share to access the same data. In other words, if you place data in an NFS share, you will not be able to access it via the SMB/CIFS share and vice versa.
+In the example configuration we used, the AltaVault appliance uses the `Primary` interface as the cloud replication interface and `e0b` interface to export an NFS mount point. 
+
+You cannot use both an NFS share and SMB/CIFS share to access the same data. In other words, if you place data in an NFS share, you will not be able to access it via the SMB/CIFS share and vice versa.
+{:important}
 
 ![Figure 3 - On-premises and {{site.data.keyword.BluSoftlayer}} overview](/images/altavault_fig3.png)
 
-The [NetApp AltaVault Installation and Service Guide](https://library.netapp.com/ecm/ecm_download_file/ECMLP2317733) has more information on the installation of the OVA and configuration of the VM settings for the appliance.
+For more information about the installation of the OVA and configuration of the VM settings for the appliance, see the [NetApp AltaVault Installation and Service Guide ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://library.netapp.com/ecm/ecm_download_file/ECMLP2317733).
 
 
 ### Setting up Initial Configuration of the AltaVault Appliance for On-Premises
@@ -92,7 +98,7 @@ After the AltaVault VM is configured with the appropriate hardware, you can powe
      <tr><td>Step 1. `Admin password?`</td><td>Enter a new admin password</td></tr>
      <tr><td>Step 2. `Hostname?`</td><td>Enter the host name that you want to use</td></tr>
      <tr><td>Step 3. `Use DHCP on primary interface?`</td><td>Enter n</td></tr>
-     <tr><td>Step 4. `Primary IP address?`</td><td>Enter the primary network IP address.  In our configuration, this is the network used for cloud replication and appliance management (for example, 192.168.64.5)</td></tr>
+     <tr><td>Step 4. `Primary IP address?`</td><td>Enter the primary network IP address.  In our configuration, this is the network that is used for cloud replication and appliance management (for example, 192.168.64.5)</td></tr>
      <tr><td>Step 5. `Netmask?`</td><td>Enter the netmask (for example, 255.255.255.0)</td></tr>
      <tr><td>Step 6. `Default gateway?`</td><td>Enter the default gateway (for example, 192.168.64.1)</td></tr>
      <tr><td>Step 7. `Primary DNS server?`</td><td>Enter the primary DNS server in your environment</td></tr>
@@ -217,8 +223,8 @@ Next, log in to your vSphere environment and create a VM port group to reflect t
 
 Deploy the AltaVault OVA to the vSphere environment by using the utility server after all of the previous requirements are met.
 
-1. Go back and edit the AltaVault VM when the deployment of the OVA is completed. Within the edit window, you might need to modify the memory allocated to match the version of AltaVault that you purchased. If you are using the trial version, assign 24 GB of memory and a disk less than or equal to 8 TB.
-2. Make sure to assign different networks (such as, portable private networks) to the AltaVault appliance after the memory and disk configurations are modified. The NICs are assigned the following functions:
+1. Go back and edit the AltaVault VM when the deployment of the OVA is completed. Within the edit window, you might need to modify the memory that is allocated to match the version of AltaVault that you purchased. If you are using the trial version, assign 24 GB of memory and a disk less than or equal to 8 TB.
+2. Make sure to assign different networks (such as portable private networks) to the AltaVault appliance after the memory and disk configurations are modified. The NICs are assigned the following functions:
 
      - `Primary`: Used as the management and or replication-to-the-cloud/object store interface. In this environment, it is assigned the “Primary Network” port group.      
      - `e0a`: An optional interface that can be used to replicated data to the cloud.
@@ -243,9 +249,9 @@ After the AltaVault VM is configured with the appropriate virtualized hardware, 
    <table>
      <tr><th>Question</th><th>Answer</th></tr>
      <tr><td>Step 1. `Admin password?``</td><td>Enter a new admin password</td></tr>
-     <tr><td>Step 2. `Host name? </td><td>Enter the host name you want to use</td></tr>
+     <tr><td>Step 2. `Host name? </td><td>Enter the host name that you want to use</td></tr>
      <tr><td>Step 3. `Use DHCP on primary interface?`</td><td>Enter n</td></tr>
-     <tr><td>Step 4. `Primary IP address?`</td><td>Enter the primary network IP address.  In our configuration, this is the network used for cloud replication and appliance management (for example, 192.168.64.5)</td></tr>
+     <tr><td>Step 4. `Primary IP address?`</td><td>Enter the primary network IP address.  In our configuration, this is the network that is used for cloud replication and appliance management (for example, 192.168.64.5)</td></tr>
      <tr><td>Step 5. `Netmask?`</td><td>Enter the netmask (for example, 255.255.255.0)</td></tr>
      <tr><td>Step 6. `Default gateway?`</td><td>Enter the default gateway (for example, 192.168.64.1)</td></tr>
      <tr><td>Step 7. `Primary DNS server?`</td><td>Enter the primary DNS server in your environment</td></tr>
@@ -271,7 +277,7 @@ In this step, the appliance is configured to connect to {{site.data.keyword.BluS
 9. In the **Key Passphrase** field, enter the password of the encryption key that you specified when you configured the on-premises AltaVault. For example, if your password for the on-premises AltaVault is **Neymar11**, enter **Neymar11**.
 10. Click **Import Configuration > Exit**.
 
-Although we imported the on-premises configuration to the {{site.data.keyword.BluSoftlayer}} AltaVault appliance, the cloud settings within the appliance must be modified to access the {{site.data.keyword.BluSoftlayer}} {{site.data.keyword.objectstorageshort}} Service through the private network. Use the following steps to make the modifications to the appliance.
+Although we imported the on-premises configuration to the {{site.data.keyword.BluSoftlayer}} AltaVault appliance, the cloud settings within the appliance must be modified to access the {{site.data.keyword.BluSoftlayer}} {{site.data.keyword.objectstorageshort}} Service through the private network.
 
 1. Browse to the **Cloud Settings** screen within the AltaVault appliance, and modify the **Hostname** to reflect the private address of the {{site.data.keyword.BluSoftlayer}} {{site.data.keyword.objectstorageshort}}. The private network name syntax is `location.objectstorage.service.networklayer.com`, where location designates the shortened data center name (for example, `mel01` for Melbourne 01 data center).
 2. Click **Apply**.
