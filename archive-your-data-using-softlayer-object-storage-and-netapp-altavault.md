@@ -226,10 +226,10 @@ Deploy the AltaVault OVA to the vSphere environment by using the utility server 
 1. Go back and edit the AltaVault VM when the deployment of the OVA is completed. Within the edit window, you might need to modify the memory that is allocated to match the version of AltaVault that you purchased. If you are using the trial version, assign 24 GB of memory and a disk less than or equal to 8 TB.
 2. Assign different networks (such as portable private networks) to the AltaVault appliance after the memory and disk configurations are modified. The NICs are assigned the following functions:
 
-     - `Primary`: Used as the management and or replication-to-the-cloud/object store interface. In this environment, it is assigned the “Primary Network” port group.      
-     - `e0a`: An optional interface that can be used to replicated data to the cloud.
-     - `e0b`: An interface that can be used to export the mount point for the NFS/SMB/CIFS share. In this environment, it is assigned the “Share Network” port group.
-     - `e0c`: Another interface that can be used to export the mount point for the NFS/SMB/CIFS share.
+     - `Primary`, it's used as the management and/or replication to the cloud object store interface. In the example environment, it is assigned the “Primary Network” port group.      
+     - `e0a`, an optional interface that can be used to replicated data to the cloud.
+     - `e0b`, an interface that can be used to export the mount point for the NFS/SMB/CIFS share. In the example environment, it is assigned the “Share Network” port group.
+     - `e0c`, another interface that can be used to export the mount point for the NFS/SMB/CIFS share.
 
 In the example configuration, the AltaVault appliance uses the `Primary` interface as the replicate-to-cloud/object store interface and `e0b` interface to export an NFS mount point. you must use the same type of protocol (such as, NFS or SMB/CIFS) as the one that you used on the on-premises AltaVault to replicate data to the cloud. For example, if you used an NFS share within the on-premises environment, you must use an NFS share to access the same data within {{site.data.keyword.BluSoftlayer}}.
 {:important}
@@ -322,7 +322,7 @@ You now have a configured AltaVault appliance in your {{site.data.keyword.BluSof
 
 ## Closing notes
 
-As large, unstructured data sets continue to grow, companies are seeking alternative ways to store and retain archives while lowering operational and capital expenses. The economics of data archiving and retention become feasible with cloud {{site.data.keyword.objectstorageshort}}, but inject various hurdles involving the migration from traditional storage systems to the cloud. By using NetApp’s AltaVault Cloud-Integrated Storage Appliance, organizations can quickly realize the value of cloud {{site.data.keyword.objectstorageshort}}. It allows straightforward deployment, set up, and migration from on-premises to {{site.data.keyword.BluSoftlayer}}.
+As large, unstructured data sets continue to grow, companies are seeking alternative ways to store and retain archives while they try to lessen operational and capital expenses. The economics of data-archiving and retention become feasible with cloud {{site.data.keyword.objectstorageshort}}, but the migration from traditional storage systems to the cloud involves various hurdles. By using NetApp’s AltaVault Cloud-Integrated Storage Appliance, organizations can quickly realize the value of cloud {{site.data.keyword.objectstorageshort}}. It allows straightforward deployment, set up, and migration from on-premises to {{site.data.keyword.BluSoftlayer}}.
 
 For more information about NetApp AltaVault, see the [NetApp AltaVault website ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://www.netapp.com/us/products/protection-software/altavault/).
 
