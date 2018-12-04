@@ -2,14 +2,24 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-07-10"
+lastupdated: "2018-12-03"
 
 ---
 {:new_window: target="_blank"}
+{:shortdesc: .shortdesc}
+{:codeblock: .codeblock}
+{:screen: .screen}
+{:pre: .pre}
+{:shortdesc: .shortdesc}
+{:note: .note}
+{:important: .important}
+{:deprecated: .deprecated}
+{:DomainName: data-hd-keyref="APPDomain"}
+{:DomainName: data-hd-keyref="DomainName"}
 
 # Creating Pseudo Hierarchical Directories
 
-After a directory was created with the {{site.data.keyword.objectstorageshort}} browser interface, or by using the API directly or by using one of the various clients or libraries, you might notice that a stub directory object was created. This is done to help users create empty directories that stick around past one user's session without having to add objects underneath that directory. 
+After a directory was created with the {{site.data.keyword.objectstorageshort}} browser interface, or by using the API directly or by using one of the various clients or libraries, you might notice that a stub directory object was created. This is done to help users create empty directories that stick around past one user's session without having to add objects underneath that directory.
 
 The entire directory structure can be built without these directory objects so cleaning up those objects is safe. Read on to for better understanding how you can build a directory listing through the {{site.data.keyword.objectstorageshort}} API.
 
@@ -57,7 +67,7 @@ Instead of CURL, use a HTTPie as the command line tool to make HTTP requests. Be
    3-f9ea5ef10393"}}
    ```
 
-   The authentication token is `AUTH_tk8a47cc0e4b3d48599aa499ffce1cf50a`, and the storage URL that you need to use is `https://dal05.objectstorage.softlayer.net/v1/AUTH_de5f21ef-09ff-4b1a-aaa3-f9ea5ef10393`. 
+   The authentication token is `AUTH_tk8a47cc0e4b3d48599aa499ffce1cf50a`, and the storage URL that you need to use is `https://dal05.objectstorage.softlayer.net/v1/AUTH_de5f21ef-09ff-4b1a-aaa3-f9ea5ef10393`.
 
 2. Set up some data. Expects 201 status codes for all of these requests.
 
@@ -124,7 +134,7 @@ Instead of CURL, use a HTTPie as the command line tool to make HTTP requests. Be
    }
    ]
    ```
-   
+
    As you can see, the result is a JSON document that is a list with three hashes, each one is an object in the container. It's easier to see the structure if you don't include `format=json` in the parameters.
 
    ```
@@ -147,18 +157,18 @@ Instead of CURL, use a HTTPie as the command line tool to make HTTP requests. Be
    ```
 4. You can add some more parameters to the end of that URL so you see only one level of that directory structure. {{site.data.keyword.objectstorageshort}} gives us the following to work with:
 
-   - **Prefix** - This parameter causes the call to return a list of objects that are prefixed with this value. If the prefix is 1/2/3/4/ the call returns objects that start with 1/2/3/4/. 
-   - **Delimiter** - This parameter is used to split a directory path. Without this parameter, the system has no idea if you're using slashes to denote a directory or pictures of ducks. Defining this parameter means that you want {{site.data.keyword.objectstorageshort}} to treat your call like you want only the current directory (which you can define through a prefix). 
+   - **Prefix** - This parameter causes the call to return a list of objects that are prefixed with this value. If the prefix is 1/2/3/4/ the call returns objects that start with 1/2/3/4/.
+   - **Delimiter** - This parameter is used to split a directory path. Without this parameter, the system has no idea if you're using slashes to denote a directory or pictures of ducks. Defining this parameter means that you want {{site.data.keyword.objectstorageshort}} to treat your call like you want only the current directory (which you can define through a prefix).
      Using the example setup, this is what you can expect out of making a GET request to /fake_directories with a prefix of '1/' and a delimiter of '/'.
-     
+
      ```
      1/2
      1/2/
      1/actual_object.txt
      ```
-     
+
      The actual_object.txt that is nested deeper doesn't show at all. Instead it's just `1/2/`. One of the problems is that `1/2` (the object) can clash with `1/2/` (the directory). You can delete `1/2` but you can't delete `1/2/`. You can set metadata on `1/2` but you can't on `1/2/`. You can set content on `1/2` but you can't on `1/2/`. That was the plain text output. Now look at the JSON.
-     
+
      ```
      $ http -v GET
      https://dal05.objectstorage.softlayer.net/v1/AUTH_de5f21ef-09ff-4b1a-aaa...
@@ -200,5 +210,5 @@ Instead of CURL, use a HTTPie as the command line tool to make HTTP requests. Be
      }
      ]
      ```
-     
+
      As you can see, real objects have a distinctly different look than the fake directories through the API. The {{site.data.keyword.objectstorageshort}} browsing interface uses both real and fake directories to provide an experience similar to browsing a file-based directory structure that might be much more familiar.

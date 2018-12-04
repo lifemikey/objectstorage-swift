@@ -2,15 +2,24 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-07-10"
+lastupdated: "2018-12-03"
 
 ---
 {:new_window: target="_blank"}
-{:note: .deprecated}
+{:shortdesc: .shortdesc}
+{:codeblock: .codeblock}
+{:screen: .screen}
+{:pre: .pre}
+{:shortdesc: .shortdesc}
+{:note: .note}
+{:important: .important}
+{:deprecated: .deprecated}
+{:DomainName: data-hd-keyref="APPDomain"}
+{:DomainName: data-hd-keyref="DomainName"}
 
-# Connecting to {{site.data.keyword.objectstorageshort}} OpenStack Swift by using Cloudfuse
+# Connecting to {{site.data.keyword.objectstorageshort}} with Cloudfuse
 
-{{site.data.keyword.BluSoftlayer}}'s {{site.data.keyword.objectstorageshort}} product can be mounted in Linux or Windows, and navigated as a native directory. While you can interact with your {{site.data.keyword.objectstorageshort}} containers similar to a native file/folder structure. It's not recommended to run programs from this mount point.
+{{site.data.keyword.BluSoftlayer}}'s {{site.data.keyword.objectstorageshort}} product can be mounted in Linux or Windows, and navigated as a native directory. You can interact with your {{site.data.keyword.objectstorageshort}} containers similar to a native file/folder structure. However, it's not recommended to run programs from this mount point.
 
 1. Download the `cloudfuse` files.
    ```
@@ -23,8 +32,8 @@ lastupdated: "2018-07-10"
    ```
 
 3. Check system dependency for the compiling process. Install the following packages for your Linux system.
-   - RHEL/CentOS - `gcc make fuse-devel curl-devel libxml2-devel openssl-devel fuse`
-   - Debian/Ubuntu - `build-essential libcurl4-openssl-dev libxml2-dev libssl-dev libfuse-dev`
+   - RHEL and CentOS - `gcc make fuse-devel curl-devel libxml2-devel openssl-devel fuse`
+   - Debian and Ubuntu - `build-essential libcurl4-openssl-dev libxml2-dev libssl-dev libfuse-dev`
 
 4. Compile the `cloudfuse` binary.
    ```
@@ -33,7 +42,7 @@ lastupdated: "2018-07-10"
    make install
    ```
 
-5. Check that the `cloudfuse` binary was installed.
+5. Check that the `cloudfuse` binary is installed.
    ```
    which cloudfuse => /usr/local/bin/cloudfuse
    ```
@@ -46,7 +55,8 @@ api_key=[key or password string]
 authurl=https://dal05.objectstorage.softlayer.net/auth/v1.0/
 ```
 
-**Note** - Your `authurl` depends on the location of your {{site.data.keyword.objectstorageshort}}.
+Your `authurl` depends on the location of your {{site.data.keyword.objectstorageshort}}.
+{:tip}
 
 You can set more option for the {{site.data.keyword.objectstorageshort}} mount. These options are located under the **USE:** section in the `README` file found in the cloudfuse `.tar` file. A common option is the following setting.
 
@@ -55,3 +65,4 @@ cache_timeout
 ```
 
 This option sets the duration of directory caching. The default is 600 seconds.
+{:note}

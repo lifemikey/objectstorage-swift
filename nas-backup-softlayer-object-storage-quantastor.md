@@ -2,10 +2,20 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-07-10"
+lastupdated: "2018-12-03"
 
 ---
 {:new_window: target="_blank"}
+{:shortdesc: .shortdesc}
+{:codeblock: .codeblock}
+{:screen: .screen}
+{:pre: .pre}
+{:shortdesc: .shortdesc}
+{:note: .note}
+{:important: .important}
+{:deprecated: .deprecated}
+{:DomainName: data-hd-keyref="APPDomain"}
+{:DomainName: data-hd-keyref="DomainName"}
 
 
 # Setting up NAS Backup to {{site.data.keyword.objectstorageshort}} OpenStack Swift With QuantaStor

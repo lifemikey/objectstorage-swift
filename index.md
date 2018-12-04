@@ -2,11 +2,20 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-07-10"
+lastupdated: "2018-12-03"
 
 ---
-{:note: .deprecated}
 {:new_window: target="_blank"}
+{:shortdesc: .shortdesc}
+{:codeblock: .codeblock}
+{:screen: .screen}
+{:pre: .pre}
+{:shortdesc: .shortdesc}
+{:note: .note}
+{:important: .important}
+{:deprecated: .deprecated}
+{:DomainName: data-hd-keyref="APPDomain"}
+{:DomainName: data-hd-keyref="DomainName"}
 
 
 # Getting Started with {{site.data.keyword.objectstorageshort}} OpenStack Swift

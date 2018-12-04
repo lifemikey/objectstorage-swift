@@ -2,16 +2,23 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-07-09"
+lastupdated: "2018-12-03"
 
 ---
-{:note: .deprecated}
-{:codeblock: .codeblock}
-{:pre: .pre}
 {:new_window: target="_blank"}
+{:shortdesc: .shortdesc}
+{:codeblock: .codeblock}
+{:screen: .screen}
+{:pre: .pre}
+{:shortdesc: .shortdesc}
+{:note: .note}
+{:important: .important}
+{:deprecated: .deprecated}
+{:DomainName: data-hd-keyref="APPDomain"}
+{:DomainName: data-hd-keyref="DomainName"}
 
 
-# VHD Content Checking and Conversion 
+# VHD Content Checking and Conversion
 
 Being able to import and deploy your own instance by using a custom VHD or ISO is one of the many benefits of the {{site.data.keyword.BluSoftlayer_full}}. Use these instructions to verify that your VHD/ISO is the proper content type, convert it if the content type is incorrect, and even manually import an image if needed. If you're unfamiliar with the Image import option, see the following [article](https://console.bluemix.net/docs/infrastructure/image-templates/import-image.html){:new_window}.
 
@@ -66,7 +73,7 @@ Accept-Ranges: bytes
 X-Account-Storage-Policy-Standard-Bytes-Used: 109313871291
 X-Trans-Id: tx5fa5bb3224694c49bb3b7-0056797317
 Date: Tue, 22 Dec 2015 15:58:15 GMT
-      
+
 images
 isos
 vhds    
@@ -82,12 +89,12 @@ curl -i -H "X-Auth-Token: AUTH_tkcxxxxxxxxxxxxxxxxxxxxxxxx1d2a2a2" "https://dal0
 
 ### Verifying content type
 
-If you are using a third party application to upload objects in to {{site.data.keyword.objectstorageshort}} you might run across an issue where the application sets the wrong content type. This error is caused by the software that is being used to upload the object not properly identifying the MIME type and uploading it as such. 
+If you are using a third party application to upload objects in to {{site.data.keyword.objectstorageshort}} you might run across an issue where the application sets the wrong content type. This error is caused by the software that is being used to upload the object not properly identifying the MIME type and uploading it as such.
 
 Example
 ```
 curl -s -i -H "X-Auth-Token: AUTH_tkcxxxxxxxxxxxxxxxxxxxxxxxx1d2a2a2" "https://dal05.objectstorage.service.networklayer.com/v1/AUTH_xxxxxxxx-d4a2-xxxx-xxxx-xxxxxxxxxx/isos/centos.iso" -I |grep Content-Type
-     
+
 Content-Type: application/octet-stream
 ```
 {: codeblock}
@@ -104,7 +111,7 @@ curl -i -H "X-Auth-Token: AUTH_tkcxxxxxxxxxxxxxxxxxxxxxxxx1d2a2a2" -H "Content-T
 
 ### Importing Data Manually
 
-In very rare circumstances, an ISO with the correct Content-Type doesn't show up for import under **Devices** > **Manage** > **Images** > **Import Image**. When this happens you can manually import the ISO using the following curl command. 
+In very rare circumstances, an ISO with the correct Content-Type doesn't show up for import under **Devices** > **Manage** > **Images** > **Import Image**. When this happens you can manually import the ISO using the following curl command.
 
 ```
 curl -sk "https://<SWIFT_USER>:<APIKEY>@api.softlayer.com/rest/v3/SoftLayer_Virtual_Guest_Block_Device_Template_Group/createFromExternalSource.json" -X POST -d '{"parameters": [{"name": "<CentOS>", "note": "Testing manual import of image", "operatingSystemReferenceCode": "<CENTOS_6_64>", "uri": "swift://<SWIFT_ACCOUNT>@<DC>/<CONTAINER_NAME>/<OBJECT_NAME_OF_IMAGE>"}]}'
@@ -118,10 +125,7 @@ curl -sk "https://<SWIFT_USER>:<APIKEY>@api.softlayer.com/rest/v3/SoftLayer_Virt
 
 The following example shows the full command that johndoe can use to import a CentOS ISO.
 
-   ``` 
+   ```
    curl -sk "https://johndoe:a5a9139ccb319795362785af5da02d244e76076d142f15b9d7bb95671b83XXXX@api.softlayer.com/rest/v3/SoftLayer_Virtual_Guest_Block_Device_Template_Group/createFromExternalSource.json" -X POST -d '{"parameters": [{"name": "CentOS", "note": "CentOS production image", "operatingSystemReferenceCode": "CENTOS_6_64", "uri": "swift://SLOSXXXXX-35@dal05/isos/centos_production_iso_image.iso"}]}'
    ```
    {: codeblock}
-
-
-
