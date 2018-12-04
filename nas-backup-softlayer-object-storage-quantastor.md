@@ -30,7 +30,7 @@ The {{site.data.keyword.BluSoftlayer_full}} QuantaStor platform includes the abi
 3. The {{site.data.keyword.objectstorageshort}} account information that is needed for the configuration can be obtained from the [{{site.data.keyword.slportal}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/){:new_window}.
     1. Select **{{site.data.keyword.objectstorageshort}}** from the Storage menu.
     2. The {{site.data.keyword.objectstorageshort}} accounts are listed under the SL Master account, and you can also order another {{site.data.keyword.objectstorageshort}} account. All {{site.data.keyword.objectstorageshort}} accounts that are requested by child accounts under the Master Account are visible to and accessible by all other child accounts. Ensure that only the appropriate {{site.data.keyword.objectstorageshort}} account is used.
-    3. Select a {{site.data.keyword.objectstorageshort}} account. Then, select the data center, where the backup data is to be stored.
+    3. Select an {{site.data.keyword.objectstorageshort}} account. Then, select the data center, where the backup data is to be stored.
     4. The {{site.data.keyword.objectstorageshort}} data center cluster screen provides statistics on the usage within the account.
     5. Click **View Credentials** to get the account data needed for the QuantaStor configuration.
 
@@ -68,8 +68,8 @@ The cloud container that was created in the previous step now appears as one of 
 **Start Date**
  - By using a start date in the future, you can configure the backup policy now to come into effect later.
 
-**backup Concurrency**
- - backup Concurrency controls the number of simultaneous file copy threads that are used to back up the data. Five settings are available. You need to be careful if you run parallel backups through the NAS – {{site.data.keyword.objectstorageshort}} gateway. The NAS/Cloud gateway cache is only 500 MB and highly parallelized backups might fill up the cache faster than the data can be uploaded into {{site.data.keyword.objectstorageshort}}.
+**Backup Concurrency**
+ - Backup Concurrency controls the number of simultaneous file copy threads that are used to back up the data. Five settings are available. You need to be careful if you run parallel backups through the NAS – {{site.data.keyword.objectstorageshort}} gateway. The NAS/Cloud gateway cache is only 500 MB and highly parallelized backups might fill up the cache faster than the data can be uploaded into {{site.data.keyword.objectstorageshort}}.
 
 **Purge Policy**
  - The purge policy controls handling of files in the backup. Four settings are available:

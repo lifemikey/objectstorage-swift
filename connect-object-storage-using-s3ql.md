@@ -23,10 +23,10 @@ S3QL is the Python utility that QuantaStor uses to mount its cloud containers. I
 
 - Advantages
   - Advanced features (encryption, compression, data deduplication, local caching),
-  - highly configurable (cache size, compression method).
+  - Highly configurable (cache size, compression method).
 - Disadvantages
-  - {{site.data.keyword.objectstorageshort}} containers cannot be shared by multiple hosts;
-  - no graphical interface
+  - {{site.data.keyword.objectstorageshort}} containers cannot be shared by multiple hosts
+  - No graphical interface
 
 This solution works great for Integrated solutions, and permanent storage mounts.
 
@@ -41,7 +41,7 @@ This solution works great for Integrated solutions, and permanent storage mounts
    ```
    {:pre}
 
-   These commands are for Ubuntu. Your distibution might have different ones. Check your vendor documentation.
+   These commands are for Ubuntu. Your distribution might have different ones. Check your vendor documentation.
    {:tip}
 
 2. Create a directory to store your credentials.<br/>
@@ -69,7 +69,7 @@ This solution works great for Integrated solutions, and permanent storage mounts
    storage-url: swift://
    ```
 
-4. Create a {{site.data.keyword.objectstorageshort}} container for your S3QL file system.
+4. Create an {{site.data.keyword.objectstorageshort}} container for your S3QL file system.
 5. Make your new S3QL file system. <br/>
    ```
    mkfs.s3ql swift://:443/
@@ -81,7 +81,7 @@ This solution works great for Integrated solutions, and permanent storage mounts
    mkfs.s3ql swift://tor01.objectstorage.softlayer.net:443/s3qltest
    ```
 
-6. Create a new mount point for your file system.<br/>
+6. Create a mount point for your file system.<br/>
    ```
    mkdir /mnt/s3ql
    ```
