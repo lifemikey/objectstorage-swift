@@ -33,7 +33,7 @@ The entire directory structure can be built without these objects so cleaning up
 
 **Example** <br/>
 
-Instead of cURL, use a `HTTPie` as the command line tool to make HTTP requests. Before you can do anything on {{site.data.keyword.objectstorageshort}}, you need to authenticate.
+Instead of cURL, use a `HTTPie` as the command-line tool to make HTTP requests. Before you can do anything on {{site.data.keyword.objectstorageshort}}, you need to authenticate.
 
 1. Get an 'auth token`.
 
