@@ -30,9 +30,9 @@ The Swift Object Storage service that is provisioned from and managed in the [{{
 
 Existing Swift accounts continue to be supported, but no new Swift accounts are created. The service is replaced by the [{{site.data.keyword.cos_full}} service ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/cloud/object-storage) which is provisioned from and managed in the unified console alongside our PaaS offerings such as Containers and Watson services. 
 
-{{site.data.keyword.cos_notm}} is available at a lower cost per GB than OpenStack Swift. {{site.data.keyword.cos_notm}} is designed to provide the performance, flexibility, and pricing that fits your workload demands and data access patterns. 
+{{site.data.keyword.cos_full_notm}} is available at a lower cost per GB than OpenStack Swift. {{site.data.keyword.cos_full_notm}} is designed to provide the performance, flexibility, and pricing that fits your workload demands and data access patterns. 
 
-{{site.data.keyword.cos_notm}} benefits:
+{{site.data.keyword.cos_full_notm}} benefits:
 * Secure to the core
    - Integration with {{site.data.keyword.iamlong}} allows for granular access control at the bucket-level by using role-based policies.
    - All data is encrypted at-rest and in-flight by default.
@@ -42,11 +42,11 @@ Existing Swift accounts continue to be supported, but no new Swift accounts are 
   - Flexible data storage classes for Active, Less Active, Cold and Dynamic workloads.
   - No charge for data ingress.
   - Lowest cost archive with lifecycle policies for long-term data retention.
-  - Analyze data directly in {{site.data.keyword.cos_notm}} with {{site.data.keyword.sqlquery_full}}.
+  - Analyze data directly in {{site.data.keyword.cos_full_notm}} with {{site.data.keyword.sqlquery_full}}.
   
 **Recommended Action** 
 
-Migrate to {{site.data.keyword.cos_notm}} to take advantage of the superior cost-performance profile. Please, migrate your workloads to the [{{site.data.keyword.cos_notm}} service ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/catalog/services/cloud-object-storage) at your earliest convenience.
+Migrate to {{site.data.keyword.cos_full_notm}} to take advantage of the superior cost-performance profile. Please, migrate your workloads to the [{{site.data.keyword.cos_full_notm}} service ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/catalog/services/cloud-object-storage) at your earliest convenience.
 
 For more information about how to perform the migration, see [Migrating data from OpenStack Swift](https://{DomainName}/docs/services/cloud-object-storage/tutorials/migrate.html#migrating-data-from-openstack-swift)
 {:tip}
