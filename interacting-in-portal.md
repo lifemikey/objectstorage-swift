@@ -46,26 +46,6 @@ The {{site.data.keyword.objectstorageshort}} screen in the [{{site.data.keyword.
    - Toronto 1 (TOR01)
    - Tokyo 2 (TOK02)
 
-## Accessing the {{site.data.keyword.objectstorageshort}} Screen
-
-The {{site.data.keyword.objectstorageshort}} screen can be accessed through Navigation in the [{{site.data.keyword.slportal}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/){:new_window}.
-
-- Click the {{site.data.keyword.objectstorageshort}} link from the list of storage nodes to access the {{site.data.keyword.objectstorageshort}} screen. If there are multiple users on an account, select the user whose {{site.data.keyword.objectstorageshort}} account you want to access.
-
-- Select one of the following Clusters based on the city that is of nearest proximity to your users.
-    - Dallas 5 (DAL05)
-    - Singapore 1 (SNG01)
-    - Amsterdam 1 (AMS01)
-    - San Jose 1 (SJC01)
-    - Mexico 1 (MEX01)
-    - Toronto 1 (TOR01)
-    - Melbourne 1 (MEL01)
-    - London 2 (LON02)
-    - Paris 1 (PAR01)
-    - Hong Kong 2 (HKG02)
-    - Tokyo 2 (TOK02)
-    - Frankfurt 2 (FRA02)
-
 ## Explaining the {{site.data.keyword.objectstorageshort}} User Interface
 
 Upon clicking {{site.data.keyword.objectstorageshort}} in the menu, you are routed directly to the {{site.data.keyword.objectstorageshort}} landing page. From ordering more {{site.data.keyword.objectstorageshort}} on your user account to adding and deleting metadata, all [{{site.data.keyword.slportal}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/){:new_window} interactions with your {{site.data.keyword.objectstorageshort}} account begin from this screen. The information that is displayed on the landing page is specific to the selected account and is dependent upon how containers, files and metadata are organized on the cluster. Your {{site.data.keyword.objectstorageshort}} account interactions begin on the **Account** Tab.
