@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-12-03"
+lastupdated: "2018-12-10"
 
 ---
 {:new_window: target="_blank"}
@@ -18,6 +18,9 @@ lastupdated: "2018-12-03"
 {:DomainName: data-hd-keyref="DomainName"}
 
 # Connecting to {{site.data.keyword.objectstorageshort}} with Cloudfuse
+
+All instances of this service are deprecated. Existing instances can be used, but no new {{site.data.keyword.objectstorageshort}} accounts can be provisioned after **10 December 2018**.
+{:deprecated}
 
 {{site.data.keyword.BluSoftlayer}}'s {{site.data.keyword.objectstorageshort}} product can be mounted in Linux or Windows, and navigated as a native directory. You can interact with your {{site.data.keyword.objectstorageshort}} containers similar to a native file and folder structure. However, it is not recommended to run programs from this mount point.
 
@@ -47,16 +50,29 @@ lastupdated: "2018-12-03"
    which cloudfuse => /usr/local/bin/cloudfuse
    ```
 
-Before you can mount your {{site.data.keyword.objectstorageshort}} account, you need to create a file in your home directory with your {{site.data.keyword.Bluemix}} {{site.data.keyword.objectstorageshort}} account details. The file must be named `.cloudfuse` and contain the following information.
+6. Before you can mount your {{site.data.keyword.objectstorageshort}} account, you need to create a file in your home directory with your {{site.data.keyword.Bluemix}} {{site.data.keyword.objectstorageshort}} account details. The file must be named `.cloudfuse` and contain the following information.
 
-```
-username=[your username]
-api_key=[key or password string]
-authurl=https://dal05.objectstorage.softlayer.net/auth/v1.0/
-```
+   ```
+   username=[your username]
+   api_key=[key or password string]
+   authurl=https://dal05.objectstorage.softlayer.net/auth/v1.0/
+    ```
 
-Your `authurl` depends on the location of your {{site.data.keyword.objectstorageshort}}.
-{:tip}
+   Your `authurl` depends on the location of your {{site.data.keyword.objectstorageshort}}.
+   {:tip}
+
+7. Chmod the cloudfuse configuration file .cloudfuse, for proper permissions.
+   ```
+   chmod 600 /user/.cloudfuse
+   ```
+   {:pre}
+
+8. Mount the directory on your filesystem.
+   ```
+   cloudfuse /path/to/mount
+   ```
+   {:pre}
+
 
 You can set more option for the {{site.data.keyword.objectstorageshort}} mount. These options are located under the `USE:` section in the `README` file that is located in the `cloudfuse .tar` file. A common option is the following setting.
 
@@ -66,3 +82,5 @@ cache_timeout
 
 This option sets the duration of directory caching. The default is 600 seconds.
 {:note}
+
+For more information, see [IBM Cloud Infrastructure + OpenStack Swift = Object Storage](http://blog.softlayer.com/2012/softlayer-openstack-swift-softlayer-object-storage/){:new_window}

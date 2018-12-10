@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-12-03"
+lastupdated: "2018-12-10"
 
 ---
 {:new_window: target="_blank"}
@@ -19,6 +19,9 @@ lastupdated: "2018-12-03"
 
 
 # FAQs
+
+All instances of this service are deprecated. Existing accounts can be used, but no new {{site.data.keyword.objectstorageshort}} accounts can be provisioned after **10 December 2018**.
+{:deprecated}
 
 ## What are the {{site.data.keyword.objectstorageshort}} authentication endpoints on the Public and Private networks?
 

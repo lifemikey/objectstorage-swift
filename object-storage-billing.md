@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-12-03"
+lastupdated: "2018-12-10"
 
 ---
 {:new_window: target="_blank"}
@@ -19,6 +19,9 @@ lastupdated: "2018-12-03"
 
 
 # Billing for {{site.data.keyword.objectstorageshort}} OpenStack Swift
+
+All instances of this service are deprecated. Existing accounts can be used, but no new {{site.data.keyword.objectstorageshort}} accounts can be provisioned after **10 December 2018**.
+{:deprecated}
 
 {{site.data.keyword.Bluemix}} {{site.data.keyword.objectstorageshort}} is a pay-as-you-go service – you pay only for what you use. There's no minimum fee, nor are there any setup-fees or commitments to start the service. {{site.data.keyword.objectstorageshort}} is charged in 1 of 2 ways – {{site.data.keyword.objectstorageshort}} usage per GB per month and public outbound bandwidth per GB per month.
 

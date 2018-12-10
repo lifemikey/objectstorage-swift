@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-12-03"
+lastupdated: "2018-12-10"
 
 ---
 {:new_window: target="_blank"}
@@ -18,6 +18,9 @@ lastupdated: "2018-12-03"
 {:DomainName: data-hd-keyref="DomainName"}
 
 # Creating Pseudo Hierarchical Directories
+
+All instances of this service are deprecated. Existing accounts can be used, but no new {{site.data.keyword.objectstorageshort}} accounts can be provisioned after **10 December 2018**.
+{:deprecated}
 
 After a directory was created with the {{site.data.keyword.objectstorageshort}} browser interface, or by the API, or by one of the various clients, you might notice that a stub directory object was created. This object is created to help users create empty directories that stick around past one user's session without having to add objects in that directory.
 

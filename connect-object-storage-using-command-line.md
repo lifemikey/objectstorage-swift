@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-12-03"
+lastupdated: "2018-12-10"
 
 ---
 {:new_window: target="_blank"}
@@ -18,6 +18,9 @@ lastupdated: "2018-12-03"
 {:DomainName: data-hd-keyref="DomainName"}
 
 # Connecting to {{site.data.keyword.objectstorageshort}} with the command line
+
+All instances of this service are deprecated. Existing accounts can be used, but no new {{site.data.keyword.objectstorageshort}} accounts can be provisioned after **10 December 2018**. 
+{:deprecated}
 
 {{site.data.keyword.BluSoftlayer_full}} {{site.data.keyword.objectstorageshort}} provides a low-cost storage solution that can be used for many applications. Unlike {{site.data.keyword.filestorage_short}} and {{site.data.keyword.blockstorageshort}}, {{site.data.keyword.objectstorageshort}} manages data as objects. Each object includes the data itself, some metadata, and a globally unique identifier.
 

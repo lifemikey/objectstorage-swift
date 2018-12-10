@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-12-03"
+lastupdated: "2018-12-10"
 
 ---
 {:new_window: target="_blank"}
@@ -18,6 +18,9 @@ lastupdated: "2018-12-03"
 {:DomainName: data-hd-keyref="DomainName"}
 
 # Connecting to {{site.data.keyword.objectstorageshort}} with QuantaStor
+
+All instances of this service are deprecated. Existing accounts can be used, but no new {{site.data.keyword.objectstorageshort}} accounts can be provisioned after **10 December 2018**. 
+{:deprecated}
 
 The QuantaStor appliance available from {{site.data.keyword.BluSoftlayer_full}} offers a more permanent solution for accessing your {{site.data.keyword.objectstorageshort}} account. The appliance acts as a storage gateway so you can create NFS/CIFS endpoints from your {{site.data.keyword.objectstorageshort}} clusters. The endpoints can then be mounted and accessed like any other NFS/CIFS  share. The appliance uses the S3QL Python library to access your {{site.data.keyword.objectstorageshort}} account and shares many of the same features, such as data-deduplication, encryption, and compression. With the QuantaStor appliance, you can also schedule backups and push them to your {{site.data.keyword.objectstorageshort}} account.
 

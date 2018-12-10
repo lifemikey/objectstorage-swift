@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-12-03"
+lastupdated: "2018-12-10"
 
 ---
 {:new_window: target="_blank"}
@@ -19,6 +19,10 @@ lastupdated: "2018-12-03"
 
 
 # Setting up NAS backup to {{site.data.keyword.objectstorageshort}} With QuantaStor
+
+All instances of this service are deprecated. Existing accounts can be used, but no new {{site.data.keyword.objectstorageshort}} accounts can be provisioned after **10 December 2018**.
+{:deprecated}
+
 
 The {{site.data.keyword.BluSoftlayer_full}} QuantaStor platform includes the ability to back up NAS network shares to various cloud storage platforms, including {{site.data.keyword.objectstoragefull}}. The QuantaStor NAS backup capability can be used to back up NAS network shares external to the QuantaStor platform. The backup function operates by using a “server-pull” mechanism, retrieving files through the NAS interface, caching them on the QuantaStor appliance and uploading the files into {{site.data.keyword.objectstorageshort}}. Backed up files are uploaded to the configured cloud storage container.
 

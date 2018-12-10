@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2018
-lastupdated: "2018-12-03"
+lastupdated: "2018-12-10"
 
 ---
 {:new_window: target="_blank"}
@@ -19,6 +19,9 @@ lastupdated: "2018-12-03"
 
 
 # Connecting to {{site.data.keyword.objectstorageshort}} with Cyberduck
+
+All instances of this service are deprecated. Existing accounts can be used, but no new {{site.data.keyword.objectstorageshort}} accounts can be provisioned after **10 December 2018**. 
+{:deprecated}
 
 OpenStack limits the size of any individual object to 5 GB. The application supports storage of files larger than the 5-GB limit through segmentation. Additionally, various clients have their own file size limits.
 
