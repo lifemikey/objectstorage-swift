@@ -32,7 +32,7 @@ Existing Swift accounts continue to be supported, but no new Swift accounts are 
 
 {{site.data.keyword.cos_full_notm}} is available at a lower cost per GB than OpenStack Swift. {{site.data.keyword.cos_full_notm}} is designed to provide the performance, flexibility, and pricing that fits your workload demands and data access patterns.
 
-**{{site.data.keyword.cos_full_notm}} benefits**
+## {{site.data.keyword.cos_full_notm}} benefits
 * Secure to the core
    - Integration with {{site.data.keyword.iamlong}} allows for granular access control at the bucket-level by using role-based policies.
    - All data is encrypted at-rest and in-flight by default.
@@ -44,7 +44,7 @@ Existing Swift accounts continue to be supported, but no new Swift accounts are 
   - Lowest cost archive with lifecycle policies for long-term data retention.
   - Analyze data directly in {{site.data.keyword.cos_full_notm}} with {{site.data.keyword.sqlquery_full}}.
 
-**Recommended Action**
+## Recommended Action
 
 Migrate to {{site.data.keyword.cos_full_notm}} to take advantage of the superior cost-performance profile. Please, migrate your workloads to the [{{site.data.keyword.cos_full_notm}} service ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/catalog/services/cloud-object-storage) at your earliest convenience.
 
