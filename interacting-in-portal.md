@@ -28,8 +28,7 @@ All instances of this service are deprecated. Existing accounts can be used, but
 The {{site.data.keyword.objectstorageshort}} screen in the [{{site.data.keyword.slportal}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/){:new_window} can be accessed from the main menu after login.
 
 1. Access the {{site.data.keyword.slportal}} by using your unique credentials.
-2. Select **Storage** > **{{site.data.keyword.objectstorageshort}}** from the navigation bar.<br/>
-   ![{{site.data.keyword.objectstorageshort}} menu option](/images/ObjectStorageMenu.png)
+2. Select **Storage** > **{{site.data.keyword.objectstorageshort}}** from the navigation bar.
 3. Click the **{{site.data.keyword.objectstorageshort}}** link from the list of storage nodes to access the {{site.data.keyword.objectstorageshort}} page. If the account has multiple users, select the user whose {{site.data.keyword.objectstorageshort}} account you want to access.
 4. Select one of the following **Clusters** based on the city that is of nearest proximity to your users.
    - Amsterdam 1 (AMS01)
@@ -47,6 +46,68 @@ The {{site.data.keyword.objectstorageshort}} screen in the [{{site.data.keyword.
    - Toronto 1 (TOR01)
    - Tokyo 2 (TOK02)
 
+## Accessing the {{site.data.keyword.objectstorageshort}} Screen
+
+The {{site.data.keyword.objectstorageshort}} screen can be accessed through Navigation in the [{{site.data.keyword.slportal}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/){:new_window}.
+
+- Click the {{site.data.keyword.objectstorageshort}} link from the list of storage nodes to access the {{site.data.keyword.objectstorageshort}} screen. If there are multiple users on an account, select the user whose {{site.data.keyword.objectstorageshort}} account you want to access.
+
+- Select one of the following Clusters based on the city that is of nearest proximity to your users.
+    - Dallas 5 (DAL05)
+    - Singapore 1 (SNG01)
+    - Amsterdam 1 (AMS01)
+    - San Jose 1 (SJC01)
+    - Mexico 1 (MEX01)
+    - Toronto 1 (TOR01)
+    - Melbourne 1 (MEL01)
+    - London 2 (LON02)
+    - Paris 1 (PAR01)
+    - Hong Kong 2 (HKG02)
+    - Tokyo 2 (TOK02)
+    - Frankfurt 2 (FRA02)
+
+## Explaining the {{site.data.keyword.objectstorageshort}} User Interface
+
+Upon clicking {{site.data.keyword.objectstorageshort}} in the menu, you are routed directly to the {{site.data.keyword.objectstorageshort}} landing page. From ordering more {{site.data.keyword.objectstorageshort}} on your user account to adding and deleting metadata, all [{{site.data.keyword.slportal}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/){:new_window} interactions with your {{site.data.keyword.objectstorageshort}} account begin from this screen. The information that is displayed on the landing page is specific to the selected account and is dependent upon how containers, files and metadata are organized on the cluster. Your {{site.data.keyword.objectstorageshort}} account interactions begin on the **Account** Tab.
+
+- **Account Tab**
+
+  The **Account** Tab contains various information about your account, including account and network usage and is the access point to all information stored on your cluster.
+
+- **Account Usage**
+
+  This section of the Account tab contains an overview of the number of containers that are currently active on the cluster and the total amount of storage that is used. Also in this section, you can see the **View Credentials** link. The View Credentials link allows the user to view the credentials that are associated with the selected account, including the Authentication Endpoint, user name and API Key (Password). While this information is not vital for interactions through the [{{site.data.keyword.slportal}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/){:new_window}, the Account Credentials are needed for interacting with {{site.data.keyword.objectstorageshort}} through the API or another client.
+
+- **Bandwidth Usage**
+
+  The various Bandwidth Usage boxes that are located within the Account tab display current details about your public and private network, and CDN bandwidth through the node interface. Because {{site.data.keyword.objectstorageshort}} is set up on a “pay as you go” basis, you only pay for what you use. That being said, this section helps users understand their usage to better manage the amount of money that is spent on {{site.data.keyword.objectstorageshort}} each month.
+
+- **Cluster Contents - Container-Level View**
+
+  The third area on the Account tab displays the contents of the cluster. This view varies based on what information you accessed, but defaults to the container-level view upon initial access of the {{site.data.keyword.objectstorageshort}} account. From this section, the check box can be clicked for high-level details on the container that is displayed in the **Details** window. All views that are available within your cluster are filterable through the **Filter** text box at the top of each view.
+
+  In addition to viewing containers, new containers can be added. Click the **Add Container** link to begin the process of adding a container to your cluster.
+
+  Containers can also be deleted at this level by clicking the **delete** icon and following the prompts.
+
+  The entire contents of the container can be viewed at a folder-level and file-level view (dependent upon how the container is organized) by clicking the container name. Upon clicking the container name, the view populates in a similar format, displaying each folder and file associated with the container.
+
+- **Cluster Contents - Folder/File-Level View**
+
+  When the folder or file-level view of the account is accessed, users can view all folders that are associated with the container and all the files that are associated with the container that weren't yet assigned to folders. If no folders were associated with an account, this is the final level of organization the user can view. Clicking the check box next to the folder or file name provides information about the folder or in the **Details** window. For files present at this level, clicking the **file name** displays the file. For folders present at this level, clicking the **folder name** opens an extra file-level view that displays only those files that are associated with the selected folder.
+
+  The files that are associated with a folder are not viewable in the initial folder-level view, even if files are displayed along with a folder. When you view files that are associated with the folder, the same interactions apply as for files that are not associated with a folder.
+  {:note}
+
+  In addition to viewing and expanding contents of the container on this view, both files and folders can be added at this level. Clicking the **Add File** or **Add Folder** link begins the process for adding either item to the selected container. Files and folders can also be deleted at this level by clicking the **delete** icon and following the prompts.
+
+- **Details Pane**
+
+  The Details pane is present throughout the navigation of your container. However, this window displays varied information based on the area in which you are navigating and the boxes, if any, you clicked. Clicking the check box next to a specific line item on the **Account** tab provides high-level details about the item you selected.
+
+  When no items are checked, the **Details** pane displays information about the part of your cluster that you're viewing. For example, in the previous image, the photos container was accessed and the contents of that container are displayed on the folder/file-level view. At this level, the **Details** window displays an overview of the contents of the container and CDN information.
+
+  Clicking the **Actions** list within the **Details Pane** on any view allows various actions to be taken on the cluster, based on what area of the cluster is displayed within the **Details Pane**.
 
 ## Managing {{site.data.keyword.objectstorageshort}} OpenStack Swift User Permissions
 
