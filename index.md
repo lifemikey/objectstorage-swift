@@ -132,11 +132,7 @@ Container names can't contain a forward slash (`/`) and must be less than 256 by
 
 The {{site.data.keyword.objectstorageshort}} screen can be accessed through Navigation in the [{{site.data.keyword.slportal}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/){:new_window}.
 
-![Figure 1. {{site.data.keyword.objectstorageshort}} in the {{site.data.keyword.slportal}}](/images/objectstorage1.png)
-
 - Click the {{site.data.keyword.objectstorageshort}} link from the list of storage nodes to access the {{site.data.keyword.objectstorageshort}} screen. If there are multiple users on an account, select the user whose {{site.data.keyword.objectstorageshort}} account you want to access.
-
-![Figure 2. Choose {{site.data.keyword.objectstorageshort}} User](/images/objectstorage2.png)
 
 - Select one of the following Clusters based on the city that is of nearest proximity to your users.
     - Dallas 5 (DAL05)
