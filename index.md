@@ -48,7 +48,7 @@ Existing Swift accounts continue to be supported, but no new Swift accounts are 
 
 Migrate to {{site.data.keyword.cos_full_notm}} to take advantage of the superior cost-performance profile. Please, migrate your workloads to the [{{site.data.keyword.cos_full_notm}} service ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/catalog/services/cloud-object-storage) at your earliest convenience.
 
-For more information about how to perform the migration, see [Migrating data from OpenStack Swift](https://{DomainName}/docs/services/cloud-object-storage/tutorials/migrate.html#migrating-data-from-openstack-swift)
+For more information about how to perform the migration, see [Migrating data from OpenStack Swift](https://{DomainName}/docs/services/cloud-object-storage/tutorials/migrate.html#migrating-data-from-openstack-swift).
 {:tip}
 
 If you no longer use {{site.data.keyword.objectstorageshort}} OpenStack Swift and no longer need your data stored, please delete your Swift account from the [{{site.data.keyword.slportal}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/){:new_window}.
