@@ -6,28 +6,29 @@ IBM Cloud Storage - Object Storage OpenStack Swift
 
     {: .navgroup id="learn"}
     index.md
-    object-storage-billing.md
     pseudo-hierarchical-directories.md
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
-    interacting-in-portal.md
-    [Bulk delete data from Object Storage](https://developer.ibm.com/recipes/tutorials/delete-large-amounts-of-data-from-swift-object-storage/)
-    connect-object-storage-using-cloudfuse.md
-    connect-object-storage-using-command-line.md
-    connect-object-storage-using-cyberduck.md
-    connect-object-storage-using-IBM-Bluemix-Apps.md
-    connect-object-storage-using-quantastor.md
-    connect-object-storage-using-s3ql.md
-    connect-object-storage-using-sftp.md
-    connect-object-storage-using-winscp.md
+    {: .topicgroup}
+    Working with Swift Object Storage
+        interacting-in-portal.md
+        [Bulk delete data from Object Storage](https://developer.ibm.com/recipes/tutorials/delete-large-amounts-of-data-from-swift-object-storage/)
+        connect-object-storage-using-cloudfuse.md
+        connect-object-storage-using-command-line.md
+        connect-object-storage-using-cyberduck.md
+        connect-object-storage-using-IBM-Bluemix-Apps.md
+        connect-object-storage-using-quantastor.md
+        connect-object-storage-using-s3ql.md
+        connect-object-storage-using-sftp.md
+        connect-object-storage-using-winscp.md
 
     {: .topicgroup}
     Handling Virtual Hard Disks and ISO Images
         vhd-uploader.md
         vhd-content-checking-and-conversion.md
-        [Importing an Image from an Object Storage Account](https://console.bluemix.net/docs/infrastructure/image-templates/import-image.html)
-        [Exporting an Image to an Object Storage Account](https://console.bluemix.net/docs/infrastructure/image-templates/export-image.html)
+        [Importing an Image from an Object Storage Account](https://cloud.ibm.com/docs/infrastructure/image-templates/import-image.html)
+        [Exporting an Image to an Object Storage Account](https://cloud.ibm.com/docs/infrastructure/image-templates/export-image.html)
 
     {: .topicgroup}
     Using Object Storage as Archive or Backup
@@ -37,4 +38,5 @@ IBM Cloud Storage - Object Storage OpenStack Swift
 
     {: .navgroup id="help"}
     FAQ.md
+    object-storage-billing.md
     {: .navgroup-end}
