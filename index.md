@@ -26,7 +26,7 @@ lastupdated: "2018-12-10"
 All instances of this service are deprecated. Existing accounts can be used, but no new {{site.data.keyword.objectstorageshort}} accounts can be provisioned after **10 December 2018**. 
 {:deprecated}
 
-The Swift Object Storage service that is provisioned from and managed in the [{{site.data.keyword.BluSoftlayer_notm}} ![External link icon](../../icons/launch-glyph.svg "External link icon")] (https://www.ibm.com/cloud/infrastructure) are no longer be sold or marketed after **10 December 2018**.
+The Swift Object Storage service that is provisioned from and managed in the [{{site.data.keyword.BluSoftlayer_notm}} ![External link icon](../../icons/launch-glyph.svg "External link icon")] (https://www.ibm.com/cloud/infrastructure) are no longer sold or marketed after **10 December 2018**.
 
 Existing Swift accounts continue to be supported, but no new Swift accounts are created. The service is replaced by the [{{site.data.keyword.cos_full}} service ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/cloud/object-storage) which is provisioned from and managed in the unified console alongside our PaaS offerings such as Containers and Watson services. 
 
