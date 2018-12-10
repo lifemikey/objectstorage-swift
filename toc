@@ -6,6 +6,7 @@ IBM Cloud Storage - Object Storage OpenStack Swift
 
     {: .navgroup id="learn"}
     index.md
+    features-concepts.md
     pseudo-hierarchical-directories.md
     {: .navgroup-end}
 
