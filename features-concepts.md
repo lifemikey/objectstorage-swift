@@ -17,7 +17,7 @@ lastupdated: "2018-12-10"
 {:DomainName: data-hd-keyref="APPDomain"}
 {:DomainName: data-hd-keyref="DomainName"}
 
-Key concepts and features of {{site.data.keyword.objectstorageshort}}
+# Key concepts and features of {{site.data.keyword.objectstorageshort}}
 
 All instances of this service are deprecated. Existing accounts can be used, but no new {{site.data.keyword.objectstorageshort}} accounts can be provisioned after **10 December 2018**.
 {:deprecated}
