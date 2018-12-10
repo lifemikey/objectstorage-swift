@@ -31,9 +31,10 @@ Public outbound bandwidth charges apply when data is read from any of your objec
 
 Your cost per month might vary because your {{site.data.keyword.objectstorageshort}} usage for month can vary. {{site.data.keyword.Bluemix}} charges per GB used and prices also vary per data center. For up-to-date pricing information, see the [Order {{site.data.keyword.objectstorageshort}} page ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/cloud-computing/bluemix/pricing-object-storage#swift){:new_window}.
 
-## {{site.data.keyword.objectstorageshort}}
+The prices that are shown here are not official pricing, and prices can be subject to change.
+{important}
 
-Current pricing is available on the [Order {{site.data.keyword.objectstorageshort}} page ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/cloud-computing/bluemix/pricing-object-storage#swift){:new_window}.
+## {{site.data.keyword.objectstorageshort}}
 
 For Capacity Usage per billing cycle, {{site.data.keyword.Bluemix}} gets the usage for every hour. An example billing cycle has 720(24x30) data points. The capacity for all of those data points is summed up, then divided by 720; this calculation gives the average use.
 
@@ -45,15 +46,11 @@ Another example is your workload that is split across two or more data centers �
 <tr><td>Total {{site.data.keyword.objectstorageshort}} cost for the month</td><td>  	= 	$260.00</td></tr>
 </table>
 
-*Not official pricing, prices are subject to change.
-
 ## Pricing for Public Inbound Bandwidth
 
 There's no additional charge for public inbound bandwidth. {{site.data.keyword.Bluemix}} also doesn’t charge for bandwidth on the private network nor between {{site.data.keyword.BluSoftlayer}} data centers. If you wanted to back up your data to another data center, you’d pay only for the storage at your backup site; not for the data transfer between the two data centers.
 
 ## Pricing for Public Outbound Bandwidth
-
-Current pricing is available on the [Order {{site.data.keyword.objectstorageshort}} page ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/cloud-computing/bluemix/pricing-object-storage#swift){:new_window}.
 
 This charge applies whenever data is read from any of your object containers over the public network. Again, the pay-as-you-go cost is per GB with bandwidth usage that is metered and totaled monthly. For example, you have 250-GB outbound daily for the first 15 days of the month and 500-GB outbound daily for the 15 days of the same month. Assuming a 30-day month, your usage is calculated as follows.
 
@@ -68,8 +65,6 @@ Another example, you have data in the Dallas and São Paulo data centers, and 10
 <tr><td>Total {{site.data.keyword.objectstorageshort}} cost for the month</td><td>  	= 	$2,775.00</td></tr>
 </table>
 
-Not official pricing and prices subject to change
-{important}
 
 ## Pricing for Data Requests
 
