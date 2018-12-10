@@ -69,7 +69,7 @@ The primary use of {{site.data.keyword.objectstorageshort}} is the long-term sto
 
 ## Introducing Key Features
 
-Although {{site.data.keyword.objectstorageshort}} is based on OpenStack’s Swift, {{site.data.keyword.BluSoftlayer}} offers many unique features. Among them are:
+Although {{site.data.keyword.objectstorageshort}} is based on OpenStack’s Swift, {{site.data.keyword.BluSoftlayer}} offered many unique features. Among them are:
 
 - **Integrated Indexing and Search functions**
 
@@ -158,9 +158,7 @@ Upon clicking {{site.data.keyword.objectstorageshort}} in the menu, you are rout
 
 - **Account Tab**
 
-  The **Account** Tab contains various information about your account, including account and network usage and is the access point to all information stored on your cluster. After an {{site.data.keyword.objectstorageshort}} account is created and is in use, the Account Tab appears similar to the following image.
-
-![Figure 3. Account Overview](/images/objectstorage3.png)
+  The **Account** Tab contains various information about your account, including account and network usage and is the access point to all information stored on your cluster. 
 
 - **Account Usage**
 
@@ -169,8 +167,6 @@ Upon clicking {{site.data.keyword.objectstorageshort}} in the menu, you are rout
 - **Bandwidth Usage**
 
   The various Bandwidth Usage boxes that are located within the Account tab display current details about your public and private network, and CDN bandwidth through the node interface. Because {{site.data.keyword.objectstorageshort}} is set up on a “pay as you go” basis, you only pay for what you use. That being said, this section helps users understand their usage to better manage the amount of money that is spent on {{site.data.keyword.objectstorageshort}} each month.
-
-![Figure 4. View Credentials and Bandwidth Overview](/images/objectstorage4.png)
 
 - **Cluster Contents - Container-Level View**
 
@@ -181,13 +177,13 @@ Upon clicking {{site.data.keyword.objectstorageshort}} in the menu, you are rout
   Containers can also be deleted at this level by clicking the **delete** icon and following the prompts.
 
   The entire contents of the container can be viewed at a folder-level and file-level view (dependent upon how the container is organized) by clicking the container name. Upon clicking the container name, the view populates in a similar format, displaying each folder and file associated with the container.
-![Figure 5. Cluster contents](/images/objectstorage5.png)
 
 - **Cluster Contents - Folder/File-Level View**
 
   When the folder or file-level view of the account is accessed, users can view all folders that are associated with the container and all the files that are associated with the container that weren't yet assigned to folders. If no folders were associated with an account, this is the final level of organization the user can view. Clicking the check box next to the folder or file name provides information about the folder or in the **Details** window. For files present at this level, clicking the **file name** displays the file. For folders present at this level, clicking the **folder name** opens an extra file-level view that displays only those files that are associated with the selected folder.
 
-  **NOTE** - files that are associated with a folder are not viewable in the initial folder-level view, even if files are displayed along with a folder. When you view files that are associated with the folder, the same interactions apply as for files that are not associated with a folder.
+  The files that are associated with a folder are not viewable in the initial folder-level view, even if files are displayed along with a folder. When you view files that are associated with the folder, the same interactions apply as for files that are not associated with a folder.
+  {:note}
 
   In addition to viewing and expanding contents of the container on this view, both files and folders can be added at this level. Clicking the **Add File** or **Add Folder** link begins the process for adding either item to the selected container. Files and folders can also be deleted at this level by clicking the **delete** icon and following the prompts.
 
@@ -198,5 +194,3 @@ Upon clicking {{site.data.keyword.objectstorageshort}} in the menu, you are rout
   When no items are checked, the **Details** pane displays information about the part of your cluster that you're viewing. For example, in the previous image, the photos container was accessed and the contents of that container are displayed on the folder/file-level view. At this level, the **Details** window displays an overview of the contents of the container and CDN information.
 
   Clicking the **Actions** list within the **Details Pane** on any view allows various actions to be taken on the cluster, based on what area of the cluster is displayed within the **Details Pane**.
-
-  ![Figure 6. Actions menu](/images/objectstorage6.png)
