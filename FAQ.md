@@ -51,6 +51,12 @@ The authentication endpoints for {{site.data.keyword.objectstorageshort}} are cl
 <tr><td>Tokyo, Japan</td><td><li>Public Network - <code>`https://tok02.objectstorage.softlayer.net/auth/v1.0`</code></li><li>Private Network - <code>`https://tok02.objectstorage.service.networklayer.com/auth/v1.0`</code></li></td></tr>
 </table>
 
+After **31 March, 2019**, the following data center locations will no longer be supported:
+ - CHE01(Chennai),
+ - MEX01 (Mexico City),
+ - MON01 (Montreal),
+ - SEO01 (Seoul)
+ - OSL0 (Oslo)
 
 ## Can a sub-User access {{site.data.keyword.objectstorageshort}}?
 
@@ -59,6 +65,9 @@ Any [{{site.data.keyword.slportal}} ![External link icon](../../icons/launch-gly
 ## Can a User Have Edgecast CDN and StorageLayer Permissions Granted but be Prohibited from Accessing {{site.data.keyword.objectstorageshort}}?
 
 If a user has the Manage CDN Account, Manage CDN File Transfers and Manage StorageLayer permissions, the user automatically has access to {{site.data.keyword.objectstorageshort}}, as well. At the current time, you can't grant access to CDN and StorageLayer while you prohibit access to {{site.data.keyword.objectstorageshort}}, or vice versa.
+
+Effective of **31 March 2019**, IBM Cloud will no longer support the Content Delivery Network (CDN) feature with Cloud Object Storage Swift.
+{:important}
 
 ## What is the file upload limit of {{site.data.keyword.objectstorageshort}}?
 
@@ -126,3 +135,6 @@ No. This feature is not supported by OpenStack’s Swift, the platform on which 
 ## Is CDN integration available on my {{site.data.keyword.objectstorageshort}} account?
 
 Yes, Edgecast CDN integration is a standard feature on all {{site.data.keyword.objectstorageshort}} OpenStack Swift accounts.  All interactions with the Storage CDN portion of your account must be managed through {{site.data.keyword.BluSoftlayer}}’s API and CDN integration must be activated on your account before to its use.  For more information about interactions with the Edgecast CDN portion of your {{site.data.keyword.objectstorageshort}} account, see [Attaching EdgeCast CDN account to {{site.data.keyword.objectstorageshort}} OpenStack Swift](/docs/infrastructure/content-deliver-network/attach-edgecast-cdn-account-sl-object-storage.html).
+
+Effective of **31 March 2019**, IBM Cloud will no longer support the Content Delivery Network (CDN) feature.
+{:important}

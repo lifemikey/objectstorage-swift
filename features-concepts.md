@@ -19,7 +19,7 @@ lastupdated: "2018-12-10"
 
 # Key concepts and features of {{site.data.keyword.objectstorageshort}}
 
-All instances of this service are deprecated. Existing accounts can be used, but no new {{site.data.keyword.objectstorageshort}} accounts can be provisioned after **10 December 2018**.
+All instances of this service are deprecated. Existing accounts can be used, but no new {{site.data.keyword.objectstorageshort}} accounts can be provisioned after **10 December 2018**. Effective of **31 March 2019**, IBM Cloud no longer supports the Image Templates import/export feature.
 {:deprecated}
 
 {{site.data.keyword.objectstorageshort}} uses multiple servers and multiple drives. It replicates the data that you provide to the cluster across multiple physical servers. Replication ensures that your data is available exactly when you need it. To provide more reliability, all update requests are handled through proxy servers, which abstract the actual data storage to provide the highest levels of fault tolerance. {{site.data.keyword.objectstorageshort}} is run on a RESTful interface.
@@ -39,6 +39,9 @@ Although {{site.data.keyword.objectstorageshort}} is based on OpenStack’s Swif
 
 Quickly access information through user-defined metadata key-value pairs, file names, or unique identifiers.
 
+Effective of **31 March 2019**, IBM Cloud will no longer support the Search function.
+{:important}
+
 - **Worldwide Storage Fabric**
 
 Storage clusters are located in North America, Europe, and Asia. With all the clusters that are connected through {{site.data.keyword.BluSoftlayer}}’s private network, you are guaranteed secure data replication and transfer.
@@ -50,6 +53,9 @@ Data is written multiple times per cluster with self-healing capabilities to imm
 - **Flexible Data Distribution**
 
 Highly expandable read/write access gives users the ability to serve content directly from the storage system or through {{site.data.keyword.cdn_full}}.
+
+Effective of **31 March 2019**, IBM Cloud will no longer support the Content Delivery Network (CDN) feature.
+{:important}
 
 - **Powerful Management Toolkit**
 
@@ -91,4 +97,3 @@ Container names can't contain a forward slash (`/`) and must be less than 256 by
   Any data or metadata for the files that are stored in the system is considered an object, or file.
   Files that are stored on the system can't exceed 5 GB. Files that are larger than 5 GB must be segmented before they are loaded to storage. However, they can be concatenated together so that the eventual download can be viewed as a single file.
   File names must be shorter than 1024 bytes after URL encoding.
-

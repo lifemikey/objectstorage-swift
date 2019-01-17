@@ -19,7 +19,7 @@ lastupdated: "2018-12-10"
 
 # Working with the VHD Uploader Scripts
 
-All instances of this service are deprecated. Existing accounts can be used, but no new {{site.data.keyword.objectstorageshort}} accounts can be provisioned after **10 December 2018**.
+All instances of this service are deprecated. Existing accounts can be used, but no new {{site.data.keyword.objectstorageshort}} accounts can be provisioned after **10 December 2018**. Effective of **31 March 2019**, IBM Cloud no longer supports the Image Templates import/export feature.
 {:deprecated}
 
 {{site.data.keyword.BluSoftlayer_full}} allows customers to import customer-supplied virtual hard disks (VHDs) to the {{site.data.keyword.objectstorageshort}} offering. This option is a great for customers who might have special virtual machines that they spent hours perfecting.

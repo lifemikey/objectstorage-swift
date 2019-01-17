@@ -37,14 +37,19 @@ The {{site.data.keyword.objectstorageshort}} screen in the [{{site.data.keyword.
    - Hong Kong 2 (HKG02)
    - London (LON02)
    - Melbourne 1 (MEL01)
-   - Mexico 1 (MEX01)
-   - Montreal 1 (MON01)
    - Paris 1 (PAR01)
    - San Jose 1 (SJC01)
    - Singapore 1 (SNG01)
    - Sydney 1 (SYD01)
    - Toronto 1 (TOR01)
    - Tokyo 2 (TOK02)
+
+  After **31 March, 2019**, the following data center locations are no longer supported:
+   - CHE01(Chennai),
+   - MEX01 (Mexico City),
+   - MON01 (Montreal),
+   - SEO01 (Seoul)
+   - OSL0 (Oslo)
 
 ## Explaining the {{site.data.keyword.objectstorageshort}} User Interface
 
@@ -112,6 +117,8 @@ After you granted or removed permissions for {{site.data.keyword.objectstoragesh
   - Manage Storage CDN File Transfer
   - Manage StorageLayer
 
+  Effective of **31 March 2019**, IBM Cloud no longer supports the CDN feature of Object Storage OpenStack Swift (infrastructure).
+  {:note}
 
 ## Adding a Container to a Cluster
 
