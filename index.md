@@ -23,20 +23,17 @@ lastupdated: "2019-01-17"
 {{site.data.keyword.objectstorageshort}} OpenStack Swift is a redundant and expandable cloud storage service. With {{site.data.keyword.objectstorageshort}} users can easily store, search, and retrieve data across the internet, with optional CDN connectivity, or across {{site.data.keyword.BluSoftlayer}}’s global private network. This offering was formerly known as SoftLayer {{site.data.keyword.objectstorageshort}}. {{site.data.keyword.objectstorageshort}} can be accessed through a RESTful API and through [{{site.data.keyword.slportal}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/){:new_window}. By using the {{site.data.keyword.slportal}} you can complete easy, point-and-click interactions with your account without making direct calls to the API.
 {:shortdesc}
 
-All instances of this service are deprecated. Existing accounts can be used, but no new {{site.data.keyword.objectstorageshort}} accounts can be provisioned after **10 December 2018**.
+All instances of this service are deprecated. Existing accounts can be used, but no new {{site.data.keyword.objectstorageshort}} accounts can be purchased and provisioned after **10 December 2018**.
 {:deprecated}
 
-The Swift Object Storage service that is provisioned from and managed in the [{{site.data.keyword.BluSoftlayer_notm}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/cloud/infrastructure){:new_window} is no longer available for purchase after **10 December 2018**.
+Effective of **31 March 2019**, IBM Cloud no longer supports the following Object Storage OpenStack Swift (infrastructure) features:
+- Static Site Access
+- Content Delivery Network (CDN)
+- Search
+- Image Templates import/export  
 
-<div>Effective of **31 March 2019**, IBM Cloud no longer supports the following Object Storage OpenStack Swift (infrastructure) features:
- <li> Static Site Access
- <li> Content Delivery Network (CDN)
- <li> Search
- <li> Image Templates import/export  
-</div>
-{:important}
 
-In addition, effective 31 March 2019, the following Object Storage OpenStack Swift (infrastructure) data center locations are no longer supported.
+In addition, the following Object Storage OpenStack Swift (infrastructure) data center locations are no longer supported after 31 March 2019.
 - CHE01(Chennai),
 - MEX01 (Mexico City),
 - MON01 (Montreal),
