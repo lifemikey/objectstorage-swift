@@ -28,29 +28,51 @@ All instances of this service are deprecated. Existing accounts can be used, but
 
 The Swift Object Storage service that is provisioned from and managed in the [{{site.data.keyword.BluSoftlayer_notm}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/cloud/infrastructure){:new_window} is no longer available for purchase after **10 December 2018**.
 
-Existing Swift accounts continue to be supported, but no new Swift accounts are created. The service is replaced by the [{{site.data.keyword.cos_full}} service ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/cloud/object-storage){:new_window}, which is provisioned from and managed in the unified console alongside our PaaS offerings such as Containers and Watson services.
+Effective of **31 March 2019**, IBM Cloud no longer supports the following Object Storage OpenStack Swift (infrastructure) features:
+<li> Static Site Access
+<li> Content Delivery Network (CDN)
+<li> Search
+<li> Image Templates import/export  
+{:important}
 
-{{site.data.keyword.cos_full_notm}} is available at a lower cost per GB than OpenStack Swift. {{site.data.keyword.cos_full_notm}} is designed to provide the performance, flexibility, and pricing that fits your workload demands and data access patterns.
+In addition, effective 31 March 2019, the following Object Storage OpenStack Swift (infrastructure) data center locations are no longer supported.
+- CHE01(Chennai),
+- MEX01 (Mexico City),
+- MON01 (Montreal),
+- SEO01 (Seoul)
+- OSL0 (Oslo)
 
-## {{site.data.keyword.cos_full_notm}} benefits
-* Secure to the core
-   - Integration with {{site.data.keyword.iamlong}} allows for granular access control at the bucket-level by using role-based policies.
-   - All data is encrypted at-rest and in-flight by default.
-   - Encryption keys are automatically managed by default but can optionally be self-managed or managed by using {{site.data.keyword.keymanagementservicelong}}.
-* Built for all your applications
-  - Select the best resiliency to store your data – “Cross Region”, “Regional”, and “Single Location” storage options are available.
-  - Flexible data storage classes for Active, Less Active, Cold, and Dynamic workloads.
-  - No charge for data ingress.
-  - Lowest cost archive with lifecycle policies for long-term data retention.
-  - Analyze data directly in {{site.data.keyword.cos_full_notm}} with {{site.data.keyword.sqlquery_full}}.
 
-## Recommended Action
+##  Action Required
 
-Migrate to {{site.data.keyword.cos_full_notm}} to take advantage of the superior cost-performance profile. Please, migrate your workloads to the [{{site.data.keyword.cos_full_notm}} service ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://console.bluemix.net/catalog/services/cloud-object-storage) at your earliest convenience.
+Clients who have applications that use these features or data that is stored in those data center locations need to migrate to {{site.data.keyword.cos_full_notm}} service by 31 March 2019.
+{:important}
 
-For more information about how to perform the migration, see [Migrating data from OpenStack Swift](https://{DomainName}/docs/services/cloud-object-storage/tutorials/migrate.html#migrating-data-from-openstack-swift).
+  Starting on **1 April 2019**, the following features are available on the {{site.data.keyword.cos_full_notm}} service.
+  - CDN capability that is be provided through the {{site.data.keyword.cos_full_notm}} integration with Akamai. For more information, see [Solution Tutorial ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/docs/tutorials/static-files-cdn.html#accelerate-delivery-of-static-files-using-a-cdn){:new_window}.
+  - Image Templates import/export is also provided by using {{site.data.keyword.cos_full_notm}}. For more information, see [IBM Cloud Blogs ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/blogs/bluemix/2018/11/speed-up-image-imports-to-ibm-cloud-infrastructure/){:new_window}.
+  -Bucket name and object name search is provided through the {{site.data.keyword.cos_full_notm}} UI. Bucket and object metadata search is no longer available.
+  -Any data that is stored in CHE01(Chennai), MEX01 (Mexico City), MON01 (Montreal), SEO01 (Seoul) and OSL0 (Oslo) can be migrated to {{site.data.keyword.cos_full_notm}} service in these same locations, or the locations of your choosing.
+
+  {{site.data.keyword.cos_full_notm}} is available at a lower cost per GB than OpenStack Swift. {{site.data.keyword.cos_full_notm}} is designed to provide the performance, flexibility, and pricing that fits your workload demands and data access patterns. For more information, see https://www.ibm.com/cloud/object-storage ![External link icon](../../icons/launch-glyph.svg "External link icon").
+
+  ## {{site.data.keyword.cos_full_notm}} benefits
+  * Secure to the core
+     - Integration with {{site.data.keyword.iamlong}} allows for granular access control at the bucket-level by using role-based policies.
+     - All data is encrypted at-rest and in-flight by default.
+     - Encryption keys are automatically managed by default but can optionally be self-managed or managed by using {{site.data.keyword.keymanagementservicelong}}.
+  * Built for all your applications
+    - Select the best resiliency to store your data – “Cross Region”, “Regional”, and “Single Location” storage options are available.
+    - Flexible data storage classes for Active, Less Active, Cold, and Dynamic workloads.
+    - No charge for data ingress.
+    - Lowest cost archive with lifecycle policies for long-term data retention.
+    - Analyze data directly in {{site.data.keyword.cos_full_notm}} with {{site.data.keyword.sqlquery_full}}.
+
+##  Migration Assistance
+
+Do you need migration help? For more information about the migration process and tool, see the [{{site.data.keyword.cos_full_notm}} documentation ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/docs/services/cloud-object-storage/tutorials/migrate.html#migrating-data-from-openstack-swift).
+
+We’re here to help! Please, email us at swift-cos-migration@wwpdl.vnet.ibm.com, if you have any questions.
 {:tip}
 
-If you no longer use {{site.data.keyword.objectstorageshort}} OpenStack Swift and no longer need your data to be stored, please delete your Swift account from the [{{site.data.keyword.slportal}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/){:new_window}.
-
-If you have questions, reach out to swift-cos-migration@wwpdl.vnet.ibm.com or raise a support case.
+If you are not using Swift and do not need your data stored, please delete your Swift account from the [{{site.data.keyword.slportal}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/storage/objectstorage){:new_window}. Click the red X to cancel your Swift account in all Swift clusters and delete all data. There is no recovery from this action.
