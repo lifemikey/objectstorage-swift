@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-12-10"
+  years: 2017, 2019
+lastupdated: "2019-01-17"
 
 ---
 {:new_window: target="_blank"}
@@ -28,11 +28,12 @@ All instances of this service are deprecated. Existing accounts can be used, but
 
 The Swift Object Storage service that is provisioned from and managed in the [{{site.data.keyword.BluSoftlayer_notm}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/cloud/infrastructure){:new_window} is no longer available for purchase after **10 December 2018**.
 
-Effective of **31 March 2019**, IBM Cloud no longer supports the following Object Storage OpenStack Swift (infrastructure) features:
-<li> Static Site Access
-<li> Content Delivery Network (CDN)
-<li> Search
-<li> Image Templates import/export  
+<div>Effective of **31 March 2019**, IBM Cloud no longer supports the following Object Storage OpenStack Swift (infrastructure) features:
+ <li> Static Site Access
+ <li> Content Delivery Network (CDN)
+ <li> Search
+ <li> Image Templates import/export  
+</div>
 {:important}
 
 In addition, effective 31 March 2019, the following Object Storage OpenStack Swift (infrastructure) data center locations are no longer supported.
