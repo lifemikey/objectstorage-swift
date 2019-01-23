@@ -39,7 +39,7 @@ Although {{site.data.keyword.objectstorageshort}} is based on OpenStack’s Swif
 
 Quickly access information through user-defined metadata key-value pairs, file names, or unique identifiers.
 
-Effective of **31 March 2019**, IBM Cloud will no longer support the Search function.
+Effective of **31 March 2019**, IBM Cloud will no longer support the Search function with Cloud Object Storage Swift..
 {:important}
 
 - **Worldwide Storage Fabric**
@@ -54,7 +54,7 @@ Data is written multiple times per cluster with self-healing capabilities to imm
 
 Highly expandable read/write access gives users the ability to serve content directly from the storage system or through {{site.data.keyword.cdn_full}}.
 
-Effective of **31 March 2019**, IBM Cloud will no longer support the Content Delivery Network (CDN) feature.
+Effective of **31 March 2019**, IBM Cloud will no longer support the Content Delivery Network (CDN) feature with Cloud Object Storage Swift.
 {:important}
 
 - **Powerful Management Toolkit**
