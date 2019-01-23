@@ -136,5 +136,5 @@ No. This feature is not supported by OpenStack’s Swift, the platform on which 
 
 Yes, Edgecast CDN integration is a standard feature on all {{site.data.keyword.objectstorageshort}} OpenStack Swift accounts.  All interactions with the Storage CDN portion of your account must be managed through {{site.data.keyword.BluSoftlayer}}’s API and CDN integration must be activated on your account before to its use.  For more information about interactions with the Edgecast CDN portion of your {{site.data.keyword.objectstorageshort}} account, see [Attaching EdgeCast CDN account to {{site.data.keyword.objectstorageshort}} OpenStack Swift](/docs/infrastructure/content-deliver-network/attach-edgecast-cdn-account-sl-object-storage.html).
 
-Effective of **31 March 2019**, IBM Cloud will no longer support the Content Delivery Network (CDN) feature.
+Effective of **31 March 2019**, IBM Cloud will no longer support the Content Delivery Network (CDN) feature with Cloud Object Storage Swift.
 {:important}
