@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-01-17"
+lastupdated: "2019-02-19"
 
 ---
 {:new_window: target="_blank"}
@@ -51,12 +51,35 @@ The authentication endpoints for {{site.data.keyword.objectstorageshort}} are cl
 <tr><td>Tokyo, Japan</td><td><li>Public Network - <code>`https://tok02.objectstorage.softlayer.net/auth/v1.0`</code></li><li>Private Network - <code>`https://tok02.objectstorage.service.networklayer.com/auth/v1.0`</code></li></td></tr>
 </table>
 
-After **31 March, 2019**, the following data center locations will no longer be supported:
- - CHE01(Chennai),
- - MEX01 (Mexico City),
- - MON01 (Montreal),
- - SEO01 (Seoul)
- - OSL0 (Oslo)
+The following Object Storage OpenStack Swift (infrastructure) data center locations are being phased out of support after 31 March 2019.
+
+Phase 1 - **End of support** commences on **31 March 2019**.
+- CHE01(Chennai)
+- MEX01 (Mexico City)
+- MON01 (Montreal)
+- SEO01 (Seoul)
+- OSL0 (Oslo)
+
+Phase 2 - **End of support** commences on **30 June 2019**. 
+- MEL01 (Melbourne)
+- MIL01 (Milan)
+- SAO01 (Sao Paulo)
+- TOK02 (Tokyo)
+- TOR01 (Toronto)
+- WDC (Washington DC)
+
+Phase 3 - **End of support** commences on **30 September 2019**.
+- AMS01 (Amsterdam)
+- FRA02 (Frankfurt)
+- LON02 (London)
+- SNG01 (Singapore)
+- SYD01 (Sydney)
+
+Phase 4 - **End of support** commences on **1 December 2019**.
+- DAL05 (Dallas)
+- HKG01 (Hong Kong)
+- PAR01 (Paris)
+- SJC01 (San Jose)
 
 ## Can a sub-User access {{site.data.keyword.objectstorageshort}}?
 
