@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-01-17"
+lastupdated: "2019-02-11"
 
 ---
 {:new_window: target="_blank"}
@@ -33,20 +33,42 @@ Effective of **31 March 2019**, IBM Cloud no longer supports the following Objec
 - Image Templates import/export  
 
 
-In addition, the following Object Storage OpenStack Swift (infrastructure) data center locations are no longer supported after 31 March 2019.
-- CHE01(Chennai),
-- MEX01 (Mexico City),
-- MON01 (Montreal),
+The following Object Storage OpenStack Swift (infrastructure) data center locations are being phased out of support after 31 March 2019.
+
+Phase 1 - End of support commences on 31 March 2019.
+- CHE01(Chennai)
+- MEX01 (Mexico City)
+- MON01 (Montreal)
 - SEO01 (Seoul)
 - OSL0 (Oslo)
 
+Phase 2 - End of support commences on 30 June 2019. 
+- MEL01 (Melbourne)
+- MIL01 (Milan)
+- SAO01 (Sao Paulo)
+- TOK02 (Tokyo)
+- TOR01 (Toronto)
+- WDC (Washington DC)
+
+Phase 3 - End of support commences on 30 September 2019.
+- AMS01 (Amsterdam)
+- FRA02 (Frankfurt)
+- LON02 (London)
+- SNG01 (Singapore)
+- SYD01 (Sydney)
+
+Phase 4 - End of support commences on 1 December 2019.
+- DAL05 (Dallas)
+- HKG01 (Hong Kong)
+- PAR01 (Paris)
+- SJC01 (San Jose)
 
 ##  Action Required
 
-Clients who have applications that use these features or data that is stored in those data center locations need to migrate to {{site.data.keyword.cos_full_notm}} service by 31 March 2019.
+Clients who have applications that use these features or data that is stored in those data center locations need to migrate to {{site.data.keyword.cos_full_notm}} service by the End of support date.
 {:important}
 
-  Starting on **1 April 2019**, the following features are available on the {{site.data.keyword.cos_full_notm}} service.
+Starting on **1 April 2019**, the following features are available on the {{site.data.keyword.cos_full_notm}} service.
   - CDN capability that is be provided through the {{site.data.keyword.cos_full_notm}} integration with Akamai. For more information, see [Solution Tutorial ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/docs/tutorials/static-files-cdn.html#accelerate-delivery-of-static-files-using-a-cdn){:new_window}.
   - Image Templates import/export is also provided by using {{site.data.keyword.cos_full_notm}}. For more information, see [IBM Cloud Blogs ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/blogs/bluemix/2018/11/speed-up-image-imports-to-ibm-cloud-infrastructure/){:new_window}.
   -Bucket name and object name search is provided through the {{site.data.keyword.cos_full_notm}} UI. Bucket and object metadata search is no longer available.
@@ -54,7 +76,7 @@ Clients who have applications that use these features or data that is stored in 
 
   {{site.data.keyword.cos_full_notm}} is available at a lower cost per GB than OpenStack Swift. {{site.data.keyword.cos_full_notm}} is designed to provide the performance, flexibility, and pricing that fits your workload demands and data access patterns. For more information, see https://www.ibm.com/cloud/object-storage ![External link icon](../../icons/launch-glyph.svg "External link icon").
 
-  ## {{site.data.keyword.cos_full_notm}} benefits
+## {{site.data.keyword.cos_full_notm}} benefits
   * Secure to the core
      - Integration with {{site.data.keyword.iamlong}} allows for granular access control at the bucket-level by using role-based policies.
      - All data is encrypted at-rest and in-flight by default.
