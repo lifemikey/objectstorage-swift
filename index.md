@@ -19,7 +19,7 @@ lastupdated: "2019-02-13"
 
 
 # Getting Started with {{site.data.keyword.objectstorageshort}} OpenStack Swift
-**Action Required:  Object Storage OpenStack Swift is nearing the End of Support**
+**Action Required:  Object Storage OpenStack Swift is nearing the End of Support.**
 {:important}
 
 {{site.data.keyword.objectstorageshort}} OpenStack Swift is a redundant and expandable cloud storage service. With {{site.data.keyword.objectstorageshort}} users can easily store, search, and retrieve data across the internet, with optional CDN connectivity, or across {{site.data.keyword.BluSoftlayer}}’s global private network. This offering was formerly known as SoftLayer {{site.data.keyword.objectstorageshort}}. {{site.data.keyword.objectstorageshort}} can be accessed through a RESTful API and through [{{site.data.keyword.slportal}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/){:new_window}. By using the {{site.data.keyword.slportal}} you can complete easy, point-and-click interactions with your account without making direct calls to the API.
