@@ -19,7 +19,9 @@ lastupdated: "2019-02-13"
 
 
 # Getting Started with {{site.data.keyword.objectstorageshort}} OpenStack Swift
-**Action Required:  Object Storage OpenStack Swift is nearing the End of Support**
+{: #GettingStarted}
+
+**Action Required: Object Storage OpenStack Swift is nearing the End of Support.**
 {:important}
 
 {{site.data.keyword.objectstorageshort}} OpenStack Swift is a redundant and expandable cloud storage service. With {{site.data.keyword.objectstorageshort}} users can easily store, search, and retrieve data across the internet, with optional CDN connectivity, or across {{site.data.keyword.BluSoftlayer}}’s global private network. This offering was formerly known as SoftLayer {{site.data.keyword.objectstorageshort}}. {{site.data.keyword.objectstorageshort}} can be accessed through a RESTful API and through [{{site.data.keyword.slportal}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/){:new_window}. By using the {{site.data.keyword.slportal}} you can complete easy, point-and-click interactions with your account without making direct calls to the API.
@@ -44,7 +46,7 @@ Phase 1 - End of support commences on 31 March 2019.
 - SEO01 (Seoul)
 - OSL0 (Oslo)
 
-Phase 2 - End of support commences on 30 June 2019. 
+Phase 2 - End of support commences on 30 June 2019.
 - MEL01 (Melbourne)
 - MIL01 (Milan)
 - SAO01 (Sao Paulo)
@@ -70,7 +72,7 @@ Phase 4 - End of support commences on 1 December 2019.
 Clients who have applications that use these features or data that is stored in those data center locations need to migrate to {{site.data.keyword.cos_full_notm}} service by the End of support date.
 {:important}
 
-Starting on **1 April 2019**, the following features are available on the {{site.data.keyword.cos_full_notm}} service.
+  Starting on **1 April 2019**, the following features are available on the {{site.data.keyword.cos_full_notm}} service.
   - CDN capability that is be provided through the {{site.data.keyword.cos_full_notm}} integration with Akamai. For more information, see [Solution Tutorial ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/docs/tutorials/static-files-cdn.html#accelerate-delivery-of-static-files-using-a-cdn){:new_window}.
   - Image Templates import/export is also provided by using {{site.data.keyword.cos_full_notm}}. For more information, see [IBM Cloud Blogs ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/blogs/bluemix/2018/11/speed-up-image-imports-to-ibm-cloud-infrastructure/){:new_window}.
   -Bucket name and object name search is provided through the {{site.data.keyword.cos_full_notm}} UI. Bucket and object metadata search is no longer available.
@@ -78,7 +80,7 @@ Starting on **1 April 2019**, the following features are available on the {{site
 
   {{site.data.keyword.cos_full_notm}} is available at a lower cost per GB than OpenStack Swift. {{site.data.keyword.cos_full_notm}} is designed to provide the performance, flexibility, and pricing that fits your workload demands and data access patterns. For more information, see https://www.ibm.com/cloud/object-storage ![External link icon](../../icons/launch-glyph.svg "External link icon").
 
-## {{site.data.keyword.cos_full_notm}} benefits
+  ## {{site.data.keyword.cos_full_notm}} benefits
   * Secure to the core
      - Integration with {{site.data.keyword.iamlong}} allows for granular access control at the bucket-level by using role-based policies.
      - All data is encrypted at-rest and in-flight by default.

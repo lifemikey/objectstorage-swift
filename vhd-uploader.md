@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-01-17"
+lastupdated: "2019-02-05"
 
 ---
 {:new_window: target="_blank"}
@@ -18,6 +18,7 @@ lastupdated: "2019-01-17"
 {:DomainName: data-hd-keyref="DomainName"}
 
 # Working with the VHD Uploader Scripts
+{: #VHDUploader}
 
 All instances of this service are deprecated. Existing accounts can be used, but no new {{site.data.keyword.objectstorageshort}} accounts can be provisioned after **10 December 2018**. Effective of **31 March 2019**, IBM Cloud no longer supports the Image Templates import/export feature with Cloud Object Storage Swift.
 {:deprecated}

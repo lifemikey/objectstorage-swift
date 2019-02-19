@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-01-17"
+lastupdated: "2019-02-05"
 
 ---
 {:new_window: target="_blank"}
@@ -19,13 +19,14 @@ lastupdated: "2019-01-17"
 
 
 # VHD content checking and conversion
+{: #VHDChecking}
 
 All instances of this service are deprecated. Existing accounts can be used, but no new {{site.data.keyword.objectstorageshort}} accounts can be provisioned after **10 December 2018**. Effective of **31 March 2019**, IBM Cloud no longer supports the Image Templates import/export feature with Cloud Object Storage Swift.
 {:deprecated}
 
-Being able to import and deploy your own instance by using a custom VHD or ISO is one of the many benefits of the {{site.data.keyword.BluSoftlayer_full}}. By using these instructions you can verify that your VHD/ISO is the proper content type, convert it if the content type is incorrect, and even manually import an image if needed. For more information about the Image import option, see the following [article](https://{DomainName}/docs/infrastructure/image-templates/import-image.html){:new_window}.
+Being able to import and deploy your own instance by using a custom VHD or ISO is one of the many benefits of the {{site.data.keyword.BluSoftlayer_full}}. By using these instructions you can verify that your VHD/ISO is the proper content type, convert it if the content type is incorrect, and even manually import an image if needed. For more information about the Image import option, see the following [article](/docs/infrastructure/image-templates?topic=image-templates-preparing-and-importing-images){:new_window}.
 
-You can access the [{{site.data.keyword.objectstorageshort}} Screen](interacting-in-portal.html) and click **View Credentials** to see your credentials.
+You can access the [{{site.data.keyword.objectstorageshort}} Screen](/docs/infrastructure/objectstorage-swift?topic=objectstorage-swift-OSSSLPortal) and click **View Credentials** to see your credentials.
 {:tip}
 
 1. Authenticate against the specific [{{site.data.keyword.objectstorageshort}} cluster you want to interact with.

@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-01-17"
+lastupdated: "2019-02-05"
 
 ---
 {:new_window: target="_blank"}
@@ -18,6 +18,7 @@ lastupdated: "2019-01-17"
 {:DomainName: data-hd-keyref="DomainName"}
 
 # Interacting with {{site.data.keyword.objectstorageshort}} through the {{site.data.keyword.slportal}}
+{: #OSSSLPortal}
 
 All instances of this service are deprecated. Existing accounts can be used, but no new {{site.data.keyword.objectstorageshort}} accounts can be provisioned after **10 December 2018**.
 {:deprecated}
@@ -99,7 +100,7 @@ Upon clicking {{site.data.keyword.objectstorageshort}} in the menu, you are rout
 User permissions for {{site.data.keyword.objectstorageshort}} accounts require that several individual permissions be granted. By using the Manage Users feature for {{site.data.keyword.objectstorageshort}}, the account administrator can manage users' {{site.data.keyword.objectstorageshort}} permissions by clicking a single check box. Additionally, multiple users can be managed at one time on the same screen. It's important to note the following information.
 
   - Access to each {{site.data.keyword.objectstorageshort}} Account and Cluster are impacted. If access is removed, the user loses access to all Accounts and Clusters for {{site.data.keyword.objectstorageshort}}.
-  - {{site.data.keyword.objectstorageshort}} permissions are derived from a combination of permissions from Storage CDN and StorageLayer. Granting access to {{site.data.keyword.objectstorageshort}} means giving users permissions from those sets. Removing permissions for {{site.data.keyword.objectstorageshort}} results in the removal of permissions for Storage CDN and StorageLayer. For more information, see the [FAQ](https://console.bluemix.net/docs/infrastructure/content-deliver-network/FAQ.html#can-a-user-have-cdn-and-storagelayer-permissions-granted-but-be-prohibited-from-accessing-object-storage-){:new_window}.
+  - {{site.data.keyword.objectstorageshort}} permissions are derived from a combination of permissions from Storage CDN and StorageLayer. Granting access to {{site.data.keyword.objectstorageshort}} means giving users permissions from those sets. Removing permissions for {{site.data.keyword.objectstorageshort}} results in the removal of permissions for Storage CDN and StorageLayer..
 
 
 ### Managing an {{site.data.keyword.objectstorageshort}} User
@@ -160,9 +161,9 @@ Adding an object (file) in the {{site.data.keyword.slportal}} allows the user to
 5. Click **Add** to upload the selected file. Click **Cancel** to cancel the upload.
 
 Due to the {{site.data.keyword.slportal}} upload's size limit of 20 MB, you might consider other means to upload larger files. For more information, see the following instructions.
-- [Connecting to {{site.data.keyword.objectstorageshort}} OpenStack Swift by using the command-line](connect-object-storage-using-command-line.html)
-- [Connecting to {{site.data.keyword.objectstorageshort}} OpenStack Swift by using Cyberduck](connect-object-storage-using-cyberduck.html)
-- [Connecting to {{site.data.keyword.objectstorageshort}} OpenStack Swift by using WinSCP](connect-object-storage-using-winscp.html)
+- [Connecting to {{site.data.keyword.objectstorageshort}} OpenStack Swift by using the command-line](/docs/infrastructure/objectstorage-swift?topic=objectstorage-swift-OSSCLI)
+- [Connecting to {{site.data.keyword.objectstorageshort}} OpenStack Swift by using Cyberduck](/docs/infrastructure/objectstorage-swift?topic=objectstorage-swift-OSSCyberduck)
+- [Connecting to {{site.data.keyword.objectstorageshort}} OpenStack Swift by using WinSCP](/docs/infrastructure/objectstorage-swift?topic=objectstorage-swift-OSSWinSCP)
 
 ## Accessing an Object in a Folder or Container
 

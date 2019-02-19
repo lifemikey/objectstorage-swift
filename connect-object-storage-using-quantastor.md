@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-12-10"
+  years: 2017, 2019
+lastupdated: "2019-02-05"
 
 ---
 {:new_window: target="_blank"}
@@ -18,8 +18,9 @@ lastupdated: "2018-12-10"
 {:DomainName: data-hd-keyref="DomainName"}
 
 # Connecting to {{site.data.keyword.objectstorageshort}} with QuantaStor
+{: #OSSQuanta}
 
-All instances of this service are deprecated. Existing accounts can be used, but no new {{site.data.keyword.objectstorageshort}} accounts can be provisioned after **10 December 2018**. 
+All instances of this service are deprecated. Existing accounts can be used, but no new {{site.data.keyword.objectstorageshort}} accounts can be provisioned after **10 December 2018**.
 {:deprecated}
 
 The QuantaStor appliance available from {{site.data.keyword.BluSoftlayer_full}} offers a more permanent solution for accessing your {{site.data.keyword.objectstorageshort}} account. The appliance acts as a storage gateway so you can create NFS/CIFS endpoints from your {{site.data.keyword.objectstorageshort}} clusters. The endpoints can then be mounted and accessed like any other NFS/CIFS  share. The appliance uses the S3QL Python library to access your {{site.data.keyword.objectstorageshort}} account and shares many of the same features, such as data-deduplication, encryption, and compression. With the QuantaStor appliance, you can also schedule backups and push them to your {{site.data.keyword.objectstorageshort}} account.
@@ -39,7 +40,7 @@ QuantaStor works great for integrated solutions, automated backups to the cloud,
 1. Access your QuantaStor console.
 2. Click **Cloud Containers**.
 3. Click **Add Credentials**.
-4. Select **SoftLayer Object Storage** as your cloud provider, and [enter your {{site.data.keyword.objectstorageshort}} credentials](interacting-in-portal.html) and click **OK**.
+4. Select **SoftLayer Object Storage** as your cloud provider, and [enter your {{site.data.keyword.objectstorageshort}} credentials](/docs/infrastructure/objectstorage-swift?topic=objectstorage-swift-OSSSLPortal) and click **OK**.
        ![Add Cloud Provider Credentials](/images/AddCloudProviderCredentials.png)
 5. Click **Create** in the **Cloud Container** section.
 6. Complete the form with the required information, and click **OK**.

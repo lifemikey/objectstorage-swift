@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-12-10"
+  years: 2017, 2019
+lastupdated: "2019-02-05"
 
 ---
 {:new_window: target="_blank"}
@@ -18,8 +18,9 @@ lastupdated: "2018-12-10"
 {:DomainName: data-hd-keyref="DomainName"}
 
 # Connecting to {{site.data.keyword.objectstorageshort}} with S3QL
+{: #OSSS3QL}
 
-All instances of this service are deprecated. Existing accounts can be used, but no new {{site.data.keyword.objectstorageshort}} accounts can be provisioned after **10 December 2018**. 
+All instances of this service are deprecated. Existing accounts can be used, but no new {{site.data.keyword.objectstorageshort}} accounts can be provisioned after **10 December 2018**.
 {:deprecated}
 
 S3QL is the Python utility that QuantaStor uses to mount its cloud containers. If you don't have a QuantaStor appliance or want to manage your endpoints manually, then you can install and use the S3QL utility. S3QL supports a wide range of features, such as data-deduplication, compression, encryption, and caching. The following example uses Ubuntu 14.04. Your instructions might vary depending on your distribution.

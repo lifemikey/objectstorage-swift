@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-12-10"
+  years: 2017, 2019
+lastupdated: "2019-02-05"
 
 ---
 {:new_window: target="_blank"}
@@ -18,6 +18,7 @@ lastupdated: "2018-12-10"
 {:DomainName: data-hd-keyref="DomainName"}
 
 # Creating Pseudo Hierarchical Directories
+{: #pseudodirectories}
 
 All instances of this service are deprecated. Existing accounts can be used, but no new {{site.data.keyword.objectstorageshort}} accounts can be provisioned after **10 December 2018**.
 {:deprecated}
@@ -38,7 +39,7 @@ The entire directory structure can be built without these objects so cleaning up
 
 Instead of cURL, use a `HTTPie` as the command-line tool to make HTTP requests. Before you can do anything on {{site.data.keyword.objectstorageshort}}, you need to authenticate.
 
-1. Get an 'auth token`.
+1. Get an `auth token`.
 
    ```
    $ http -v https://dal05.objectstorage.softlayer.net/auth/v1.0

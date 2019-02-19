@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-12-10"
+  years: 2017, 2019
+lastupdated: "2019-02-05"
 
 ---
 {:new_window: target="_blank"}
@@ -19,6 +19,7 @@ lastupdated: "2018-12-10"
 
 
 # Billing for {{site.data.keyword.objectstorageshort}} OpenStack Swift
+{: #OSSBilling}
 
 All instances of this service are deprecated. Existing accounts can be used, but no new {{site.data.keyword.objectstorageshort}} accounts can be provisioned after **10 December 2018**.
 {:deprecated}

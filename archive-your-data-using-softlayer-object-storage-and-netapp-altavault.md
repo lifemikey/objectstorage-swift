@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2018-12-10"
+  years: 2017, 2019
+lastupdated: "2019-02-05"
 
 ---
 {:new_window: target="_blank"}
@@ -18,8 +18,9 @@ lastupdated: "2018-12-10"
 {:DomainName: data-hd-keyref="DomainName"}
 
 # Archiving Your Data Using {{site.data.keyword.BluSoftlayer_notm}} {{site.data.keyword.objectstorageshort}} and NetApp AltaVault
+{: #archiveOSSAlta}
 
-All instances of this service are deprecated. Existing accounts can be used, but no new {{site.data.keyword.objectstorageshort}} accounts can be provisioned after **10 December 2018**. 
+All instances of this service are deprecated. Existing accounts can be used, but no new {{site.data.keyword.objectstorageshort}} accounts can be provisioned after **10 December 2018**.
 {:deprecated}
 
 The continued growth of large, unstructured data is fueling the consumption of storage resources. This consumption leads enterprises to seek to reduce the capital and operational costs that are associated with the storage of infrequently accessed data sets and archives. Items in the data sets can include email archives (per regulation), product diagrams and manuals, medical images, and other unstructured data. {{site.data.keyword.BluSoftlayer_full}} {{site.data.keyword.objectstorageshort}} is one such solution that assists with reducing costs. It offers the same durability, protection, and access of traditional, monolithic storage arrays at a much lower price point and enhanced scale.
@@ -43,7 +44,7 @@ AltaVault is considered a cloud-enabled storage appliance. It exposes a Network 
 ![Figure 2 - AltaVault mounts to {{site.data.keyword.BluSoftlayer}}](/images/altavault_fig2.png)
 
 
-In archive, or cold-storage mode, AltaVault primarily uses the local disk that is assigned for metadata cache rather than local data cache. AltaVault also provides AES 256-bit encryption for data that is in-flight and at-rest on {{site.data.keyword.BluSoftlayer}}’s Object Store. The appliance features inline variable-length deduplication and compression, which reduces the amount of data that is needed to transfer and store at {{site.data.keyword.BluSoftlayer}}. Visit the [NetApp AltaVault page](http://www.netapp.com/us/products/protection-software/altavault/) for a complete list of features and functions.
+In archive, or cold-storage mode, AltaVault primarily uses the local disk that is assigned for metadata cache rather than local data cache. AltaVault also provides AES 256-bit encryption for data that is in-flight and at-rest on {{site.data.keyword.BluSoftlayer}}’s Object Store. The appliance features inline variable-length deduplication and compression, which reduces the amount of data that is needed to transfer and store at {{site.data.keyword.BluSoftlayer}}. Visit the [NetApp AltaVault page ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://www.netapp.com/us/products/protection-software/altavault/) for a complete list of features and functions.
 
 Since the data replicated by AltaVault is encrypted, users cannot directly access the same data that resides on the {{site.data.keyword.objectstorageshort}} through the traditional {{site.data.keyword.objectstorageshort}} REST APIs or FTP. They must use 1 of 2 methods to access the data in {{site.data.keyword.objectstorageshort}}. The first method is to use the on-premises AltaVault to read, write, and delete data to, from, and in the cloud. The second, if you want to access the data remotely, is to deploy another AltaVault appliance within {{site.data.keyword.BluSoftlayer}}, import the on-premises configuration (a built-in function), and access an NFS/SMB/CIFS mount presented by the AltaVault.
 
@@ -57,7 +58,7 @@ AltaVault can be purchased as a physical or virtual appliance. Only the deployme
 
 ### Verifying the Requirements for On-Premises
 
- - Obtain a copy of the AltaVault Virtual Appliance [in Open Virtualization Appliance (OVA) format]. Contact your [NetApp representative](https://www.netapp.com/us/products/cloud-storage/altavault-cloud-backup.aspx) for this appliance.
+ - Obtain a copy of the AltaVault Virtual Appliance [in Open Virtualization Appliance (OVA) format]. Contact your [NetApp representative ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.netapp.com/us/products/cloud-storage/altavault-cloud-backup.aspx) for this appliance.
  - Available existing on-premises vSphere ESXi 5.5 environment with the minimum CPU, memory, and disk space for the AltaVault appliance. If you're using the trial version, the requirements are four virtual CPUs (vCPUs), 24 GB of memory, and up to 8 TB of disk space.
  - Available 2x10Gbps Network Interface Cards (NICs) within the vSphere environment. One NIC is used for data ingest and the other used for data replication to {{site.data.keyword.BluSoftlayer}} {{site.data.keyword.objectstorageshort}}.
  - Define two networks – replication and data access – within the vSphere environment in addition to the NICs. The replication network cannot be assigned to the same network as the data access network since it might create a loop.
@@ -66,7 +67,7 @@ AltaVault can be purchased as a physical or virtual appliance. Only the deployme
 
 ### Deploying AltaVault OVA for On-Premises
 
-Deploy the AltaVault OVA to the vSphere environment when all the requirements are met. Instructions for OVA deployment can be found in the [NetApp AltaVault Installation and Service Guide](https://library.netapp.com/ecm/ecm_download_file/ECMLP2317733).
+Deploy the AltaVault OVA to the vSphere environment when all the requirements are met. Instructions for OVA deployment can be found in the [NetApp AltaVault Installation and Service Guide ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://library.netapp.com/ecm/ecm_download_file/ECMLP2317733).
 
 1. Go back and edit the AltaVault virtual machine (VM) after the deployment of the OVA is complete.
 2. Modify the memory allocated to match the version of AltaVault in the edit window. If you are using the trial version, assign 24 GB of memory and add a disk less than or equal to 8 TB.
@@ -191,7 +192,7 @@ Note the representative environment in {{site.data.keyword.BluSoftlayer}} consis
 
 Before you proceed any further, verify that the following requirements are met.
 
-- Make sure that your environment consists of a single ESXi host that is managed by a vCenter server within a {{site.data.keyword.BluSoftlayer}} VSI or matches the [Advanced Single-Site VMware Reference Architecture ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://{DomainName}/docs/infrastructure/virtualization/advanced-single-site-vmware-reference-architecturesoftlayer.html){:new_window}.
+- Make sure that your environment consists of a single ESXi host that is managed by a vCenter server within a {{site.data.keyword.BluSoftlayer}} VSI or matches the [Advanced Single-Site VMware Reference Architecture ![External link icon](../../icons/launch-glyph.svg "External link icon")](/docs/infrastructure/virtualization?topic=Virtualization-advanced-single-site-vmware-reference-architecture){:new_window}.
 - Obtained a copy of AltaVault Virtual Appliance (in OVA format) and it resides on the utility server (which was provisioned when you were setting up the previously mentioned VMware environment). Contact your NetApp representative for this appliance, or download a 90-day trial version on NetApp’s AltaVault website.
 - Available existing vSphere ESXi 5.5 environment @ {{site.data.keyword.BluSoftlayer}} with the minimum CPU, memory, and disk space for the AltaVault appliance. If you're using the trial version, the requirements are 4 vCPU, 24 GB of memory and up to 8 TB of disk space.
 - Available 2x10Gbps NICs, which are recommended within the vSphere environment.

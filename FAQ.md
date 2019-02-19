@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-02-19"
+lastupdated: "2019-02-11"
 
 ---
 {:new_window: target="_blank"}
@@ -19,6 +19,7 @@ lastupdated: "2019-02-19"
 
 
 # FAQs
+{: #faqs}
 
 All instances of this service are deprecated. Existing accounts can be used, but no new {{site.data.keyword.objectstorageshort}} accounts can be provisioned after **10 December 2018**.
 {:deprecated}
@@ -60,7 +61,7 @@ Phase 1 - **End of support** commences on **31 March 2019**.
 - SEO01 (Seoul)
 - OSL0 (Oslo)
 
-Phase 2 - **End of support** commences on **30 June 2019**. 
+Phase 2 - **End of support** commences on **30 June 2019**.
 - MEL01 (Melbourne)
 - MIL01 (Milan)
 - SAO01 (Sao Paulo)
@@ -83,7 +84,7 @@ Phase 4 - **End of support** commences on **1 December 2019**.
 
 ## Can a sub-User access {{site.data.keyword.objectstorageshort}}?
 
-Any [{{site.data.keyword.slportal}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/){:new_window} user with appropriate permissions can access and interact with {{site.data.keyword.objectstorageshort}}. If permissions are not granted, the {{site.data.keyword.objectstorageshort}} menu option does not appear within the {{site.data.keyword.slportal}}. For more information about granting or removing permissions for {{site.data.keyword.objectstorageshort}}, see [Managing an {{site.data.keyword.objectstorageshort}} User](interacting-in-portal.html).
+Any [{{site.data.keyword.slportal}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/){:new_window} user with appropriate permissions can access and interact with {{site.data.keyword.objectstorageshort}}. If permissions are not granted, the {{site.data.keyword.objectstorageshort}} menu option does not appear within the {{site.data.keyword.slportal}}. For more information about granting or removing permissions for {{site.data.keyword.objectstorageshort}}, see [Managing an {{site.data.keyword.objectstorageshort}} User](/docs/infrastructure/objectstorage-swift?topic=objectstorage-swift-OSSSLPortal).
 
 ## Can a User Have Edgecast CDN and StorageLayer Permissions Granted but be Prohibited from Accessing {{site.data.keyword.objectstorageshort}}?
 
@@ -119,7 +120,7 @@ Each {{site.data.keyword.objectstorageshort}} account requires the API Key for t
 
 ## How do I connect {{site.data.keyword.objectstorageshort}} to my server for backups?
 
-Although {{site.data.keyword.objectstorageshort}} is a solution for archiving, it isn't the ideal solution for targeting your active backups. {{site.data.keyword.BluSoftlayer}} recommends leveraging [our EVault services](/docs/infrastructure/Backup/index.html) to ensure the best results when you back up your data. To use {{site.data.keyword.objectstorageshort}} as a mount point for archiving data, connect the server to the storage container and set up your archive process. For example, run a database dump, and then, schedule a job to move the file to the {{site.data.keyword.objectstorageshort}} mount point.
+Although {{site.data.keyword.objectstorageshort}} is a solution for archiving, it isn't the ideal solution for targeting your active backups. {{site.data.keyword.BluSoftlayer}} recommends leveraging [our {{site.data.keyword.backup}} services](/docs/infrastructure/Backup?topic=Backup-GettingStarted) to ensure the best results when you back up your data. To use {{site.data.keyword.objectstorageshort}} as a mount point for archiving data, connect the server to the storage container and set up your archive process. For example, run a database dump, and then, schedule a job to move the file to the {{site.data.keyword.objectstorageshort}} mount point.
 
 ## Do I have to adhere to the 5 GB per Object Limit when I use SFTP?
 
@@ -149,7 +150,7 @@ The use of SFTP clients is primarily based on the device's OS and user preferenc
 
 Gladinet Cloud can be downloaded from the Gladinet website and setup instructions can be found on Gladinet’s [blog ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://gladinet.blogspot.com/2012/06/access-softlayer-object-storage-from.html){:new_window}.  
 
-Cyberduck is available on the Cyberduck website but must be configured to work properly with {{site.data.keyword.objectstorageshort}}.  Configuration instruction can be found on Cyberduck’s [wiki ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://trac.cyberduck.ch/wiki/help/en/howto/preferences#Hiddenconfigurationoptions) and in our [Connect to {{site.data.keyword.objectstorageshort}} with Cyberduck](connect-object-storage-using-cyberduck.html) article.   
+Cyberduck is available on the Cyberduck website but must be configured to work properly with {{site.data.keyword.objectstorageshort}}.  Configuration instruction can be found on Cyberduck’s [wiki ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://trac.cyberduck.ch/wiki/help/en/howto/preferences#Hiddenconfigurationoptions) and in our [Connect to {{site.data.keyword.objectstorageshort}} with Cyberduck](/docs/infrastructure/objectstorage-swift?topic=objectstorage-swift-OSSCyberduck) article.   
 
 ## Can I expand archives without downloading them within {{site.data.keyword.objectstorageshort}}?
 
@@ -157,7 +158,7 @@ No. This feature is not supported by OpenStack’s Swift, the platform on which 
 
 ## Is CDN integration available on my {{site.data.keyword.objectstorageshort}} account?
 
-Yes, Edgecast CDN integration is a standard feature on all {{site.data.keyword.objectstorageshort}} OpenStack Swift accounts.  All interactions with the Storage CDN portion of your account must be managed through {{site.data.keyword.BluSoftlayer}}’s API and CDN integration must be activated on your account before to its use.  For more information about interactions with the Edgecast CDN portion of your {{site.data.keyword.objectstorageshort}} account, see [Attaching EdgeCast CDN account to {{site.data.keyword.objectstorageshort}} OpenStack Swift](/docs/infrastructure/content-deliver-network/attach-edgecast-cdn-account-sl-object-storage.html).
+Yes, Edgecast CDN integration is a standard feature on all {{site.data.keyword.objectstorageshort}} OpenStack Swift accounts.  All interactions with the Storage CDN portion of your account must be managed through {{site.data.keyword.BluSoftlayer}}’s API and CDN integration must be activated on your account before to its use.
 
 Effective of **31 March 2019**, IBM Cloud will no longer support the Content Delivery Network (CDN) feature with Cloud Object Storage Swift.
 {:important}

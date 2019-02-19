@@ -6,7 +6,7 @@ Existing Swift accounts continue to be supported, but no new Swift accounts are 
 
 **Recommended Action**
 
-Migrate to IBM Cloud Object Storage to take advantage of the superior cost-performance profile. Please, migrate your workloads to the IBM Cloud Object Storage service at your earliest convenience. For more information about how to perform the migration, see [Migrating data from OpenStack Swift](https://console.bluemix.net/docs/services/cloud-object-storage/tutorials/migrate.html#migrating-data-from-openstack-swift) 
+Migrate to IBM Cloud Object Storage to take advantage of the superior cost-performance profile. Please, migrate your workloads to the IBM Cloud Object Storage service at your earliest convenience. For more information about how to perform the migration, see [Migrating data from OpenStack Swift](https://cloud.ibm.com/docs/services/cloud-object-storage/tutorials/migrate.html#migrating-data-from-openstack-swift)
 
 If you no longer use Object Storage OpenStack Swift and no longer need your data stored, please delete your Swift account from the IBM Cloud infrastructure customer portal.
 
