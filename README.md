@@ -1,8 +1,9 @@
 # About Object Storage Open-Stack Swift
 
-This collection belongs to the Storage tribe. The Swift Object Storage service that is provisioned from and managed in the IBM Cloud infrastructure customer portal is no longer be sold or marketed after **10 December 2018**.
+This collection belongs to the Cloud Object Storage team. The Swift Object Storage service that is provisioned from and managed in the IBM Cloud infrastructure customer portal is no longer be sold or marketed after **10 December 2018**.
+**Object Storage OpenStack Swift is nearing the End of Support.**
 
-Existing Swift accounts continue to be supported, but no new Swift accounts are created. The service is replaced by the IBM Cloud Object Storage service which is provisioned from and managed in the unified console alongside our PaaS offerings such as Containers and Watson services.
+The service is replaced by the IBM Cloud Object Storage service which is provisioned from and managed in the unified console alongside our PaaS offerings such as Containers and Watson services.
 
 **Recommended Action**
 

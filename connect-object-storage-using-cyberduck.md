@@ -21,8 +21,8 @@ lastupdated: "2019-02-05"
 # Connecting to {{site.data.keyword.objectstorageshort}} with Cyberduck
 {: #OSSCyberduck}
 
-All instances of this service are deprecated. Existing accounts can be used, but no new {{site.data.keyword.objectstorageshort}} accounts can be provisioned after **10 December 2018**.
-{:deprecated}
+**Action Required: Object Storage OpenStack Swift is nearing the End of Support.**
+{:important}
 
 OpenStack limits the size of any individual object to 5 GB. The application supports storage of files larger than the 5-GB limit through segmentation. Additionally, various clients have their own file size limits.
 

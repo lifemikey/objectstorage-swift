@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-02-05"
+lastupdated: "2019-05-15"
 
 ---
 {:new_window: target="_blank"}
@@ -36,12 +36,6 @@ The primary use of {{site.data.keyword.objectstorageshort}} is the long-term sto
 
 Although {{site.data.keyword.objectstorageshort}} is based on OpenStack’s Swift, {{site.data.keyword.BluSoftlayer}} offered many unique features. Among them are:
 
-- **Integrated Indexing and Search functions**
-
-Quickly access information through user-defined metadata key-value pairs, file names, or unique identifiers.
-
-Effective of **31 March 2019**, IBM Cloud will no longer support the Search function with Cloud Object Storage Swift..
-{:important}
 
 - **Worldwide Storage Fabric**
 
@@ -50,13 +44,6 @@ Storage clusters are located in North America, Europe, and Asia. With all the cl
 - **Redundant Architecture**
 
 Data is written multiple times per cluster with self-healing capabilities to immediately restore data if a drive fails.
-
-- **Flexible Data Distribution**
-
-Highly expandable read/write access gives users the ability to serve content directly from the storage system or through {{site.data.keyword.cdn_full}}.
-
-Effective of **31 March 2019**, IBM Cloud will no longer support the Content Delivery Network (CDN) feature with Cloud Object Storage Swift.
-{:important}
 
 - **Powerful Management Toolkit**
 

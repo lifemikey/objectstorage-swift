@@ -20,8 +20,8 @@ lastupdated: "2019-02-05"
 # Connecting to {{site.data.keyword.objectstorageshort}} with SFTP
 {: #OSSSFTP}
 
-All instances of this service are deprecated. Existing accounts can be used, but no new {{site.data.keyword.objectstorageshort}} accounts can be provisioned after **10 December 2018**.
-{:deprecated}
+**Action Required: Object Storage OpenStack Swift is nearing the End of Support.**
+{:important}
 
 To connect to {{site.data.keyword.objectstorageshort}} by using SFTP, you need the following login information.
 

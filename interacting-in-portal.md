@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-02-05"
+lastupdated: "2019-05-15"
 
 ---
 {:new_window: target="_blank"}
@@ -20,9 +20,8 @@ lastupdated: "2019-02-05"
 # Interacting with {{site.data.keyword.objectstorageshort}} through the {{site.data.keyword.slportal}}
 {: #OSSSLPortal}
 
-All instances of this service are deprecated. Existing accounts can be used, but no new {{site.data.keyword.objectstorageshort}} accounts can be provisioned after **10 December 2018**.
-{:deprecated}
-
+**Action Required: Object Storage OpenStack Swift is nearing the End of Support.**
+{:important}
 
 ## Accessing the {{site.data.keyword.objectstorageshort}} Screen
 
@@ -31,26 +30,7 @@ The {{site.data.keyword.objectstorageshort}} screen in the [{{site.data.keyword.
 1. Access the {{site.data.keyword.slportal}} by using your unique credentials.
 2. Select **Storage** > **{{site.data.keyword.objectstorageshort}}** from the navigation bar.
 3. Click the **{{site.data.keyword.objectstorageshort}}** link from the list of storage nodes to access the {{site.data.keyword.objectstorageshort}} page. If the account has multiple users, select the user whose {{site.data.keyword.objectstorageshort}} account you want to access.
-4. Select one of the following **Clusters** based on the city that is of nearest proximity to your users.
-   - Amsterdam 1 (AMS01)
-   - Dallas 5 (DAL05)
-   - Frankfurt 2 (FRA02)
-   - Hong Kong 2 (HKG02)
-   - London (LON02)
-   - Melbourne 1 (MEL01)
-   - Paris 1 (PAR01)
-   - San Jose 1 (SJC01)
-   - Singapore 1 (SNG01)
-   - Sydney 1 (SYD01)
-   - Toronto 1 (TOR01)
-   - Tokyo 2 (TOK02)
-
-  After **31 March, 2019**, the following data center locations are no longer supported:
-   - CHE01(Chennai),
-   - MEX01 (Mexico City),
-   - MON01 (Montreal),
-   - SEO01 (Seoul)
-   - OSL0 (Oslo)
+4. Select a Cluster location.
 
 ## Explaining the {{site.data.keyword.objectstorageshort}} User Interface
 
@@ -203,17 +183,6 @@ After an object is uploaded to the container, metadata can be associated with th
 
 After you added metadata to a file, files can be located more easily, and metadata values can also be searched when you're trying to locate a file by using {{site.data.keyword.objectstorageshort}} search function. More than one set of metadata can be added. Repeat these steps to add more metadata to the same file.
 
-
-## Searching within a Cluster
-
-In addition to cluster, container, and object interactions, you can search across the entire cluster, regardless of what level of data is being viewed.
-
-1. Access the {{site.data.keyword.objectstorageshort}} screen in the [{{site.data.keyword.slportal}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/){:new_window}.
-2. Enter the search term or terms in the Search field. <br/>
-   **Note**: The Search field for {{site.data.keyword.objectstorageshort}} is on the middle of the screen, to the right of your current location within the cluster hierarchy.
-3. Click **Search**.
-
-The system returns all containers and objects that match the search criteria where files and containers are normally viewed.
 
 ## Deleting an Object in a Cluster
 

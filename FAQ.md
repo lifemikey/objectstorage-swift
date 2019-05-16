@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-02-11"
+lastupdated: "2019-05-15"
 
 ---
 {:new_window: target="_blank"}
@@ -21,8 +21,8 @@ lastupdated: "2019-02-11"
 # FAQs
 {: #faqs}
 
-All instances of this service are deprecated. Existing accounts can be used, but no new {{site.data.keyword.objectstorageshort}} accounts can be provisioned after **10 December 2018**.
-{:deprecated}
+**Action Required: Object Storage OpenStack Swift is nearing the End of Support.**
+{:important}
 
 ## What are the {{site.data.keyword.objectstorageshort}} authentication endpoints on the Public and Private networks?
 
@@ -36,25 +36,21 @@ The authentication endpoints for {{site.data.keyword.objectstorageshort}} are cl
 <tr><td>London, United Kingdom</td><td><li>Public Network - <code>`https://lon02.objectstorage.softlayer.net/auth/v1.0`</code></li><li>Private Network - <code>`https://lon02.objectstorage.service.networklayer.com/auth/v1.0`</code></li></td></tr>
 <tr><td>Milan, Italy</td><td><li>Public Network - <code>`https://mil01.objectstorage.softlayer.net/auth/v1.0`</code></li><li>Private Network - <code>`https://mil01.objectstorage.service.networklayer.com/auth/v1.0`</code></li></td></tr>
 <tr><td>Paris, France</td><td><li>Public Network - <code>`https://par01.objectstorage.softlayer.net/auth/v1.0`</code></li><li>Private Network - <code>`https://par01.objectstorage.service.networklayer.com/auth/v1.0`</code></li></td></tr>
-<tr><td>Montreal, Canada</td><td><li>Public Network - <code>`https://mon01.objectstorage.softlayer.net/auth/v1.0`</code></li><li>Private Network - <code>`https://mon01.objectstorage.service.networklayer.com/auth/v1.0`</code></li></td></tr>
 <tr><td>Toronto, Canada</td><td><li>Public Network - <code>`https://tor01.objectstorage.softlayer.net/auth/v1.0`</code></li><li>Private Network - <code>`https://tor01.objectstorage.service.networklayer.com/auth/v1.0`</code></li></td></tr>
 <tr><td>Dallas, TX, United States</td><td><li>Public Network - <code>`https://dal05.objectstorage.softlayer.net/auth/v1.0`</code></li><li>Private Network - <code>`https://dal05.objectstorage.service.networklayer.com/auth/v1.0`</code></li></td></tr>
 <tr><td>San Jose, CA, United States</td><td><li>Public Network - <code>`https://sjc01.objectstorage.softlayer.net/auth/v1.0`</code></li><li>Private Network - <code>`https://sjc01.objectstorage.service.networklayer.com/auth/v1.0`</code></li></td></tr>
 <tr><td>Washington DC, United States</td><td><li>Public Network - <code>`https://wdc.objectstorage.softlayer.net/auth/v1.0`</code></li><li>Private Network - <code>`https://wdc.objectstorage.service.networklayer.com/auth/v1.0`</code></li></td></tr>
-<tr><td>Mexico City, Mexico</td><td><li>Public Network - <code>`https://mex01.objectstorage.softlayer.net/auth/v1.0`</code></li><li>Private Network - <code>`https://mex01.objectstorage.service.networklayer.com/auth/v1.0`</code></li></td></tr>
 <tr><td>São Paolo, Brazil</td><td><li>Public Network - <code>`https://sao01.objectstorage.softlayer.net/auth/v1.0`</code></li><li>Private Network - <code>`https://sao01.objectstorage.service.networklayer.com/auth/v1.0`</code></li></td></tr>
-<tr><td>Chennai, India</td><td><li>Public Network - <code>`https://che01.objectstorage.softlayer.net/auth/v1.0`</code></li><li>Private Network - <code>`https://che01.objectstorage.service.networklayer.com/auth/v1.0`</code></li></td></tr>
 <tr><td>Hong Kong, China</td><td><li>Public Network - <code>`https://hkg02.objectstorage.softlayer.net/auth/v1.0`</code></li><li>Private Network - <code>`https://hkg02.objectstorage.service.networklayer.com/auth/v1.0`</code></li></td></tr>
 <tr><td>Melbourne, Australia</td><td><li>Public Network - <code>`https://mel01.objectstorage.softlayer.net/auth/v1.0`</li><li>Private Network - <code>`https://mel01.objectstorage.service.networklayer.com/auth/v1.0`</code></li></td></tr>
 <tr><td>Sydney, Australia</td><td><li>Public Network - <code>`https://syd01.objectstorage.softlayer.net/auth/v1.0`</code></li><li>Private Network -<code>`https://syd01.objectstorage.service.networklayer.com/auth/v1.0`</code></li></td></tr>
-<tr><td>Seoul, S. Korea</td><td><li>Public Network - <code>`https://seo01.objectstorage.softlayer.net/auth/v1.0`</code></li><li>Private Network - <code>`https://seo01.objectstorage.service.networklayer.com/auth/v1.0`</code></li></td></tr>
 <tr><td>Singapore, Singapore</td><td><li>Public Network - <code>`https://sng01.objectstorage.softlayer.net/auth/v1.0`</code></li><li>Private Network - <code>`https://sng01.objectstorage.service.networklayer.com/auth/v1.0`</code></li></td></tr>
 <tr><td>Tokyo, Japan</td><td><li>Public Network - <code>`https://tok02.objectstorage.softlayer.net/auth/v1.0`</code></li><li>Private Network - <code>`https://tok02.objectstorage.service.networklayer.com/auth/v1.0`</code></li></td></tr>
 </table>
 
 The following Object Storage OpenStack Swift (infrastructure) data center locations are being phased out of support after 31 March 2019.
 
-Phase 1 - **End of support** commences on **31 March 2019**.
+Phase 1 - **End of support** completed on **31 March 2019**.
 - CHE01(Chennai)
 - MEX01 (Mexico City)
 - MON01 (Montreal)
@@ -85,13 +81,6 @@ Phase 4 - **End of support** commences on **1 December 2019**.
 ## Can a sub-User access {{site.data.keyword.objectstorageshort}}?
 
 Any [{{site.data.keyword.slportal}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/){:new_window} user with appropriate permissions can access and interact with {{site.data.keyword.objectstorageshort}}. If permissions are not granted, the {{site.data.keyword.objectstorageshort}} menu option does not appear within the {{site.data.keyword.slportal}}. For more information about granting or removing permissions for {{site.data.keyword.objectstorageshort}}, see [Managing an {{site.data.keyword.objectstorageshort}} User](/docs/infrastructure/objectstorage-swift?topic=objectstorage-swift-OSSSLPortal).
-
-## Can a User Have Edgecast CDN and StorageLayer Permissions Granted but be Prohibited from Accessing {{site.data.keyword.objectstorageshort}}?
-
-If a user has the Manage CDN Account, Manage CDN File Transfers and Manage StorageLayer permissions, the user automatically has access to {{site.data.keyword.objectstorageshort}}, as well. At the current time, you can't grant access to CDN and StorageLayer while you prohibit access to {{site.data.keyword.objectstorageshort}}, or vice versa.
-
-Effective of **31 March 2019**, IBM Cloud will no longer support the Content Delivery Network (CDN) feature with Cloud Object Storage Swift.
-{:important}
 
 ## What is the file upload limit of {{site.data.keyword.objectstorageshort}}?
 
@@ -155,10 +144,3 @@ Cyberduck is available on the Cyberduck website but must be configured to work p
 ## Can I expand archives without downloading them within {{site.data.keyword.objectstorageshort}}?
 
 No. This feature is not supported by OpenStack’s Swift, the platform on which {{site.data.keyword.objectstorageshort}} is built. Currently, {{site.data.keyword.BluSoftlayer}} has no plans to implement this feature.
-
-## Is CDN integration available on my {{site.data.keyword.objectstorageshort}} account?
-
-Yes, Edgecast CDN integration is a standard feature on all {{site.data.keyword.objectstorageshort}} OpenStack Swift accounts.  All interactions with the Storage CDN portion of your account must be managed through {{site.data.keyword.BluSoftlayer}}’s API and CDN integration must be activated on your account before to its use.
-
-Effective of **31 March 2019**, IBM Cloud will no longer support the Content Delivery Network (CDN) feature with Cloud Object Storage Swift.
-{:important}

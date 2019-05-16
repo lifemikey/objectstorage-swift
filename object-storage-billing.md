@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-02-05"
+lastupdated: "2019-05-15"
 
 ---
 {:new_window: target="_blank"}
@@ -21,16 +21,16 @@ lastupdated: "2019-02-05"
 # Billing for {{site.data.keyword.objectstorageshort}} OpenStack Swift
 {: #OSSBilling}
 
-All instances of this service are deprecated. Existing accounts can be used, but no new {{site.data.keyword.objectstorageshort}} accounts can be provisioned after **10 December 2018**.
-{:deprecated}
+**Action Required: Object Storage OpenStack Swift is nearing the End of Support.**
+{:important}
 
-{{site.data.keyword.Bluemix}} {{site.data.keyword.objectstorageshort}} is a pay-as-you-go service – you pay only for what you use. There's no minimum fee, nor are there any setup-fees or commitments to start the service. {{site.data.keyword.objectstorageshort}} is charged in 1 of 2 ways – {{site.data.keyword.objectstorageshort}} usage per GB per month and public outbound bandwidth per GB per month.
+{{site.data.keyword.objectstorageshort}} is charged in 1 of 2 ways – {{site.data.keyword.objectstorageshort}} usage per GB per month and public outbound bandwidth per GB per month.
 
 {{site.data.keyword.objectstorageshort}} usage is billed based on storage usage throughout the billing cycle. For example, you use 1000 GB of {{site.data.keyword.objectstorageshort}} for one day. For the remainder of the month, you use 2000 GB per day. Your usage is averaged daily, and then reported in the billing cycle.
 
 Public outbound bandwidth charges apply when data is read from any of your object containers over the public network and is billed for all bandwidth that is used in a billing cycle.
 
-Your cost per month might vary because your {{site.data.keyword.objectstorageshort}} usage for month can vary. {{site.data.keyword.Bluemix}} charges per GB used and prices also vary per data center. For up-to-date pricing information, see the [Order {{site.data.keyword.objectstorageshort}} page ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/cloud-computing/bluemix/pricing-object-storage#swift){:new_window}.
+Your cost per month might vary because your {{site.data.keyword.objectstorageshort}} usage for month can vary. {{site.data.keyword.Bluemix}} charges per GB used and prices also vary per data center.
 
 The prices that are shown here are not official pricing, and prices can be subject to change.
 {important}
