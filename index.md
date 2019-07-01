@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-05-15"
+lastupdated: "2019-07-01"
 
 ---
 {:new_window: target="_blank"}
@@ -43,7 +43,7 @@ Phase 1 - End of support completed on 31 March 2019.
 - SEO01 (Seoul)
 - OSL0 (Oslo)
 
-Phase 2 - End of support commences on 30 June 2019.
+Phase 2 - End of support completed on 30 June 2019.
 - MEL01 (Melbourne)
 - MIL01 (Milan)
 - SAO01 (Sao Paulo)
