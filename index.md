@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-07-01"
+lastupdated: "2019-07-09"
 
 ---
 {:new_window: target="_blank"}
@@ -51,18 +51,20 @@ Phase 2 - End of support completed on 30 June 2019.
 - TOR01 (Toronto)
 - WDC (Washington DC)
 
-Phase 3 - End of support commences on 30 September 2019.
+Phase 3 - **End of support** commences on **30 September 2019**.
 - AMS01 (Amsterdam)
 - FRA02 (Frankfurt)
-- LON02 (London)
 - SNG01 (Singapore)
 - SYD01 (Sydney)
+- LON02 (London)    
+     Important: Does not apply to the Object Storage Swift (PaaS) which went End of Support on 30 June 2019
 
-Phase 4 - End of support commences on 1 December 2019.
-- DAL05 (Dallas)
+Phase 4 - **End of support** commences on **1 December 2019**.
 - HKG01 (Hong Kong)
 - PAR01 (Paris)
 - SJC01 (San Jose)
+- DAL05 (Dallas)    
+     Important: Does not apply to the Object Storage Swift (PaaS) which went End of Support on 30 June 2019
 
 ##  Action Required
 

@@ -44,14 +44,14 @@ The authentication endpoints for {{site.data.keyword.objectstorageshort}} are cl
 
 The following Object Storage OpenStack Swift (infrastructure) data center locations are being phased out of support after 31 March 2019.
 
-Phase 1 - **End of support** completed on **31 March 2019**.
+Phase 1 - End of support completed on 31 March 2019.
 - CHE01(Chennai)
 - MEX01 (Mexico City)
 - MON01 (Montreal)
 - SEO01 (Seoul)
 - OSL0 (Oslo)
 
-Phase 2 - **End of support** completed on **30 June 2019**.
+Phase 2 - End of support completed on 30 June 2019.
 - MEL01 (Melbourne)
 - MIL01 (Milan)
 - SAO01 (Sao Paulo)
@@ -62,15 +62,17 @@ Phase 2 - **End of support** completed on **30 June 2019**.
 Phase 3 - **End of support** commences on **30 September 2019**.
 - AMS01 (Amsterdam)
 - FRA02 (Frankfurt)
-- LON02 (London)
 - SNG01 (Singapore)
 - SYD01 (Sydney)
+- LON02 (London)   
+     Important: Does not apply to the Object Storage Swift (PaaS) which went End of Support on 30 June 2019
 
 Phase 4 - **End of support** commences on **1 December 2019**.
-- DAL05 (Dallas)
 - HKG01 (Hong Kong)
 - PAR01 (Paris)
 - SJC01 (San Jose)
+- DAL05 (Dallas)    
+     Important: Does not apply to the Object Storage Swift (PaaS) which went End of Support on 30 June 2019
 
 ## Can a sub-User access {{site.data.keyword.objectstorageshort}}?
 
