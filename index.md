@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017, 2019
-lastupdated: "2019-07-09"
+lastupdated: "2019-07-25"
 
 ---
 {:new_window: target="_blank"}
@@ -60,7 +60,7 @@ Phase 3 - **End of support** commences on **30 September 2019**.
      Important: Does not apply to the Object Storage Swift (PaaS) which went End of Support on 30 June 2019
 
 Phase 4 - **End of support** commences on **1 December 2019**.
-- HKG01 (Hong Kong)
+- HKG02 (Hong Kong)
 - PAR01 (Paris)
 - SJC01 (San Jose)
 - DAL05 (Dallas)    
